@@ -9,7 +9,7 @@ previsto e sono state un fallimento totale.
 
 Dopo un'attenta analisi, GameCo ha attribuito le cause del calo inaspettato delle vendite a una nuova 
 applicazione web gratuita che di recente è stata pubblicata online da un'azienda competitrice. Tale 
-applicazione permette a due giocatori di giocare a scacchi online, in qualunque momento, purchè possiedano una
+applicazione permette a due giocatori di giocare a scacchi online, in qualunque momento, purché possiedano una
 connessione internet. Inoltre, è accessibile direttamente dal browser e non necessita alcuna installazione. 
 In termini di funzionalità, l'applicazione competitrice è comunque piuttosto povera.
 
@@ -21,7 +21,7 @@ dalla grande visibilità che avrà il sito.
 
 La nuova applicazione che GameCo ha in mente di sviluppare sarà simile a quella dell'azienda competitrice. 
 Tuttavia, la si vuole migliorare, aggiungendo nuove funzionalità che l'azienda competitrice non offre.
-In particolare, la nuova applicazione non constringerà gli utenti che vogliono giocarci a registrarsi, al 
+In particolare, la nuova applicazione non costringerà gli utenti che vogliono giocarci a registrarsi, al 
 contrario dell'azienda competitrice. Però, nel caso in cui gli utenti si registrassero, si vuole offrire loro
 l'opportunità di tenere traccia dei loro progressi nel tempo, attraverso il sistema di valutazione standard 
 ELO, ben noto negli scacchi. Inoltre, si vuole mantenere una classifica globale dei giocatori, mostrando in
@@ -41,7 +41,9 @@ all'interno dell'applicazione.
 
 Data la poca esperienza di GameCo nello sviluppo di applicazione web, si è stati incaricati in qualità di 
 Project Manager e consulente esterno, di realizzare con urgenza una tale soluzione software. GameCo ha 
-intenzione di investire molto su questa nuova opportunità di business.
+intenzione d'investire molto su questa nuova opportunità di business.
+
+---
 
 [Back to Index](../index.md) |
 [Next Chapter](../1-scoping/index.md)

@@ -22,6 +22,8 @@ Determinare i tempi e i costi del progetto per il contratto.
 - Contratto
 - Project Proposal
 
+---
+
 [Back to Index](../index.md) |
 [Previous Chapter](../1-scoping/index.md) |
 [Next Chapter](../3-executing/index.md)

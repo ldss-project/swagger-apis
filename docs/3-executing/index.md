@@ -11,6 +11,8 @@ Gestire l'esecuzione del piano di progetto
 
 (- Scope Change Management)
 
+---
+
 [Back to Index](../index.md) |
 [Previous Chapter](../2-planning/index.md) |
 [Next Chapter](../4-monitoring-and-controlling/index.md)

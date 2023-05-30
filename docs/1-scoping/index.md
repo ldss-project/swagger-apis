@@ -22,9 +22,9 @@ di due settimane:
     - Descrizione della situazione attuale di GameCo (ovvero dell'_as is_);
     - Descrizione del problema o dell'opportunità individuata da GameCo;
     - Descrizione della situazione desiderata da GameCo (ovvero del _to be_);
-    - Definizione dei requisiti di massima del progetto e delle Conditions of Satisfaction a livello di
-      progetto.
-  - Durata: 4 ore;
+    - Definizione delle Conditions of Satisfaction a livello di progetto.
+  - Data: 10-01-2023
+  - Durata: 4 ore
   - Verbale: [link](../attachments/meeting-reports/scoping/problem-definition-meeting.md)
 - **Requirements Definition Meeting**:
   - Partecipanti:
@@ -36,11 +36,12 @@ di due settimane:
       - Tecnografo, per la stesura del verbale.
   - Agenda:
     - Presentazione dei Core Team di entrambe le parti;
-    - Definizione dei requisiti di dettaglio del progetto e delle Conditions of Satisfaction a livello di
-      deliverable;
+    - Definizione delle User Stories, ovvero dei requisiti del progetto e delle Conditions of Satisfaction a livello
+      di deliverable;
     - Discussione del gap tra l'_as is_ ed il _to be_;
     - Discussione e revisione della RBS.
-  - Durata: 8 ore, divise su due giornate.
+  - Data: 12-01-2023, 16-01-2023
+  - Durata: 8 ore, divise su due giornate
   - Verbale: [link](../attachments/meeting-reports/scoping/requirements-definition-meeting.md)
 - **POS Submission Meeting**:
   - Partecipanti:      
@@ -59,31 +60,43 @@ di due settimane:
       - Discussione di assunzioni, rischi e ostacoli.
     - Discussione sulla fattibilità di massima del progetto;
     - Approvazione o rifiuto del POS.
+  - Data: 23-01-2023
   - Durata: 4 ore.
   - Verbale: [link](../attachments/meeting-reports/scoping/pos-submission-meeting.md)
 
 ## Conditions of Satisfaction
 
-Durante gli Scoping Meetings, sono state definite delle Conditions of Satisfaction a livello di progetto, allo 
-scopo di formalizzare e dettagliare gli effettivi desideri del committente.
+Durante il Problem Definition Meeting, sono state definite delle Conditions of Satisfaction a livello di progetto, 
+disponibili al seguente [link](../attachments/CoS.md), allo scopo di formalizzare e dettagliare gli effettivi
+desideri del committente.
 
-Particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per comprendere
-meglio l'entità del progetto e successivamente facilitare la pianificazione e la gestione delle risorse.
+Inizialmente, particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per
+comprendere meglio l'entità del progetto e successivamente facilitare la pianificazione e la gestione delle 
+risorse.
 
-In dettaglio, sono state individuate le seguenti Conditions of Satisfaction:
-- Budget: upperbound 200000$
-- Tempi: upperbound 6 mesi
-- ...
+## Definizione dei requisiti
 
-- Conditions of Satisfaction: budget, tempo, desideri a livello di progetto
-- Definire i requisiti: facilitated group session, use case scenarios, requirement reuse
-- User Stories: desideri (CoS) a livello di deliverable, User Flow
-- RBS: includerà le User Stories decomponendole, noun-type, verb-type, organizational approaches
-- Check
+Durante il Requirements Definition Meeting, sono stati definiti i requisiti di progetto in termini di User Stories,
+disponibili al seguente [link](../attachments/user-stories.md).
+
+In particolare, siccome GameCo ha già realizzato un progetto relativo al gioco degli scacchi, sarà possibile
+riutilizzare alcuni dei requisiti di quel progetto, almeno per quanto riguarda la gestione di una singola partita
+di scacchi.
+
+Quindi, tra le due giornate dei meeting, si è lavorato per trasformare le User Stories in un RBS, disponibile al
+seguente [link](../attachments/RBS.md), allo scopo di facilitare la pianificazione nelle fasi successive del 
+progetto.
+
+## Swot Analysis
 - Swot Analysis: studio di fattibilità, analisi dei rischi e opportunità
+
+## PMLC Model
 - Definire PMLC Model: lineare, incrementale, iterativo, adattivo, extreme, emertxe
+
+## POS
 - POS o Project Charter
-- Submit
+
+---
 
 [Back to Index](../index.md) |
 [Previous Chapter](../0-request/index.md) |

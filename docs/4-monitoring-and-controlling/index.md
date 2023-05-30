@@ -14,6 +14,8 @@ Garantire che il piano di progetto sia rispettato
     - Richiedere nuove risorse
     - Aggiungere derivable, estendere la Schedula, modificare lo Scope
 
+---
+
 [Back to Index](../index.md) |
 [Previous Chapter](../3-executing/index.md) |
 [Next Chapter](../5-closing/index.md)
