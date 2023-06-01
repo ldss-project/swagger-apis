@@ -76,16 +76,19 @@ risorse.
 
 ## Definizione dei requisiti
 
+### User Stories
 Durante il Requirements Definition Meeting, sono stati definiti i requisiti di progetto in termini di User Stories,
-disponibili al seguente [link](../attachments/user-stories.md).
+disponibili al seguente [link](../attachments/user-stories.md). 
+In questo modo, è stata condotta un'analisi sulle necessità degli utenti finali, ovvero dei giocatori dell'applicazione,
+quindi i requisiti del progetto saranno il più vicino possibile all'utente finale. Quindi, le User Stories potranno
+essere il riferimento per la verifica del sistema.
 
-In particolare, siccome GameCo ha già realizzato un progetto relativo al gioco degli scacchi, sarà possibile
-riutilizzare alcuni dei requisiti di quel progetto, almeno per quanto riguarda la gestione di una singola partita
-di scacchi.
+### RBS
+Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
+lavorato per trasformare le User Stories in un RBS, disponibile al seguente [link](../attachments/RBS.md).
 
-Quindi, tra le due giornate dei meeting, si è lavorato per trasformare le User Stories in un RBS, disponibile al
-seguente [link](../attachments/RBS.md), allo scopo di facilitare la pianificazione nelle fasi successive del 
-progetto.
+Siccome GameCo ha già realizzato un progetto relativo al gioco degli scacchi, sarà possibile riutilizzare alcuni dei 
+requisiti di quel progetto, almeno per quanto riguarda la gestione delle regole di una partita di scacchi.
 
 ## Swot Analysis
 - Swot Analysis: studio di fattibilità, analisi dei rischi e opportunità
