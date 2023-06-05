@@ -13,8 +13,8 @@ Data: 15-01-2023
          di scacchi, a cui chiunque può partecipare.
       2. **Private Game**: permettere a un giocatore di creare una partita privata
          di scacchi, a cui solo chi conosce l'id segreto può partecipare.
-      3. **Friend Game**: permettere a un giocatore di creare una partita privata di
-         scacchi invitando un suo specifico amico nell'applicazione a parteciparci.
+      3. **Friend Game**: permettere a un giocatore autenticato di creare una partita 
+         privata di scacchi invitando un suo specifico amico nell'applicazione a parteciparci.
       4. **Time Constraint**: permette di configurare i vincoli di tempo della partita.
          1. **No Limit**: nessun vincolo di tempo.
          2. **Turn Limit**: vincolo di tempo sul turno di ciascun giocatore (es.: ogni
@@ -28,10 +28,9 @@ Data: 15-01-2023
          partita pubblica qualsiasi.
       2. **Private Game Participation**: permettere a un giocatore di partecipare a una
          partita privata di cui conosce l'id segreto.
-      3. **Friend Game Participation**: permettere a un giocatore di partecipare a una
-         partita privata a cui è stato invitato.
-   3. **Game Execution**: gestione dello svolgimento di una partita tra due
-      giocatori.
+      3. **Friend Game Participation**: permettere a un giocatore autenticato di partecipare
+         a una partita privata a cui è stato invitato.
+   3. **Game Execution**: gestione dello svolgimento di una partita tra due giocatori.
       1. **Turn Execution**: gestione di un turno della partita.
          1. **Turn Control**: durante il turno di un giocatore, tale giocatore
             deve essere l'unico ad avere il controllo sulla scacchiera.
@@ -73,7 +72,7 @@ Data: 15-01-2023
             1. **One Around**: movimento di una casella in qualsiasi direzione.
             2. **Castling**: movimento di due caselle a sinistra o a destra, verso
                una delle due torri del giocatore. Quando effettuato, la torre verso
-               cui si è mosso il re, si muove fino a scavalcare il re.
+               cui si è mosso il re si muove fino a scavalcare il re.
                Effettuabile solo se il re e la torre non hanno eseguito movimenti 
                in precedenza e se non ci sono altri pezzi tra loro due.
       5. **Piece Capture**: gestione della cattura dei pezzi sulla scacchiera.
@@ -96,121 +95,129 @@ Data: 15-01-2023
             pedone sul lato opposto della scacchiera e può sostituirlo con un
             cavallo, un alfiere, una torre o una regina.
 2. **Tournament Management**: permettere di organizzare dei tornei che includono
-   più partite tra diversi giocatori.
+   più partite tra diversi giocatori autenticati.
    1. **Tournament Configuration**: permettere a un amministratore di creare e
       configurare dei tornei di scacchi (es.: massimo numero di partecipanti,
       numero di round...).
-   2. **Tournament Participation**: permettere a un giocatore di partecipare a 
-      un torneo.
-   3. **Tournament Execution**: gestione dell'esecuzione di un torneo basandosi
+   2. **Tournament Participation**: permettere a un giocatore autenticato di 
+      partecipare a un torneo.
+   3. **Tournament Execution**: gestione dell'esecuzione di un torneo, basandosi
       sul sistema svizzero.
       1. **Round Execution**: gestione di un round del sistema svizzero.
          1. **Participant Pairing**: gestione della formazione delle coppie di 
-            giocatori che devono affrontarsi.
+            giocatori autenticati che devono affrontarsi, sulla base dei risultati
+            di ciascun giocatore autenticato.
          2. **Match Execution**: gestione dell'esecuzione dei match tra le coppie
-            di giocatori che devono affrontarsi.
+            di giocatori autenticati che devono affrontarsi.
          3. **Result Aggregation**: gestione dell'aggregazione dei risultati dei
             match del round eseguiti.
    4. **Tournament Awards**: gestione della premiazione del torneo.
    5. **Tournament Storage**: gestione della memorizzazione dei dati relativi
       ai tornei (es.: numero di partecipanti massimi e correnti...).
-3. **Authentication Management**: permettere a un giocatore di autenticarsi 
+3. **Authentication Management**: permettere a un giocatore ospite di autenticarsi 
    all'interno dell'applicazione.
-   1. **Sign In**: permettere a un giocatore di registrarsi all'applicazione.
-      1. **Registration Form**: gestione dell'inserimento dei dati del giocatore.
-         In particolare, sono richiesti la sua email, il suo username e la sua 
-         password;
-      2. **Confirmation Email**: gestione dell'email per ultimare la 
-         registrazione del giocatore, verificando che l'email da lui specificata
-         sia effettivamente la sua.
-   2. **Log In**: permettere a un giocatore di accedere all'applicazione,
-      conoscendo le proprie credenziali, se non autenticato.
+   1. **Sign In**: permettere a un giocatore ospite di registrarsi all'applicazione.
+      1. **Registration Form**: gestione dell'inserimento dei dati del giocatore ospite.
+         In particolare, sono richiesti la sua email, il suo username e la sua password;
+      2. **Confirmation Email**: gestione dell'email per ultimare la registrazione del 
+         giocatore ospite, verificando che l'email da lui specificata sia effettivamente
+         la sua.
+   2. **Log In**: permettere a un giocatore ospite di accedere all'applicazione,
+      conoscendo le proprie credenziali.
       1. **Token Creation**: creazione di un token utente riferito a una sessione
-         attiva di un utente autenticato, richiesto per accedere alle operazioni
+         attiva di un giocatore autenticato, richiesto per accedere alle operazioni
          sensibili dell'applicazione (es.: cambio della password...).
       2. **Token Expiration**: gestire la scadenza dei token utente, per limitare
          la validità di uno specifico accesso nel tempo.
-   3. **Log out**: permettere a un giocatore di disconnettersi dall'applicazione,
-      se autenticato.
+   3. **Log out**: permettere a un giocatore autenticato di disconnettersi 
+      dall'applicazione.
       1. **Token Revocation**: gestione la revoca ed eliminazione del token
-         utente riferito alla sessione attiva dell'utente appena disconnesso.
-   4. **Sensitive Data Storage**: gestione dei dati sensibili dei giocatori.
+         utente riferito alla sessione attiva del giocatore autenticato appena 
+         disconnesso.
+   4. **Sensitive Data Storage**: gestione dei dati sensibili dei giocatori registrati
+      all'applicazione.
       1. **Secure Storage**: gestione della memorizzazione dei dati sensibili su
          una piattaforma sicura. Tra i dati sensibili, sono inclusi l'email del
          giocatore, la sua password ed i token utente delle sessioni attive.
       2. **Cryptography**: gestione dell'oscuramento dei dati sensibili (es.:
          password degli utenti dell'applicazione...).
-4. **Socialization Management**: permettere ai giocatori dell'applicazione di
-   interagire e socializzare tra di loro.
+4. **Profile Management**: permettere a un giocatore autenticato di gestire il proprio
+   profilo utente.
+   1. **Profile Visualization**: permettere a un giocatore autenticato di visualizzare 
+      il proprio profilo utente, ovvero le informazioni relative al proprio account 
+      (es.: email, username...).
+   2. **Profile Update**: permettere a un giocatore autenticato di aggiornare le 
+      informazioni relative al proprio account (es.: email, password...).
+5. **Socialization Management**: permettere ai giocatori di interagire e socializzare tra di loro.
    1. **Friend Management**: gestione delle amicizie all'interno dell'applicazione.
-      1. **Friend Request**: permettere a due giocatori di stringere amicizia.
-         1. **Send Request**: permettere a un giocatore di inviare una richiesta
-            di amicizia a un altro giocatore.
-            1. **In-Game Request**: permettere a un giocatore di inviare una richiesta
-               di amicizia al giocatore avversario durante una partita.
-            2. **Request By Username**: permettere a un giocatore di inviare una richiesta
-               di amicizia a un giocatore dell'applicazione, conoscendone lo username.
-         2. **Handle Request**: permettere a un giocatore di accettare o rifiutare una 
-            richiesta di amicizia ricevuta da un altro giocatore.
-            1. **Request Visualization**: permettere a un giocatore di visualizzare
-               le richieste di amicizia ricevute dagli altri giocatori dell'applicazione.
-            2. **Request Notification**: gestione della notifica a un giocatore della
-               ricezione di una richiesta di amicizia.
-      2. **Friend Visualization**: permettere a un giocatore di visualizzare se i propri 
+      1. **Friend Request**: permettere a due giocatori autenticati di stringere amicizia.
+         1. **Send Request**: permettere a un giocatore autenticato di inviare una richiesta
+            di amicizia a un altro giocatore registrato all'applicazione.
+            1. **In-Game Request**: permettere a un giocatore autenticato di inviare una richiesta
+               di amicizia al giocatore autenticato avversario durante una partita.
+            2. **Request By Username**: permettere a un giocatore autenticato di inviare una richiesta
+               di amicizia a un altro giocatore registrato all'applicazione, conoscendone lo username.
+         2. **Receive Request**: permettere a un giocatore autenticato di accettare o rifiutare una 
+            richiesta di amicizia ricevuta da un altro giocatore registrato all'applicazione.
+            1. **Request Visualization**: permettere a un giocatore autenticato di visualizzare
+               le richieste di amicizia ricevute dagli altri giocatori registrati all'applicazione.
+            2. **Request Notification**: gestione della notifica a un giocatore autenticato della
+               ricezione di una nuova richiesta di amicizia.
+      2. **Friend Visualization**: permettere a un giocatore autenticato di visualizzare se i propri 
          amici sono offline, online o all'interno di una partita.
-      3. **Friend Removal**: permettere a un giocatore di rimuovere un altro giocatore dalla
+      3. **Friend Removal**: permettere a un giocatore autenticato di rimuovere un altro giocatore dalla
          lista dei suoi amici.
       4. **Friend Storage**: gestione della memorizzazione degli amici dei giocatori
          e del loro stato.
-   2. **Communication Management**: permettere ai giocatori dell'applicazione di comunicare
-      tra di loro.
-      1. **Chat**: permettere ai giocatori dell'applicazione di scambiarsi dei 
-         messaggi testuali tra di loro.
-         1. **In-Game Chat**: permettere a un giocatore dell'applicazione di
-            scambiare dei messaggi testuali con il proprio avversario durante una 
-            partita.
-         2. **Friend Chat**: permettere a un giocatore dell'applicazione di
-            scambiare dei messaggi testuali con un suo amico online.
-            1. **Friend Message Notification**: gestione della notifica a un
-               giocatore della ricezione di un messaggio da uno dei suoi amici.
-            2. **Friend Chat Storage**: gestione della memorizzazione dei messaggi
-               scambiati tra ogni giocatore ed i suoi amici.
-5. **Statistics Management**: permettere a un giocatore dell'applicazione di
-   monitorare le proprie statistiche.
-   1. **Profile Management**: permettere a un giocatore dell'applicazione di
-      gestire il proprio profilo.
-      1. **Profile Visualization**: permettere a un giocatore dell'applicazione
-         di visualizzare il proprio profilo o quello di un altro giocatore.
-         1. **Account Information**: permettere a un giocatore dell'applicazione
-            di visualizzare le informazioni relative al proprio account (es.:
-            email, username...).
-         2. **Score Visualization**: permettere a un giocatore dell'applicazione
-            di visualizzare il proprio punteggio ELO o quello di un altro giocatore.
-            1. **Score Evaluation**: gestione della valutazione del punteggio di
-               un giocatore al termine di ogni partita.
-            2. **Score Storage**: gestione della memorizzazione dello storico dei
-               punteggi di ciascuno giocatore dell'applicazione.
-            3. **Score History Visualization**: permettere a un giocatore
-               dell'applicazione di visualizzare come è cambiato nel tempo il 
-               proprio punteggio ELO o quello di un altro giocatore.
-         3. **Tournament Visualization**: permettere a un giocatore
-            dell'applicazione di visualizzare i risultati ottenuti nei tornei
-            in cui ha partecipato lui o un altro giocatore.
-            1. **Tournament Storage**: gestire la memorizzazione dei risultati
-               dei giocatori di ogni torneo.
-      2. **Profile Update**: permettere a un giocatore dell'applicazione di
-         aggiornare le informazioni relative al proprio account (es.: email,
-         password...).
-   2. **Leaderboard Visualization**: permettere a un giocatore dell'applicazione
-      di visualizzare la classifica globale dei giocatori dell'applicazione.
-      1. **Rank Visualization**: permettere a un giocatore dell'applicazione di
-         visualizzare la propria posizione nella classifica globale, se
-         autenticato.
-6. **Notification Management**: gestione delle notifiche dell'applicazione.
+   2. **Communication Management**: permettere ai giocatori di comunicare tra di loro.
+      1. **Chat**: permettere ai giocatori di scambiarsi dei messaggi testuali tra di loro.
+         1. **In-Game Chat**: permettere a un giocatore di scambiare dei messaggi testuali con il 
+            proprio avversario durante una partita.
+            1. **Send Message**: permettere a un giocatore di inviare messaggi testuali al proprio
+               avversario durante una partita.
+            2. **Receive Message**: permettere a un giocatore di ricevere messaggi testuali provenienti
+               dal proprio avversario durante una partita.
+            3. **Message Visualization**: permettere a un giocatore di visualizzare i messaggi testuali
+               scambiati con il proprio avversario durante una partita.
+            4. **Message Notification**: gestione della notifica a un giocatore della ricezione di un 
+               messaggio dell'avversario durante una partita.
+         2. **Friend Chat**: permettere a un giocatore autenticato di scambiare dei messaggi testuali con
+            un suo amico.
+            1. **Send Message**: permettere a un giocatore autenticato di inviare messaggi testuali a un
+               suo amico.
+            2. **Receive Message**: permettere a un giocatore registrato di ricevere messaggi testuali
+               provenienti da un suo amico.
+            3. **Message Visualization**: permettere a un giocatore autenticato di visualizzare i messaggi
+               testuali scambiati con un suo amico.
+            4. **Message Forwarding**: gestione dell'inoltro di un messaggio da un giocatore autenticato
+               a un suo amico.
+            5. **Message Notification**: gestione della notifica a un giocatore autenticato della ricezione
+               di un messaggio di uno dei suoi amici.
+            6. **Friend Chat Storage**: gestione della memorizzazione dei messaggi scambiati tra ogni
+               giocatore registrato e i suoi amici.
+6. **Statistics Management**: permettere a un giocatore di monitorare le statistiche di
+   un giocatore registrato all'applicazione, tra cui le proprie statistiche.
+   1. **Score Visualization**: permettere a un giocatore di visualizzare il punteggio ELO
+      di un giocatore registrato all'applicazione.
+      1. **Score Evaluation**: gestione della valutazione del punteggio di
+         un giocatore autenticato al termine di ogni partita.
+      2. **Score Storage**: gestione della memorizzazione dello storico dei
+         punteggi di ciascun giocatore registrato all'applicazione.
+      3. **Score History Visualization**: permettere a un giocatore di visualizzare come è cambiato
+         nel tempo il punteggio ELO di un giocatore registrato all'applicazione.
+   2. **Tournament Visualization**: permettere a un giocatore di visualizzare i risultati ottenuti
+      nei tornei a cui ha partecipato un giocatore registrato all'applicazione.
+      1. **Tournament Storage**: gestire la memorizzazione dei risultati di ogni torneo
+         dei giocatori registrati all'applicazione.
+   3. **Leaderboard Visualization**: permettere a un giocatore di visualizzare la classifica globale
+      dei giocatori registrati all'applicazione.
+      1. **Rank Visualization**: permettere a un giocatore autenticato di visualizzare la propria
+         posizione nella classifica globale.
+7. **Notification Management**: gestione delle notifiche dell'applicazione.
    1. **Notification Forwarding**: gestione della notifica in tempo reale ai
-      giocatori degli eventi che li coinvolgono.
+      giocatori autenticati degli eventi che li coinvolgono.
    2. **Notification Storage**: gestione della memorizzazione delle notifiche
-      relative ai giocatori dell'applicazione.
+      relative ai giocatori registrati all'applicazione.
 
 ---
 [Back to Scoping](../1-scoping/index.md)

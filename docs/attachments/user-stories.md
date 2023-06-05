@@ -2,10 +2,10 @@
 
 ---
 ### Legenda
-- **E (Employee)**: dipendente di GameCo;
-- **P (Player)**: giocatore dell'applicazione. Un giocatore dell'applicazione può essere:
-  - **G (Guest)**: ospite non autenticato;
-  - **U (User)**: utente autenticato all'applicazione.
+- **A (Admin)**: amministratore, dipendente di GameCo;
+- **P (Player)**: giocatore dell'applicazione:
+  - **G (Guest)**: giocatore ospite dell'applicazione
+  - **U (User)**: giocatore autenticato dell'applicazione.
 
 ### Nomenclatura
 Ogni User Story ha associato un id nella forma seguente: 
@@ -19,7 +19,7 @@ Data: 12-01-2023
 
 | Uid | Descrizione                                                                                                                                                                                                                                   | CoS                                                                                                                                                                                                  |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| E1  | Enrico, un **dipendente di GameCo**, vuole poter **organizzare dei tornei di scacchi**, allo scopo di **pubblicizzare l'applicazione**.                                                                                                       | Enrico può organizzare tornei ogni stagione con un alto numero di partecipanti, seguendo l'organizzazione del sistema svizzero.                                                                      |
+| A1  | Anna, un **amministratrice dell'applicazione**, vuole poter **organizzare dei tornei di scacchi**, allo scopo di **pubblicizzare l'applicazione**.                                                                                            | Anna può organizzare tornei ogni stagione con un alto numero di partecipanti, seguendo l'organizzazione del sistema svizzero.                                                                        |
 | P1  | Paolo, un **giocatore dell'applicazione**, vuole poter **creare una partita pubblica di scacchi**, allo scopo di **permettere a un altro giocatore di parteciparvi e divertirsi giocando insieme a lui**.                                     | Paolo può giocare insieme ad un qualsiasi altro giocatore dell'applicazione. Inoltre, può configurare i vincoli temporali della partita.                                                             |             
 | P2  | Paolo, un **giocatore dell'applicazione**, vuole poter **creare una partita privata di scacchi**, allo scopo di **permettere a un suo conoscente di parteciparvi e divertirsi giocando insieme a lui**.                                       | Paolo può decidere chi può partecipare alla partita creata e giocare insieme ai suoi conoscenti. Inoltre, può configurare i vincoli temporali della partita.                                         |             
 | P3  | Paolo, un **giocatore dell'applicazione**, vuole poter **configurare una partita privata di scacchi quando la crea**, allo scopo di **personalizzare il tipo di partita a proprio piacimento**.                                               | Paolo può decidere i vincoli della partita creata, tra cui i vincoli temporali (es.: il tempo che ogni giocatore ha a sua disposizione ogni turno...).                                               |             
