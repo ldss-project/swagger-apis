@@ -126,9 +126,11 @@ Data: 15-01-2023
       conoscendo le proprie credenziali.
       1. **Token Creation**: creazione di un token utente riferito a una sessione
          attiva di un giocatore autenticato, richiesto per accedere alle operazioni
-         sensibili dell'applicazione (es.: cambio della password...).
+         sensibili dell'applicazione (es.: cambio della password...);
       2. **Token Expiration**: gestire la scadenza dei token utente, per limitare
-         la validità di uno specifico accesso nel tempo.
+         la validità di uno specifico accesso nel tempo;
+      3. **Authorization Management**: gestire i permessi dell'utente in base al
+         suo ruolo nell'applicazione (es.: dipendente dell'azienda, giocatore...).
    3. **Log out**: permettere a un giocatore autenticato di disconnettersi 
       dall'applicazione.
       1. **Token Revocation**: gestione la revoca ed eliminazione del token
@@ -215,9 +217,11 @@ Data: 15-01-2023
          posizione nella classifica globale.
 7. **Notification Management**: gestione delle notifiche dell'applicazione.
    1. **Notification Forwarding**: gestione della notifica in tempo reale ai
-      giocatori autenticati degli eventi che li coinvolgono.
+      giocatori autenticati degli eventi che li coinvolgono;
    2. **Notification Storage**: gestione della memorizzazione delle notifiche
       relative ai giocatori registrati all'applicazione.
+8. **Sponsor Management**: gestione della pubblicità agli sponsor dell'applicazione
+   (es.: banner, video...).
 
 ---
 [Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#rbs)
