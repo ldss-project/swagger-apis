@@ -37,4 +37,4 @@ Data: 12-01-2023
 | U6  | Umberto, un **giocatore autenticato dell'applicazione**, vuole poter **comunicare con i propri amici in un qualunque momento**, allo scopo di **socializzare o organizzarsi con loro**.                                                       | Umberto può scambiare dei messaggi testuali con i propri amici online in qualunque momento.                                                                                                          |
 
 ---
-[Back to Scoping](../1-scoping/index.md)
+[Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#user-stories)

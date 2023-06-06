@@ -220,4 +220,4 @@ Data: 15-01-2023
       relative ai giocatori registrati all'applicazione.
 
 ---
-[Back to Scoping](../1-scoping/index.md)
+[Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#rbs)

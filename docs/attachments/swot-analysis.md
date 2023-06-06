@@ -58,4 +58,4 @@ Data: 19-01-2023
       a una consulenza esterna.
 
 ---
-[Back to Scoping](../1-scoping/index.md)
+[Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#swot-analysis)

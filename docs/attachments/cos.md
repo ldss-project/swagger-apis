@@ -18,4 +18,4 @@ Data: 10-01-2023
 Data: ???
 
 ---
-[Back to Scoping](../../../1-scoping/index.md#conditions-of-satisfaction)
+[Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#conditions-of-satisfaction)
