@@ -4,8 +4,6 @@
 
 ## Sommario
 
----
-
 1. [Richiesta del cliente](0-request/index.md)
 2. [Scoping](1-scoping/index.md)
 3. [Planning](2-planning/index.md)
@@ -16,8 +14,6 @@
 ---
 
 ## Allegati
-
----
 
 - Scoping:
   - [Conditions of Satisfaction](attachments/cos.md)
