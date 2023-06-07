@@ -1,7 +1,7 @@
 # POS
 
 ---
-Data: 22-01-2023, revisionato e approvato il 23-01-2023
+Data: 20-01-2023, revisionato e approvato il 23-01-2023
 
 - **Problema**: il committente ha subito un calo inaspettato nelle vendite di una sua applicazione di scacchi, pari a
   circa il 70% rispetto ai valori attesi. La causa è stata attribuita alla pubblicazione di una nuova applicazione web

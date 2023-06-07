@@ -1,9 +1,9 @@
 # Requirement Definition Meeting
 
 ---
-## Report
+## Verbale
 
-**Data: 12-01-2023**
+**Data: 11-01-2023**
 
 I membri dei Core Team di GameCo e del fornitore si sono presentati, ognuno indicando il proprio ruolo e le proprie 
 competenze.
@@ -21,11 +21,11 @@ Il Project Manager del fornitore ha iniziato la presentazione del RBS redatto da
 giustificando una alla volta i requisiti individuati attraverso le User Stories.
 
 Durante la discussione del RBS, è stato identificato più in dettaglio il divario tra la situazione corrente del
-committente e quella da lui richiesta. Inoltre, la sua revisione ha permesso di identificare alcuni requisiti mancanti,
+committente e quella da lui desiderata. Inoltre, la sua revisione ha permesso di identificare alcuni requisiti mancanti,
 come la gestione della sponsorizzazione a livello applicativo.
 
 In conclusione, si è data al fornitore la responsabilità della stesura del POS e ci si è accordati sulla data della sua
 presentazione.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md)
+[Back to Scoping](../../../1-scoping/index.md#scoping-meetings)

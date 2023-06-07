@@ -12,18 +12,21 @@ In questa fase di Scoping, sono stati organizzati i seguenti meeting in giornate
 di due settimane:
 - **Problem Definition Meeting**:
   - Partecipanti:
+    - Il committente;
     - Project Manager lato cliente;
     - Project Manager lato fornitore;
     - Facilitatore, come mediatore della riunione;
     - Tecnografo, per la stesura del verbale.
   - Agenda:
+    - Presentazione del committente;
     - Presentazione tra il Project Manager lato cliente e Project Manager lato fornitore;
     - Presentazione del business di GameCo;
     - Descrizione della situazione attuale di GameCo (ovvero dell'_as is_);
     - Descrizione del problema o dell'opportunità individuata da GameCo;
     - Descrizione della situazione desiderata da GameCo (ovvero del _to be_);
-    - Definizione delle Conditions of Satisfaction a livello di progetto.
-  - Data: 10-01-2023
+    - Definizione delle Conditions of Satisfaction a livello di progetto;
+    - Organizzazione dei successivi Scoping Meetings.
+  - Data: 09-01-2023
   - Durata: 4 ore
   - Verbale: [link](../attachments/meeting-reports/scoping/problem-definition-meeting.md)
 - **Requirements Definition Meeting**:
@@ -38,9 +41,9 @@ di due settimane:
     - Presentazione dei Core Team di entrambe le parti;
     - Definizione delle User Stories, ovvero dei requisiti del progetto e delle Conditions of Satisfaction a livello
       di deliverable;
-    - Discussione del gap tra l'_as is_ ed il _to be_;
-    - Discussione e revisione della RBS.
-  - Data: 12-01-2023, 16-01-2023
+    - Presentazione e revisione del RBS;
+    - Discussione del gap tra l'_as is_ ed il _to be_.
+  - Data: 11-01-2023, 16-01-2023
   - Durata: 8 ore, divise su due giornate
   - Verbale: [link](../attachments/meeting-reports/scoping/requirements-definition-meeting.md)
 - **POS Submission Meeting**:

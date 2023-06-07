@@ -1,7 +1,7 @@
 # Requirement Breakdown Structure
 
 ---
-Data: 15-01-2023, revisionato il 16-01-2023
+Data: 13-01-2023, revisionato il 16-01-2023
 
 **Goal**: realizzare un'applicazione web per giocare a scacchi online.
 

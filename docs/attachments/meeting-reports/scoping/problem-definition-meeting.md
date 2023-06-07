@@ -1,9 +1,9 @@
 # Problem Definition Meeting
 
 ---
-## Report
+## Verbale
 
-**Data: 10-01-2023**
+**Data: 09-01-2023**
 
 GameCo si è presentata come una software house che si occupa della vendita di videogiochi tramite distributori
 intermediari, in particolare è stato citato uno store online.
@@ -23,7 +23,7 @@ intorno a sei mesi, e l'effettivo budget massimo del progetto, intorno a 200000$
 Inoltre, essendo una software house, GameCo ha richiesto che per realizzare la soluzione si adottassero le best practice per
 la qualità del codice.
 
-In conclusione, ci si è accordati sulla data del prossimo meeting.
+In conclusione, ci si è accordati sulle riunioni necessarie per completare lo Scoping e sulle loro date.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md)
+[Back to Scoping](../../../1-scoping/index.md#scoping-meetings)
