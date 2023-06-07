@@ -1,7 +1,7 @@
 # POS
 
 ---
-Data: 22-01-2023
+Data: 22-01-2023, revisionato e approvato il 23-01-2023
 
 - **Problema**: il committente ha subito un calo inaspettato nelle vendite di una sua applicazione di scacchi, pari a
   circa il 70% rispetto ai valori attesi. La causa è stata attribuita alla pubblicazione di una nuova applicazione web
@@ -10,7 +10,7 @@ Data: 22-01-2023
 - **Opportunità**: il committente ha individuato l'opportunità di adottare una nuova strategia di business aggiuntiva, 
   permettendo di essere più robusti agli eventi esterni del mercato.
   Rispetto alla strategia di business corrente, basata sulla vendita di applicazioni a pagamento tramite intermediario,
-  la nuova strategia di business aggiuntiva è basata sulla distribuzione di applicazioni gratuite sponsorizzate da degli
+  la nuova strategia di business aggiuntiva è basata sulla distribuzione di applicazioni gratuite sponsorizzate da
   investitori esterni.
 
 - **Goal**: progettare un'applicazione web che permetta a una comunità di utenti di giocare a scacchi online, che sia
@@ -19,8 +19,8 @@ Data: 22-01-2023
 - **Obiettivi**:
   - **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online,
     allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme;
-  - **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi
-    secondo il sistema svizzero, allo scopo di aumentare la visibilità e la popolarità dell'applicazione;
+  - **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo
+    scopo di aumentare la visibilità e la popolarità dell'applicazione;
   - **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro
     permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di 
     tenere traccia dei propri progressi;
@@ -41,8 +41,8 @@ Data: 22-01-2023
       per il 95% del tempo in cui il sistema è online;
     - Il tempo medio di attesa tra una richiesta di un utente e la relativa risposta dal sistema dev'essere inferiore a
       200 millisecondi per l'80% dei casi e inferiore a un secondo per il 95% dei casi;
-    - L'accessibilità dell'applicazione dev'essere almeno di livello AA, secondo lo standard WCAG 2.0, all'interno
-      dell'intero sito web.
+    - L'accessibilità dell'applicazione dev'essere almeno di livello AA, secondo lo standard WCAG 2.0, nell'intero sito
+      web.
 
 - **Assunzioni e rischi principali**:
   - Possibilità di riutilizzare alcuni dei requisiti dell'applicazione che il committente ha già realizzato in passato;
