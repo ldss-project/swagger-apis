@@ -12,7 +12,7 @@ Recentemente, una sua applicazione di scacchi ha subito un calo delle vendite a 
 che fornisce lo stesso servizio gratuitamente online.
 
 Quindi, GameCo ha individuato l'opportunità di applicare la propria competenza ed esperienza negli scacchi, per produrre
-un'applicazione web migliore rispetto a quella competitrice. Tale applicazione comporterà la necessità di adottare un
+un'applicazione web migliore rispetto a quelle dei competitori. Tale applicazione comporterà la necessità di adottare un
 nuovo modello di business affiancato a quello esistente, in cui si trarrà profitto tramite la sponsorizzazione
 dell'applicazione da parte di investitori esterni, per cui risulterà fondamentale la popolarità dell'applicazione.
 
@@ -26,4 +26,4 @@ la qualità del codice.
 In conclusione, ci si è accordati sulle riunioni necessarie per completare lo Scoping e sulle loro date.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md#scoping-meetings)
+[Back to Scoping](../../../1-scoping/index.md#problem-definition-meeting)

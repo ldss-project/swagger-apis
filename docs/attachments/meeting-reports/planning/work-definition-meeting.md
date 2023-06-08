@@ -17,4 +17,4 @@ TODO
 
 ---
 
-[Back to Planning](../../../2-planning/index.md#joint-project-planning-sessions)
+[Back to Planning](../../../2-planning/index.md#work-definition-meeting)

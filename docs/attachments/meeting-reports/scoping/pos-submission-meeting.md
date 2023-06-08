@@ -19,4 +19,4 @@ In conclusione, si è ottenuta l'approvazione del POS da parte del committente.
 
 ---
 
-[Back to Scoping](../../../1-scoping/index.md#scoping-meetings)
+[Back to Scoping](../../../1-scoping/index.md#pos-submission-meeting)

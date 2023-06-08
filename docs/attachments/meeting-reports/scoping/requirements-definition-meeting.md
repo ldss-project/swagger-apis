@@ -28,4 +28,4 @@ In conclusione, si è data al fornitore la responsabilità della stesura del POS
 presentazione.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md#scoping-meetings)
+[Back to Scoping](../../../1-scoping/index.md#requirements-definition-meeting)

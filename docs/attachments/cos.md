@@ -1,7 +1,21 @@
 # Conditions of Satisfaction
 
 ---
-Data: 09-01-2023
+
+## Versioni
+
+- [09-01-2023](#09-01-2023)
+
+---
+
+## 09-01-2023
+[Back to Index](../index.md) | 
+[Back to Scoping](../1-scoping/index.md#conditions-of-satisfaction) | 
+[Back to Versions](#versioni)
+
+---
+
+### CoS
 
 | N°  | Condizione                                                 | Target                        | Inizio     | Completamento |
 |-----|------------------------------------------------------------|-------------------------------|------------|---------------|
@@ -15,7 +29,9 @@ Data: 09-01-2023
 | 8   | Accessibilità dell'applicazione                            | WCAG 2.0: livello AA          |            |               |
 
 ---
-Data: ???
+
+[Back to Index](../index.md) | 
+[Back to Versions](#versioni) |
+[Previous Version](#09-01-2023)
 
 ---
-[Back to Index](../index.md) | [Back to Scoping](../1-scoping/index.md#conditions-of-satisfaction)
