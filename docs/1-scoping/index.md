@@ -10,9 +10,6 @@ nav_order: 3
 In questa sezione, si descriverà il processo seguito per comprendere la situazione attuale del committente e i
 suoi desideri, definendo gli obiettivi del progetto di conseguenza.
 
-All'interno di questa sezione si distingueranno due Project Manager: quello _lato cliente_ (rappresentante di
-GameCo) e quello _lato fornitore_ (rappresentante della nostra azienda).
-
 ## Contenuti
 {: .no_toc}
 
@@ -100,6 +97,8 @@ comprendere meglio l'entità del progetto e successivamente facilitare la pianif
 risorse.
 
 ## Definizione dei requisiti
+Di seguito, si riporta il processo di definizione dei requisiti del progetto, che è partito dell'identificazione delle
+necessità degli utenti finali del sistema e terminato con la definizione formale dei requisiti del progetto.
 
 ### User Stories
 Durante il Requirements Definition Meeting, sono stati definiti i requisiti di progetto in termini di User Stories,
@@ -108,7 +107,7 @@ In questo modo, è stata condotta un'analisi sulle necessità degli utenti final
 quindi i requisiti del progetto saranno il più vicino possibile all'utente finale. Quindi, le User Stories potranno
 essere il riferimento per la verifica del sistema.
 
-### RBS
+### Requirement Breakdown Structure (RBS)
 Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
 lavorato per trasformare le User Stories in un RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
 In particolare, sono state organizzate alcune Facilitated Group Session all'interno dell'azienda del fornitore, 
@@ -127,7 +126,7 @@ Come fase preliminare alla stesura del POS, è stata svolta la SWOT Analysis, di
 [link](/pm/attachments/content/swot-analysis#19-01-2023), per cui sono stati analizzati i punti di forza e
 le debolezze del progetto, da cui sono state derivate le possibili opportunità e minacce per il suo successo.
 
-## PMLC Model
+## Project Management Lifecycle Model (PMLC) Model
 In seguito all'analisi del progetto, si ha ragionato sull'approccio migliore per la gestione del progetto.
 
 Per quanto riguarda la possibilità di adottare un approccio tradizionale, si è considerato che si potrebbe approfittare
@@ -139,7 +138,7 @@ Tuttavia, considerando anche i rischi legati alle aziende competitrici sul merca
 iterativo possa essere la soluzione migliore, per poter reagire tempestivamente alle modifiche sui requisiti che 
 potrebbero insorgere durante il monitoraggio delle aziende competitrici.
 
-## POS
+## Project Overview Statement (POS)
 Dopo aver scelto il PMLC Model più adeguato, si è deciso di sintetizzare le informazioni raccolte nella fase di Scoping
 per presentarle al proprio senior management e successivamente al committente, allo scopo di riceverne l'approvazione.
 Il risultato di tale sintesi, è racchiuso nel POS, disponibile al seguente [link](/pm/attachments/content/pos#20-01-2023).

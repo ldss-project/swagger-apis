@@ -12,7 +12,7 @@ nav_order: 9
 {: .no_toc}
 
 - TOC
-  {:toc}
+{:toc}
 
 ---
 

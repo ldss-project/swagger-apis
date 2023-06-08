@@ -20,7 +20,7 @@ nav_order: 2
 [Back to Top](#top) |
 [Back to Scoping](/pm/1-scoping#conditions-of-satisfaction)
 
-### Conditions of Satisfaction
+### CoS
 {: .no_toc}
 
 | N°  | Condizione                                                 | Target                        | Inizio     | Completamento |

@@ -33,4 +33,5 @@ la qualità del codice.
 In conclusione, ci si è accordati sulle riunioni necessarie per completare lo Scoping e sulle loro date.
 
 ---
+
 [Back to Scoping](/pm/1-scoping#problem-definition-meeting)

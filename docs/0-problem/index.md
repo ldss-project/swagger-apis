@@ -5,6 +5,7 @@ nav_order: 2
 ---
 
 # Presentazione del problema
+{: .no_toc}
 
 ---
 
@@ -50,6 +51,9 @@ all'interno dell'applicazione.
 Data la poca esperienza di GameCo nello sviluppo di applicazione web, si è stati incaricati in qualità di 
 Project Manager e consulente esterno, di realizzare con urgenza una tale soluzione software. GameCo ha 
 intenzione d'investire molto su questa nuova opportunità di business.
+
+> _**NOTA**_: d'ora in avanti nella documentazione, si assumerà il ruolo di **fornitore** rispetto a GameCo, che invece
+assumerà il ruolo di **committente**.
 
 ---
 

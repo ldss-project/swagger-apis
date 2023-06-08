@@ -3,7 +3,7 @@ title: Project Proposal Submission Meeting
 layout: default
 grand_parent: Allegati
 parent: Meetings
-nav_order: 3
+nav_order: 6
 ---
 
 # Project Proposal Submission Meeting
