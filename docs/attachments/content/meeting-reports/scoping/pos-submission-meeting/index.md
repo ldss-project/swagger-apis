@@ -1,7 +1,14 @@
+---
+title: POS Submission Meeting
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 3
+---
+
 # POS Submission Meeting
 
 ---
-## Verbale
 
 **Data: 23-01-2023**
 
@@ -19,4 +26,4 @@ In conclusione, si è ottenuta l'approvazione del POS da parte del committente.
 
 ---
 
-[Back to Scoping](../../../1-scoping/index.md#pos-submission-meeting)
+[Back to Scoping](/pm/1-scoping#pos-submission-meeting)

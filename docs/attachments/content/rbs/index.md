@@ -1,27 +1,33 @@
-# Requirement Breakdown Structure (RBS)
-
+---
+title: Requirement Breakdown Structure (RBS)
+layout: default
+parent: Allegati
+nav_order: 4
 ---
 
-## Versioni
+# Requirement Breakdown Structure (RBS)
+{: .no_toc}
 
-- [16-01-2023](#16-01-2023)
-- [31-01-2023](#31-01-2023)
+## Versioni
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ---
 
 ## 16-01-2023
-[Back to Index](../index.md) | 
-[Back to Scoping](../1-scoping/index.md#rbs) | 
-[Back to Versions](#versioni) | 
+[Back to Top](#top) |
+[Back to Scoping](/pm/1-scoping#rbs) |
 [Next Version](#31-01-2023)
 
----
-
 ### RBS
+{: .no_toc}
 
 TODO show tree
 
 ### Requisiti
+{: .no_toc}
 
 **Goal**: realizzare un'applicazione web per giocare a scacchi online.
 
@@ -246,18 +252,17 @@ TODO show tree
 ---
 
 ## 31-01-2023
-[Back to Index](../index.md) |
-[Back to Planning](../2-planning/index.md#priorità-dei-requisiti) |
-[Back to Versions](#versioni) |
+[Back to Top](#top) |
+[Back to Planning](/pm/2-planning#priorità-dei-requisiti) |
 [Previous Version](#16-01-2023)
 
----
-
 ### RBS
+{: .no_toc}
 
 TODO show tree
 
 ### Requisiti
+{: .no_toc}
 
 **Goal**: realizzare un'applicazione web per giocare a scacchi online.
 
@@ -431,7 +436,7 @@ TODO show tree
       1. `C` **Chat**: permettere ai giocatori di scambiarsi dei messaggi testuali tra di loro.
          1. `W` **In-Game Chat**: permettere a un giocatore di scambiare dei messaggi testuali con il
             proprio avversario durante una partita.
-            1. `W` *Send Message**: permettere a un giocatore di inviare messaggi testuali al proprio
+            1. `W` **Send Message**: permettere a un giocatore di inviare messaggi testuali al proprio
                avversario durante una partita.
             2. `W` **Receive Message**: permettere a un giocatore di ricevere messaggi testuali provenienti
                dal proprio avversario durante una partita.
@@ -479,7 +484,8 @@ TODO show tree
 8. `M` **Sponsor Management**: gestione della pubblicità agli sponsor dell'applicazione
    (es.: banner, video...).
 
-### **Legenda**
+### Legenda
+{: .no_toc}
 
 - `M`: **Must-Have**: requisito necessario, con elevato Business Value;
 - `S`: **Should-Have**: requisito non necessario, con elevato Business Value;
@@ -488,8 +494,5 @@ TODO show tree
 
 ---
 
-[Back to Index](../index.md) |
-[Back to Versions](#versioni) |
+[Back to Top](#top) |
 [Previous Version](#31-01-2023)
-
----

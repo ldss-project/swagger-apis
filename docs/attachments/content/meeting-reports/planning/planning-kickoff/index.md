@@ -1,7 +1,14 @@
+---
+title: Planning Kick-Off
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 1
+---
+
 # Planning Kick-Off
 
 ---
-## Verbale
 
 **Data: 30-01-2023**
 
@@ -15,4 +22,4 @@ TODO
 
 ---
 
-[Back to Planning](../../../2-planning/index.md#planning-kick-off)
+[Back to Planning](/pm/2-planning#planning-kick-off)

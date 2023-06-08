@@ -1,14 +1,29 @@
+---
+title: Planning
+layout: default
+nav_order: 4
+---
+
 # Planning
+{: .no_toc}
 
 In questa sezione, si descriverà il processo seguito per entrare nel dettaglio di ciò che è stato definito in fase di
 Scoping, allo scopo di ridurre l'incertezza sul progetto e determinare la schedula e i costi del progetto.
+
+## Contenuti
+{: .no_toc}
+
+- TOC 
+{:toc}
+
+---
 
 ## Joint Project Planning Sessions
 
 In questa fase di Planning, sono stati organizzati i seguenti meeting in giornate separate, distribuiti nell'arco
 di due settimane.
 
-### **Planning Kick-Off**
+### Planning Kick-Off
 
 - Partecipanti:
   - Il committente, in qualità di Project Sponsor;
@@ -28,9 +43,9 @@ di due settimane.
   - Organizzazione delle successive Joint Project Planning Sessions.
 - Data: 30-01-2023
 - Durata: 4 ore
-- Verbale: [link](../attachments/meeting-reports/planning/planning-kickoff.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/planning/planning-kickoff)
 
-### **Work Definition Meeting**
+### Work Definition Meeting
 
 - Partecipanti:
   - Project Manager lato cliente, in qualità di Project Champion;
@@ -48,9 +63,9 @@ di due settimane.
   - Revisione del PMLC Model.
 - Data: 06-02-2023, 07-02-2023
 - Durata: 8 ore, divise su due giornate
-- Verbale: [link](../attachments/meeting-reports/planning/work-definition-meeting.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/planning/work-definition-meeting)
 
-### **Project Proposal Submission Meeting**
+### Project Proposal Submission Meeting
 
 - Partecipanti:
   - Il committente, in qualità di Project Sponsor;
@@ -71,7 +86,7 @@ di due settimane.
   - Approvazione del piano di progetto.
 - Data: 13-02-2023
 - Durata: 4 ore
-- Verbale: [link](../attachments/meeting-reports/planning/project-proposal-submission-meeting.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/planning/project-proposal-submission-meeting)
 
 ## Priorità dei requisiti
 
@@ -88,8 +103,8 @@ del progetto, riportate di seguito. Per definire la priorità dei requisiti è s
 | Socialization Management  | Gestire un sistema di amicizie e di comunicazione tra i giocatori nell'applicazione allo scopo di permettere agli utenti di socializzare all'interno dell'applicazione, facilitando la creazione di una comunità di giocatori.      | Could-Have  | Importante per la crescita di una comunità di giocatori. |
 
 In questa fase, si è iniziata la stesura del Project Definition Statement (PDS), che sarà completata durante il Planning.
-Inoltre, sono stati aggiornate le User Stories, disponibili al seguente [link](../attachments/user-stories.md#31-01-2023),
-e l'RBS, disponibile al seguente [link](../attachments/rbs.md#31-01-2023)
+Inoltre, sono stati aggiornate le User Stories, disponibili al seguente [link](/pm/attachments/content/user-stories#31-01-2023),
+e l'RBS, disponibile al seguente [link](/pm/attachments/content/rbs#31-01-2023).
 
 ## WBS
 - revisione del RBS
@@ -119,6 +134,6 @@ e l'RBS, disponibile al seguente [link](../attachments/rbs.md#31-01-2023)
 
 ---
 
-[Back to Index](../index.md) |
-[Previous Chapter](../1-scoping/index.md) |
-[Next Chapter](../3-executing/index.md)
+[Back to Top](#top) |
+[Previous Chapter](/pm/1-scoping) |
+[Next Chapter](/pm/3-executing)

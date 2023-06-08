@@ -1,6 +1,21 @@
-# Monitoring and Controlling
+---
+title: Monitoring and Controlling
+layout: default
+nav_order: 6
+---
 
-Garantire che il piano di progetto sia rispettato
+# Monitoring and Controlling
+{: .no_toc}
+
+TODO
+
+## Contenuti
+{: .no_toc}
+
+- TOC 
+{:toc}
+
+---
 
 - Monitoring:
   - Project Status Report:
@@ -16,6 +31,6 @@ Garantire che il piano di progetto sia rispettato
 
 ---
 
-[Back to Index](../index.md) |
-[Previous Chapter](../3-executing/index.md) |
-[Next Chapter](../5-closing/index.md)
+[Back to Top](#top) |
+[Previous Chapter](/pm/3-executing) |
+[Next Chapter](/pm/5-closing)

@@ -1,27 +1,16 @@
-# Simulazione di Project Management
-
+---
+title: Homepage
+layout: default
+nav_order: 1
 ---
 
-## Sommario
+# Simulazione di progetto
 
-1. [Richiesta del cliente](0-request/index.md)
-2. [Scoping](1-scoping/index.md)
-3. [Planning](2-planning/index.md)
-4. [Executing](3-executing/index.md)
-5. [Monitoring & Controlling](4-monitoring-and-controlling/index.md)
-6. [Closing](5-closing/index.md)
+Questa è una simulazione di progetto per il corso di 
+[Project Management 2022-2023](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/412683).
 
----
+E' consigliato leggere la documentazione a partire dalla [Presentazione del problema](/pm/0-problem), seguendo i link
+mano a mano presentati nella documentazione. 
 
-## Allegati
-
-- Scoping:
-  - [Conditions of Satisfaction](attachments/cos.md)
-  - [User Stories](attachments/user-stories.md)
-  - [Requirement Breakdown Structure](attachments/rbs.md)
-  - [Swot Analysis](attachments/swot-analysis.md)
-  - [Project Overview Statement](attachments/pos.md)
-- Planning:
-- Executing:
-- Monitoring & Controlling:
-- Closing:
+In ogni caso, è possibile sfogliare la documentazione liberamente attraverso la barra verticale di navigazione sulla
+sinistra.

@@ -1,4 +1,21 @@
+---
+title: Executing
+layout: default
+nav_order: 5
+---
+
 # Executing
+{: .no_toc}
+
+TODO
+
+## Contenuti
+{: .no_toc}
+
+- TOC 
+{:toc}
+
+---
 
 Gestire l'esecuzione del piano di progetto
 
@@ -13,6 +30,6 @@ Gestire l'esecuzione del piano di progetto
 
 ---
 
-[Back to Index](../index.md) |
-[Previous Chapter](../2-planning/index.md) |
-[Next Chapter](../4-monitoring-and-controlling/index.md)
+[Back to Top](#top) |
+[Previous Chapter](/pm/2-planning) |
+[Next Chapter](/pm/4-monitoring-and-controlling)

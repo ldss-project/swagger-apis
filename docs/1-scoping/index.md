@@ -1,4 +1,11 @@
+---
+title: Scoping
+layout: default
+nav_order: 3
+---
+
 # Scoping
+{: .no_toc}
 
 In questa sezione, si descriverà il processo seguito per comprendere la situazione attuale del committente e i
 suoi desideri, definendo gli obiettivi del progetto di conseguenza.
@@ -6,12 +13,20 @@ suoi desideri, definendo gli obiettivi del progetto di conseguenza.
 All'interno di questa sezione si distingueranno due Project Manager: quello _lato cliente_ (rappresentante di
 GameCo) e quello _lato fornitore_ (rappresentante della nostra azienda).
 
+## Contenuti
+{: .no_toc}
+
+- TOC 
+{:toc}
+
+---
+
 ## Scoping Meetings
 
 In questa fase di Scoping, sono stati organizzati i seguenti meeting in giornate separate, distribuiti nell'arco
 di due settimane.
 
-### **Problem Definition Meeting**
+### Problem Definition Meeting
 
 - Partecipanti:
   - Il committente;
@@ -30,9 +45,9 @@ di due settimane.
   - Organizzazione dei successivi Scoping Meetings.
 - Data: 09-01-2023
 - Durata: 4 ore
-- Verbale: [link](../attachments/meeting-reports/scoping/problem-definition-meeting.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/scoping/problem-definition-meeting)
 
-### **Requirements Definition Meeting**
+### Requirements Definition Meeting
 
 - Partecipanti:
     - Project Manager lato cliente;
@@ -49,9 +64,9 @@ di due settimane.
   - Discussione del gap tra l'_as is_ ed il _to be_.
 - Data: 11-01-2023, 16-01-2023
 - Durata: 8 ore, divise su due giornate
-- Verbale: [link](../attachments/meeting-reports/scoping/requirements-definition-meeting.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/scoping/requirements-definition-meeting)
 
-### **POS Submission Meeting**
+### POS Submission Meeting
 
 - Partecipanti:      
   - Presentazione del committente;
@@ -72,13 +87,13 @@ di due settimane.
   - Approvazione o rifiuto del POS.
 - Data: 23-01-2023
 - Durata: 4 ore.
-- Verbale: [link](../attachments/meeting-reports/scoping/pos-submission-meeting.md)
+- Verbale: [link](/pm/attachments/content/meeting-reports/scoping/pos-submission-meeting)
 
 ## Conditions of Satisfaction
 
 Durante il Problem Definition Meeting, sono state definite delle Conditions of Satisfaction a livello di progetto, 
-disponibili al seguente [link](../attachments/cos.md#09-01-2023), allo scopo di formalizzare e dettagliare gli effettivi
-desideri del committente.
+disponibili al seguente [link](/pm/attachments/content/cos#09-01-2023), allo scopo di formalizzare e
+dettagliare gli effettivi desideri del committente.
 
 Inizialmente, particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per
 comprendere meglio l'entità del progetto e successivamente facilitare la pianificazione e la gestione delle 
@@ -88,14 +103,14 @@ risorse.
 
 ### User Stories
 Durante il Requirements Definition Meeting, sono stati definiti i requisiti di progetto in termini di User Stories,
-disponibili al seguente [link](../attachments/user-stories.md#12-01-2023). 
+disponibili al seguente [link](/pm/attachments/content/user-stories#12-01-2023). 
 In questo modo, è stata condotta un'analisi sulle necessità degli utenti finali, ovvero dei giocatori dell'applicazione,
 quindi i requisiti del progetto saranno il più vicino possibile all'utente finale. Quindi, le User Stories potranno
 essere il riferimento per la verifica del sistema.
 
 ### RBS
 Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
-lavorato per trasformare le User Stories in un RBS, disponibile al seguente [link](../attachments/rbs.md#16-01-2023). 
+lavorato per trasformare le User Stories in un RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
 In particolare, sono state organizzate alcune Facilitated Group Session all'interno dell'azienda del fornitore, 
 coinvolgendo gli esperti del dominio. Queste riunioni sono state condotte dal Project Manager, che ha assunto il ruolo
 di facilitatore.
@@ -109,8 +124,8 @@ iniziata la stesura del POS.
 
 ## SWOT Analysis
 Come fase preliminare alla stesura del POS, è stata svolta la SWOT Analysis, disponibile al seguente 
-[link](../attachments/swot-analysis.md#19-01-2023), per cui sono stati analizzati i punti di forza e le debolezze del 
-progetto, da cui sono state derivate le possibili opportunità e minacce per il suo successo.
+[link](/pm/attachments/content/swot-analysis#19-01-2023), per cui sono stati analizzati i punti di forza e
+le debolezze del progetto, da cui sono state derivate le possibili opportunità e minacce per il suo successo.
 
 ## PMLC Model
 In seguito all'analisi del progetto, si ha ragionato sull'approccio migliore per la gestione del progetto.
@@ -127,13 +142,13 @@ potrebbero insorgere durante il monitoraggio delle aziende competitrici.
 ## POS
 Dopo aver scelto il PMLC Model più adeguato, si è deciso di sintetizzare le informazioni raccolte nella fase di Scoping
 per presentarle al proprio senior management e successivamente al committente, allo scopo di riceverne l'approvazione.
-Il risultato di tale sintesi, è racchiuso nel POS, disponibile al seguente [link](../attachments/pos.md#20-01-2023).
+Il risultato di tale sintesi, è racchiuso nel POS, disponibile al seguente [link](/pm/attachments/content/pos#20-01-2023).
 
 Infine, al termine del POS Submission Meeting, si è ottenuta l'approvazione del committente. Quindi, si ha potuto
 procedere con la fase di Planning.
 
 ---
 
-[Back to Index](../index.md) |
-[Previous Chapter](../0-request/index.md) |
-[Next Chapter](../2-planning/index.md)
+[Back to Top](#top) |
+[Previous Chapter](/pm/0-problem) |
+[Next Chapter](/pm/2-planning)

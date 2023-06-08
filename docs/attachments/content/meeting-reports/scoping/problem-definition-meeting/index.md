@@ -1,7 +1,14 @@
+---
+title: Problem Definition Meeting
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 1
+---
+
 # Problem Definition Meeting
 
 ---
-## Verbale
 
 **Data: 09-01-2023**
 
@@ -26,4 +33,4 @@ la qualità del codice.
 In conclusione, ci si è accordati sulle riunioni necessarie per completare lo Scoping e sulle loro date.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md#problem-definition-meeting)
+[Back to Scoping](/pm/1-scoping#problem-definition-meeting)

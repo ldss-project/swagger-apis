@@ -1,20 +1,28 @@
-# SWOT Analysis
-
+---
+title: SWOT Analysis
+layout: default
+parent: Allegati
+nav_order: 5
 ---
 
-## Versioni
+# SWOT Analysis
+{: .no_toc}
 
-- [19-01-2023](#19-01-2023)
+## Versioni
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ---
 
 ## 19-01-2023
-[Back to Index](../index.md) |
-[Back to Scoping](../1-scoping/index.md#swot-analysis) |
-[Back to Versions](#versioni)
+[Back to Top](#top) |
+[Back to Scoping](/pm/1-scoping#swot-analysis)
 
----
-### **Strengths**
+### Strengths
+{: .no_toc}
+
 I fattori interni che possono contribuire al successo del progetto, ovvero:
 
 - Il cliente ha già realizzato un'applicazione di scacchi in passato, quindi è possibile usufruire della sua
@@ -28,14 +36,18 @@ I fattori interni che possono contribuire al successo del progetto, ovvero:
   quindi è possibile condurre delle analisi per individuare anticipatamente dei possibili difetti, pregi o
   miglioramenti della soluzione in fase di progettazione.
 
-### **Weaknesses**
+### Weaknesses
+{: .no_toc}
+
 I fattori interni che possono contribuire al fallimento del progetto, ovvero:
 - Il cliente ha poca esperienza nel nuovo modello di business che ha intenzione di adottare, quindi esiste un rischio
   concreto che il cliente non riesca a soddisfare le sue aspettative, nonostante l'adeguatezza della soluzione;
 - Il cliente ha espresso una forte urgenza nel terminare il progetto, quindi si rischia di ridurre la qualità della
   soluzione, o addirittura di rinunciare a parte dei requisiti in caso di ritardi.
 
-### **Opportunities**
+### Opportunities
+{: .no_toc}
+
 I fattori esterni e gli obiettivi che possono contribuire al successo del progetto, ovvero:
 - L'opportunità di costruire una community attorno all'applicazione e quindi intorno all'azienda del cliente,
   fidelizzando i giocatori coinvolti nella community e aumentando la popolarità dell'azienda;
@@ -46,7 +58,9 @@ I fattori esterni e gli obiettivi che possono contribuire al successo del proget
 - L'opportunità di adottare una strategia di business aggiuntiva, quindi permettendo di essere più robusti agli
   ai fattori esterni del mercato.
 
-### **Threats**
+### Threats
+{: .no_toc}
+
 I fattori esterni che possono contribuire al fallimento del progetto, ovvero:
 - Il rischio di non distinguersi dall'applicazione concorrente abbastanza da risaltare sul mercato.
   Per ridurre questo rischio, sarà necessario non ispirarsi troppo all'applicazione concorrente e adottare dei processi
@@ -78,8 +92,5 @@ I fattori esterni che possono contribuire al fallimento del progetto, ovvero:
 
 ---
 
-[Back to Index](../index.md) |
-[Back to Versions](#versioni) |
+[Back to Top](#top) |
 [Previous Version](#19-01-2023)
-
----

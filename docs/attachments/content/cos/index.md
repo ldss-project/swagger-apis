@@ -1,21 +1,27 @@
-# Conditions of Satisfaction
-
+---
+title: Conditions of Satisfaction (CoS)
+layout: default
+parent: Allegati
+nav_order: 2
 ---
 
-## Versioni
+# Conditions of Satisfaction (CoS)
+{: .no_toc}
 
-- [09-01-2023](#09-01-2023)
+## Versioni
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ---
 
 ## 09-01-2023
-[Back to Index](../index.md) | 
-[Back to Scoping](../1-scoping/index.md#conditions-of-satisfaction) | 
-[Back to Versions](#versioni)
+[Back to Top](#top) |
+[Back to Scoping](/pm/1-scoping#conditions-of-satisfaction)
 
----
-
-### CoS
+### Conditions of Satisfaction
+{: .no_toc}
 
 | N°  | Condizione                                                 | Target                        | Inizio     | Completamento |
 |-----|------------------------------------------------------------|-------------------------------|------------|---------------|
@@ -30,8 +36,5 @@
 
 ---
 
-[Back to Index](../index.md) | 
-[Back to Versions](#versioni) |
+[Back to Top](#top) |
 [Previous Version](#09-01-2023)
-
----

@@ -1,7 +1,14 @@
-# Planning Kick-Off
+---
+title: Work Definition Meeting
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 2
+---
+
+# Work Definition Meeting
 
 ---
-## Verbale
 
 **Data: 06-02-2023**
 
@@ -17,4 +24,4 @@ TODO
 
 ---
 
-[Back to Planning](../../../2-planning/index.md#work-definition-meeting)
+[Back to Planning](/pm/2-planning#work-definition-meeting)

@@ -1,4 +1,12 @@
+---
+title: Presentazione del problema
+layout: default
+nav_order: 2
+---
+
 # Presentazione del problema
+
+---
 
 GameCo è una software house specializzata nella produzione di videogiochi. Per la vendita dei suoi prodotti,
 GameCo si affida generalmente a uno store online di videogiochi.
@@ -45,5 +53,5 @@ intenzione d'investire molto su questa nuova opportunità di business.
 
 ---
 
-[Back to Index](../index.md) |
-[Next Chapter](../1-scoping/index.md)
+[Back to Top](#top) | 
+[Next Chapter](/pm/1-scoping)

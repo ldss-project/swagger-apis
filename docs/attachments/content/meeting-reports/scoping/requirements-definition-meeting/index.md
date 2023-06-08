@@ -1,7 +1,14 @@
+---
+title: Requirements Definition Meeting
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 2
+---
+
 # Requirement Definition Meeting
 
 ---
-## Verbale
 
 **Data: 11-01-2023**
 
@@ -28,4 +35,4 @@ In conclusione, si è data al fornitore la responsabilità della stesura del POS
 presentazione.
 
 ---
-[Back to Scoping](../../../1-scoping/index.md#requirements-definition-meeting)
+[Back to Scoping](/pm/1-scoping#requirements-definition-meeting)

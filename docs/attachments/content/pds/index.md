@@ -1,27 +1,32 @@
-# POS
-
+---
+title: Project Definition Statement (PDS)
+layout: default
+parent: Allegati
+nav_order: 6
 ---
 
-## Versioni
+# Project Definition Statement (PDS)
+{: .no_toc}
 
-- [20-01-2023](#20-01-2023)
+## Versioni
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ---
 
 ## 20-01-2023
-[Back to Index](../index.md) |
-[Back to Scoping](../1-scoping/index.md#pos) |
-[Back to Versions](#versioni)
+[Back to Top](#top) |
+[Back to Scoping](/pm/1-scoping#pos)
 
----
-
-### **Problema**
+### Problema
 
 Il committente ha subito un calo inaspettato nelle vendite di una sua applicazione di scacchi, pari a
 circa il 70% rispetto ai valori attesi. La causa è stata attribuita alla pubblicazione di una nuova applicazione web
 gratuita di scacchi, appartenente a un'azienda competitrice.
 
-### **Opportunità**
+### Opportunità
 
 Il committente ha individuato l'opportunità di adottare una nuova strategia di business aggiuntiva, 
 permettendo di essere più robusti agli eventi esterni del mercato.
@@ -30,12 +35,12 @@ Rispetto alla strategia di business corrente, basata sulla vendita di applicazio
 la nuova strategia di business aggiuntiva è basata sulla distribuzione di applicazioni gratuite sponsorizzate da
 investitori esterni.
 
-### **Goal**
+### Goal
 
 Progettare un'applicazione web che permetta a una comunità di utenti di giocare a scacchi online, che sia
 competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'approvazione del progetto.
 
-### **Obiettivi**
+### Obiettivi
 
 - **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online,
   allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme;
@@ -52,7 +57,7 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 - **Sponsor Management**: gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al committente di
   adottare una nuova strategia di business aggiuntiva.
 
-### **Criteri di successo**
+### Criteri di successo
 
 - **Increased Revenue**:
   - Coprire i costi del progetto e trarre un profitto pari al 40% dei costi, entro i primi due anni dal deployment
@@ -65,7 +70,7 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
   - L'accessibilità dell'applicazione dev'essere almeno di livello AA, secondo lo standard WCAG 2.0, nell'intero sito
     web.
 
-### **Assunzioni e rischi principali**
+### Assunzioni e rischi principali
 
 - Possibilità di riutilizzare alcuni dei requisiti dell'applicazione che il committente ha già realizzato in passato;
 - Possibilità di analizzare delle applicazioni concorrenti disponibili pubblicamente;
@@ -79,20 +84,16 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 - Rischio dovuto all'incertezza sulle tecnologie da applicare per rendere l'applicazione scalabile;
 - Rischio dovuto all'incertezza sulla domanda dell'applicazione al rilascio.
 
-### **Allegati**
+### Allegati
 
-- Conditions of Satisfaction: [link](cos.md)
-- User Stories: [link](user-stories.md)
-- Requirement Breakdown Structure: [link](rbs.md)
-- Swot Analysis: [link](swot-analysis.md)
-- Project Overview Statement: [link](pos.md)
+- Conditions of Satisfaction: [link](/pm/attachments/content/cos)
+- User Stories: [link](pm/attachments/content/user-stories)
+- Requirement Breakdown Structure: [link](/pm/attachments/content/rbs)
+- Swot Analysis: [link](/pm/attachments/content/swot-analysis)
 
 Revisionato in data 23-01-2023.
 
 ---
 
-[Back to Index](../index.md) |
-[Back to Versions](#versioni) |
+[Back to Top](#top) |
 [Previous Version](#20-01-2023)
-
----

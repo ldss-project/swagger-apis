@@ -1,7 +1,14 @@
-# Planning Kick-Off
+---
+title: Project Proposal Submission Meeting
+layout: default
+grand_parent: Allegati
+parent: Meetings
+nav_order: 3
+---
+
+# Project Proposal Submission Meeting
 
 ---
-## Verbale
 
 **Data: 13-02-2023**
 
@@ -21,4 +28,4 @@ TODO
 
 ---
 
-[Back to Planning](../../../2-planning/index.md#project-proposal-submission-meeting)
+[Back to Planning](/pm/2-planning#project-proposal-submission-meeting)
