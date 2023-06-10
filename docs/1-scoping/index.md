@@ -57,7 +57,7 @@ di due settimane.
   - Presentazione dei Core Team di entrambe le parti;
   - Definizione delle User Stories, ovvero dei requisiti del progetto e delle Conditions of Satisfaction a livello
     di deliverable;
-  - Presentazione e revisione del RBS;
+  - Presentazione e revisione della RBS;
   - Discussione del gap tra l'_as is_ ed il _to be_.
 - Data: 11-01-2023, 16-01-2023
 - Durata: 8 ore, divise su due giornate
@@ -109,16 +109,16 @@ essere il riferimento per la verifica del sistema.
 
 ### Requirement Breakdown Structure (RBS)
 Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
-lavorato per trasformare le User Stories in un RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
+lavorato per trasformare le User Stories in una RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
 In particolare, sono state organizzate alcune Facilitated Group Session all'interno dell'azienda del fornitore, 
 coinvolgendo gli esperti del dominio. Queste riunioni sono state condotte dal Project Manager, che ha assunto il ruolo
 di facilitatore.
 
 Siccome GameCo ha già realizzato un progetto relativo al gioco degli scacchi, sarà possibile riutilizzare alcuni dei 
-requisiti di quel progetto, almeno per quanto riguarda la gestione delle regole di una partita di scacchi (`1.i.d` e
-`1.iii`).
+requisiti di quel progetto, almeno per quanto riguarda la gestione delle regole di una partita di scacchi (`1.a.d` e
+`1.c`).
 
-Dopo aver presentato e discusso l'RBS con il cliente, si è ottenuto un suo riscontro positivo, in seguito a cui è stata
+Dopo aver presentato e discusso la RBS con il cliente, si è ottenuto un suo riscontro positivo, in seguito a cui è stata
 iniziata la stesura del POS.
 
 ## SWOT Analysis

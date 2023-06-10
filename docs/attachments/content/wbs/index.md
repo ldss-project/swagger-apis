@@ -16,4 +16,392 @@ nav_order: 7
 
 ---
 
+## 01-02-2023
+[Back to Top](#top) |
+[Back to Planning](/pm/2-planning#wbs)
+
+### WBS
+{: .no_toc}
+
+TODO show tree
+
+### Attività
+{: .no_toc}
+
+**Goal**: realizzare un'applicazione web per giocare a scacchi online.
+
+1. `M` **Game Management**: permettere a due giocatori dell'applicazione di
+   giocare insieme.
+    1. `M` **Game Configuration**: permettere a un giocatore di creare e configurare
+       una nuova partita di scacchi.
+       1. `M` **Public Game**: permettere a un giocatore di creare una partita pubblica
+           di scacchi, a cui chiunque può partecipare.
+       
+          {: .text-green-200}
+          - **Add Public Game option to Frontend**: aggiungere l'opzione nella Configuration Page.
+          - **Add Public Game option to Backend**: aggiungere l'opzione nel _Game Service_.
+       2. `S` **Private Game**: permettere a un giocatore di creare una partita privata
+          di scacchi, a cui può partecipare solo chi conosce l'id segreto.
+       
+          {: .text-green-200}
+          - **Add Private Game option to Frontend**: aggiungere l'opzione nella Configuration Page.
+          - **Add Private Game option to Backend**: aggiungere l'opzione nel _Game Service_.
+       3. `C` **Friend Game**: permettere a un giocatore autenticato di creare una partita
+          privata di scacchi invitando un suo specifico amico nell'applicazione a parteciparci.
+
+          {: .text-green-200}
+          - **Add Friend Game option to Frontend**: aggiungere l'opzione nella Configuration Page.
+          - **Handle Friend Invitation**: inviare all'amico l'invito a partecipare alla partita.
+       4. `M` **Time Constraint**: permette di configurare i vincoli di tempo della partita.
+          1. `M` **No Limit**: nessun vincolo di tempo.
+
+             {: .text-green-200}
+             - **Add No Limit option to Frontend**: aggiungere l'opzione nella Configuration Page.
+             - **Add No Limit option to Backend**: aggiungere l'opzione nel _Game Service_.
+
+          2. `C` **Turn Limit**: vincolo di tempo sul turno di ciascun giocatore (es.: ogni
+             giocatore ha 3 minuti ogni turno per fare la propria mossa).
+
+             {: .text-green-200}
+              - **Add Turn Limit option to Frontend**: aggiungere l'opzione nella Configuration Page.
+              - **Add Turn Limit option to Backend**: aggiungere l'opzione nel _Game Service_.
+
+          3. `C` **Player Limit**: vincolo di tempo sul controllo della scacchiera di ciascun
+             giocatore (es.: ogni giocatore ha 10 minuti in totale per fare le sue mosse
+             durante un'intera partita).
+          
+             {: .text-green-200}
+              - **Add Player Limit option to Frontend**: aggiungere l'opzione nella Configuration Page.
+              - **Add Player Limit option to Backend**: aggiungere l'opzione nel _Game Service_.
+
+       {: .text-green-200}
+       - **Create Configuration Page**: creare la schermata del _Frontend_ relativa alla 
+         configurazione di una partita di scacchi, che mostri le opzioni di configurazione di una 
+         partita e permetta di crearne una nuova.
+         - **Mockup Configuration Page**: progettare la schermata del _Frontend_ relativa alla
+           configurazione di una partita di scacchi.
+         - **Implement Configuration Page**: implementare la schermata del _Frontend_ relativa
+           alla configurazione di una partita di scacchi.
+         - **Integrate Configuration Page**: integrare la schermata del _Frontend_ relativa alla
+           configurazione di una partita di scacchi con l'intero _Frontend_ e _Backend_.
+       - **Handle Game Creation**: gestire la creazione di una partita di scacchi nel _Backend_,
+         data la sua configurazione.
+         - **Model Game Configuration**: modellare il concetto di configurazione di una partita
+           nel _Game Service_.
+         - **Initialize Game**: gestire l'inizializzazione di una partita di scacchi nel
+           _Game Service_.
+         - **Handle Host Connection**: gestire la connessione dell'utente che ha creato la partita
+           al _Game Service._
+    2. `M` **Game Participation**: permettere a un giocatore di partecipare a una partita
+       di scacchi, già configurata.
+        1. `M` **Public Game Participation**: permettere a un giocatore di partecipare a una
+           partita pubblica qualsiasi.
+
+           {: .text-green-200}
+           - **Add Join Public Game to Frontend**: aggiungere l'opzione nella Participation Page.
+           - **Handle Public Game Participation**: gestire la connessione di un utente a una partita
+             pubblica casuale.
+        2. `S` **Private Game Participation**: permettere a un giocatore di partecipare a una
+           partita privata di cui conosce l'id segreto.
+
+           {: .text-green-200}
+           - **Add Join Private Game to Frontend**: aggiungere l'opzione nella Participation Page.
+           - **Handle Private Game Participation**: gestire la connessione di un utente a una partita
+             privata di cui ha specificato l'id segreto.
+        3. `C` **Friend Game Participation**: permettere a un giocatore autenticato di partecipare
+           a una partita privata a cui è stato invitato.
+   
+           {: .text-green-200}
+           - **Show Friend Game Invitation**: mostrare al giocatore gli inviti alle partite inviati dai suoi amici.
+           - **Handle Friend Game Participation**: gestire la connessione di un utente a una partita
+             private a cui è stato invitato.
+
+        {: .text-green-200}
+        - **Create Game Participation Page**: creare la schermata del _Frontend_ relativa alla
+          partecipazione a una partita di scacchi, che mostri le diverse modalità per partecipare a
+          una partita di scacchi.
+            - **Mockup Game Participation Page**: progettare la schermata del _Frontend_ relativa alla
+              partecipazione a una partita di scacchi.
+            - **Implement Game Participation Page**: implementare la schermata del _Frontend_ relativa
+              alla partecipazione a una partita di scacchi.
+            - **Integrate Game Participation Page**: integrare la schermata del _Frontend_ relativa alla
+              partecipazione a una partita di scacchi con l'intero _Frontend_ e _Backend_.
+
+    3. `M` **Game Execution**: gestione dello svolgimento di una partita tra due giocatori.
+        1. `M` **Turn Execution**: gestione di un turno della partita.
+            1. `M` **Turn Control**: durante il turno di un giocatore, tale giocatore
+               deve essere l'unico ad avere il controllo sulla scacchiera.
+            2. `M` **Turn Termination**: all'esecuzione di una mossa, il turno termina e
+               il controllo è ceduto al giocatore avversario.
+        2. `M` **Chessboard Creation**: creazione della scacchiera negli scacchi.
+            1. `M` **Rank Creation**: la scacchiera è definita da 8 righe numerate da 1 a
+               8, chiamate Rank.
+            2. `M` **File Creation**: la scacchiera è definita da 8 colonne identificate
+               con le lettere da A a H, chiamate File.
+        3. `M` **Piece Creation**: creazione dei pezzi della scacchiera.
+            1. `M` **Pawn Creation**: creazione del pedone.
+            2. `M` **Knight Creation**: creazione del cavallo.
+            3. `M` **Bishop Creation**: creazione dell'alfiere.
+            4. `M` **Rook Creation**: creazione della torre.
+            5. `M` **Queen Creation**: creazione della regina.
+            6. `M` **King Creation**: creazione del re.
+        4. `M` **Piece Movement**: movimento dei pezzi sulla scacchiera.
+            1. `M` **Movement Constraints**: gestione dei vincoli di movimento.
+                1. `M` **Border Constraint**: nessun pezzo può muoversi al di fuori della
+                   scacchiera.
+                2. `M` **Block Constraint**: nessun pezzo, ad eccezione del cavallo, può
+                   muoversi scavalcando gli altri pezzi sulla scacchiera.
+                3. `M` **Check Constraint**: nessun pezzo può muoversi se tale mossa pone
+                   il giocatore corrente in scacco.
+            2. `M` **Pawn Movement**: movimento del pedone sulla scacchiera.
+                1. `M` **One Forward**: movimento di una casella in avanti.
+                2. `M` **Double Forward**: movimento di due caselle in avanti. Possibile
+                   solo alla prima mossa del pedone.
+            3. `M` **Knight Movement**: movimento del cavallo sulla scacchiera. Il cavallo
+               può effettuare movimenti seguendo una traiettoria ad L.
+            4. `M` **Bishop Movement**: movimento dell'alfiere sulla scacchiera. L'alfiere
+               può effettuare movimenti in diagonale.
+            5. `M` **Rook Movement**: movimento della torre sulla scacchiera. La torre può
+               effettuare movimenti in verticale o in orizzontale.
+            6. `M` **Queen Movement**: movimento della regina sulla scacchiera. La regina
+               può effettuare movimenti in verticale, in orizzontale e in diagonale.
+            7. `M` **King Movement**: movimento del re sulla scacchiera.
+                1. `M` **One Around**: movimento di una casella in qualsiasi direzione.
+                2. `M` **Castling**: movimento di due caselle a sinistra o a destra, verso
+                   una delle due torri del giocatore. Quando effettuato, la torre verso
+                   cui si è mosso il re si muove fino a scavalcare il re.
+                   Effettuabile solo se il re e la torre non hanno eseguito movimenti
+                   in precedenza e se non ci sono altri pezzi tra loro due.
+        5. `M` **Piece Capture**: gestione della cattura dei pezzi sulla scacchiera.
+            1. `M` **Standard Capture**: tutti i pezzi, ad eccezione del pedone, possono
+               catturare un pezzo avversario effettuando un movimento su tale pezzo.
+            2. `M` **Pawn Capture**: gestione della cattura da parte del pedone.
+                1. `M` **Diagonal Capture**: il pedone può catturare solo un pezzo
+                   muovendosi di una posizione in avanti in diagonale.
+                2. `M` **En Passant**: il pedone può catturare un pedone avversario che,
+                   nel turno precedente, gli si è mosso accanto effettuando una mossa
+                   doppia. Tale cattura avviene muovendosi dietro il pedone avversario.
+        6. `M` **Chessboard Analysis**: riconoscimento dei possibili stati della scacchiera.
+            1. `M` **Check**: situazione in cui il re del giocatore corrente può essere
+               catturato dal suo avversario nel turno successivo.
+            2. `M` **Stale**: situazione in cui il giocatore corrente non ha mosse
+               disponibili.
+            3. `M` **Checkmate**: situazione in cui il giocatore corrente è sia in scacco
+               che in stallo.
+            4. `M` **Promotion**: situazione in cui il giocatore corrente ha portato un
+               pedone sul lato opposto della scacchiera e può sostituirlo con un
+               cavallo, un alfiere, una torre o una regina.
+
+        {: .text-green-200}
+        - **Create Game Page**: creare la schermata del _Frontend_ relativa allo svolgimento di una
+          partita di scacchi, che mostri lo stato della partita in svolgimento e permetta l'interazione
+          dell'utente con essa.
+            - **Mockup Game Page**: progettare la schermata del _Frontend_ relativa allo svolgimento di
+              una partita di scacchi.
+            - **Implement Game Page**: implementare la schermata del _Frontend_ relativa
+              allo svolgimento di una partita di scacchi.
+            - **Integrate Game Page**: integrare la schermata del _Frontend_ relativa allo svolgimento di
+              una partita di scacchi con l'intero _Frontend_ e _Backend_.
+       - **Reuse previous chess application**: riutilizzare le funzionalità dell'applicazione
+         già realizzata dal committente (es.: esecuzione di una partita di scacchi nelle diverse
+         configurazioni sui limiti di tempo...).
+         - **Analyze previous chess application**: analizzare l'applicazione già realizzata
+           dal committente, identificando quali componenti possono essere facilmente riutilizzati.
+         - **Integrate previous chess application**: integrare tali componenti con il _Game Service_,
+           esponendo le loro funzionalità agli utenti dell'applicazione.
+       - **Handle Game Termination**: gestire la terminazione delle partite eseguite dal _Game Service_,
+         memorizzando i risultati di ciascun giocatore nello _Statistics Service_.
+2. `S` **Tournament Management**: permettere di organizzare dei tornei che includono
+   più partite tra diversi giocatori autenticati.
+    1. `S` **Tournament Configuration**: permettere a un amministratore di creare e
+       configurare dei tornei di scacchi (es.: massimo numero di partecipanti,
+       numero di round...).
+
+       {: .text-green-200}
+       - **Create Tournament Configuration Page**: creare la schermata del _Frontend_ relativa
+         alla configurazione di un torneo di scacchi, che mostri le opzioni di configurazione di un
+         torneo e permetta di crearne uno nuovo.
+         - **Mockup Tournament Configuration Page**: progettare la schermata del _Frontend_ relativa
+           alla configurazione di un torneo di scacchi.
+         - **Implement Tournament Configuration Page**: implementare la schermata del _Frontend_ relativa
+           alla configurazione di un torneo di scacchi.
+         - **Integrate Tournament Configuration Page**: integrare la schermata del _Frontend_ relativa
+           alla configurazione di un torneo di scacchi con l'intero _Frontend_ e _Backend_.
+       - **Handle Tournament Creation**: gestire la creazione di un torneo di scacchi nel _Backend_,
+         data la sua configurazione.
+         - **Model Tournament Configuration**: modellare il concetto di configurazione di un torneo
+           nel _Tournament Service_.
+         - **Initialize Tournament**: gestire l'inizializzazione di un torneo di scacchi nel
+           _Tournament Service_.
+    2. `S` **Tournament Participation**: permettere a un giocatore autenticato di
+       partecipare a un torneo.
+
+       {: .text-green-200}
+       - **Create Tournament Participation Page**: creare la schermata del _Frontend_ relativa alla
+          partecipazione a un torneo di scacchi, che mostri i tornei a cui il giocatore può partecipare.
+          - **Mockup Tournament Participation Page**: progettare la schermata del _Frontend_ relativa alla
+            partecipazione a un torneo di scacchi.
+          - **Implement Tournament Participation Page**: implementare la schermata del _Frontend_ relativa
+            alla partecipazione a un torneo di scacchi.
+          - **Integrate Tournament Participation Page**: integrare la schermata del _Frontend_ relativa alla
+            partecipazione a un torneo di scacchi con l'intero _Frontend_ e _Backend_.
+       - **Handle Tournament Participation**: gestire la connessione di un utente a un torneo di scacchi
+         tra quelli disponibili.
+    3. `S` **Tournament Execution**: gestione dell'esecuzione di un torneo, basandosi
+       sul sistema svizzero.
+       1. `S` **Round Execution**: gestione di un round del sistema svizzero.
+          1. `S` **Participant Pairing**: gestione della formazione delle coppie di
+             giocatori autenticati che devono affrontarsi, sulla base dei risultati
+             di ciascun giocatore autenticato.
+
+             {: .text-green-200}
+             - **Implement Pairing Algorithm**: implementare la funzionalità del _Tournament Service_
+               che, dati i partecipanti al torneo, restituisce le coppie di partecipanti che dovranno
+               sfidarsi, sulla base dei loro risultati nei match precedenti.
+          2. `S` **Match Execution**: gestione dell'esecuzione dei match tra le coppie
+             di giocatori autenticati che devono affrontarsi.
+
+             {: .text-green-200}
+             - **Create Match**: gestire la creazione dei match individuati dal _Tournament Service_
+               attraverso il _Game Service_, che li eseguirà.
+          3. `S` **Result Aggregation**: gestione dell'aggregazione dei risultati dei
+             match eseguiti nel round corrente.
+       
+             {: .text-green-200}
+             - **Notify Match Termination**: gestire la terminazione dei match eseguiti dal _Game Service_,
+               notificandone i risultati al _Tournament Service_, che li aggregherà per mostrarli ai partecipanti.
+
+       {: .text-green-200}
+       - **Create Tournament Page**: creare la schermata del _Frontend_ relativa all'esecuzione
+           di un torneo di scacchi, che mostri lo stato del torneo in svolgimento e permetta l'interazione
+           dell'utente con essa.
+           - **Mockup Tournament Page**: progettare la schermata del _Frontend_ relativa all'esecuzione
+             di un torneo di scacchi.
+           - **Implement Tournament Page**: implementare la schermata del _Frontend_ relativa all'esecuzione
+             di un torneo di scacchi.
+           - **Integrate Tournament Page**: integrare la schermata del _Frontend_ relativa all'esecuzione
+             di un torneo di scacchi con l'intero _Frontend_ e _Backend_.
+
+    4. `S` **Tournament Awards**: gestione della premiazione del torneo.
+   
+       {: .text-green-200}
+       - **Handle Tournament Termination**: gestire la terminazione dei tornei eseguiti dal _Tournament Service_,
+         memorizzando i risultati di ciascun giocatore nello _Statistics Service_.
+    5. `S` **Tournament Storage**: gestione della memorizzazione dei dati relativi
+       ai tornei (es.: numero di partecipanti massimi e correnti...).
+
+       {: .text-green-200}
+       - **Install Tournament Database**: installare un database in cui memorizzare i dati relativi ai tornei.
+       - **Design Tournament Database**: progettare la struttura dei dati da memorizzare relativi ai tornei.
+       - **Implement Tournament Database Queries**: implementare le query per il reperimento o l'aggiornamento
+         dei dati relativi ai tornei.
+3. `M` **Authentication Management**: permettere a un giocatore ospite di autenticarsi
+   all'interno dell'applicazione.
+    1. `M` **Sign In**: permettere a un giocatore ospite di registrarsi all'applicazione.
+        1. `M` **Registration Form**: gestione dell'inserimento dei dati del giocatore ospite.
+           In particolare, sono richiesti la sua email, il suo username e la sua password;
+        2. `W` **Confirmation Email**: gestione dell'email per ultimare la registrazione del
+           giocatore ospite, verificando che l'email da lui specificata sia effettivamente
+           la sua.
+    2. `M` **Log In**: permettere a un giocatore ospite di accedere all'applicazione,
+       conoscendo le proprie credenziali.
+        1. `M` **Token Creation**: creazione di un token utente riferito a una sessione
+           attiva di un giocatore autenticato, richiesto per accedere alle operazioni
+           sensibili dell'applicazione (es.: cambio della password...);
+        2. `M` **Token Expiration**: gestire la scadenza dei token utente, per limitare
+           la validità di uno specifico accesso nel tempo;
+        3. `M` **Authorization Management**: gestire i permessi dell'utente in base al
+           suo ruolo nell'applicazione (es.: dipendente dell'azienda, giocatore...).
+    3. `M` **Log out**: permettere a un giocatore autenticato di disconnettersi
+       dall'applicazione.
+        1. `M` **Token Revocation**: gestione la revoca ed eliminazione del token
+           utente riferito alla sessione attiva del giocatore autenticato appena
+           disconnesso.
+    4. `M` **Sensitive Data Storage**: gestione dei dati sensibili dei giocatori registrati
+       all'applicazione.
+        1. `M` **Secure Storage**: gestione della memorizzazione dei dati sensibili su
+           una piattaforma sicura. Tra i dati sensibili, sono inclusi l'email del
+           giocatore, la sua password ed i token utente delle sessioni attive.
+        2. `M` **Cryptography**: gestione dell'oscuramento dei dati sensibili (es.:
+           password degli utenti dell'applicazione...).
+4. `M` **Profile Management**: permettere a un giocatore autenticato di gestire il proprio
+   profilo utente.
+    1. `M` **Profile Visualization**: permettere a un giocatore autenticato di visualizzare
+       il proprio profilo utente, ovvero le informazioni relative al proprio account
+       (es.: email, username...).
+    2. `M` **Profile Update**: permettere a un giocatore autenticato di aggiornare le
+       informazioni relative al proprio account (es.: email, password...).
+5. `C` **Socialization Management**: permettere ai giocatori di interagire e socializzare tra di loro.
+    1. `C` **Friend Management**: gestione delle amicizie all'interno dell'applicazione.
+        1. `C` **Friend Request**: permettere a due giocatori autenticati di stringere amicizia.
+            1. `C` **Send Request**: permettere a un giocatore autenticato di inviare una richiesta
+               di amicizia a un altro giocatore registrato all'applicazione.
+                1. `W` **In-Game Request**: permettere a un giocatore autenticato di inviare una richiesta
+                   di amicizia al giocatore autenticato avversario durante una partita.
+                2. `C` **Request By Username**: permettere a un giocatore autenticato di inviare una richiesta
+                   di amicizia a un altro giocatore registrato all'applicazione, conoscendone lo username.
+            2. `C` **Receive Request**: permettere a un giocatore autenticato di accettare o rifiutare una
+               richiesta di amicizia ricevuta da un altro giocatore registrato all'applicazione.
+                1. `C` **Request Visualization**: permettere a un giocatore autenticato di visualizzare
+                   le richieste di amicizia ricevute dagli altri giocatori registrati all'applicazione.
+                2. `W` **Request Notification**: gestione della notifica a un giocatore autenticato della
+                   ricezione di una nuova richiesta di amicizia.
+        2. `C` **Friend Visualization**: permettere a un giocatore autenticato di visualizzare se i propri
+           amici sono offline, online o all'interno di una partita.
+        3. `C` **Friend Removal**: permettere a un giocatore autenticato di rimuovere un altro giocatore dalla
+           lista dei suoi amici.
+        4. `C` **Friend Storage**: gestione della memorizzazione degli amici dei giocatori
+           e del loro stato.
+    2. `C` **Communication Management**: permettere ai giocatori di comunicare tra di loro.
+        1. `C` **Chat**: permettere ai giocatori di scambiarsi dei messaggi testuali tra di loro.
+            1. `W` **In-Game Chat**: permettere a un giocatore di scambiare dei messaggi testuali con il
+               proprio avversario durante una partita.
+                1. `W` **Send Message**: permettere a un giocatore di inviare messaggi testuali al proprio
+                   avversario durante una partita.
+                2. `W` **Receive Message**: permettere a un giocatore di ricevere messaggi testuali provenienti
+                   dal proprio avversario durante una partita.
+                3. `W` **Message Visualization**: permettere a un giocatore di visualizzare i messaggi testuali
+                   scambiati con il proprio avversario durante una partita.
+                4. `W` **Message Notification**: gestione della notifica a un giocatore della ricezione di un
+                   messaggio dell'avversario durante una partita.
+            2. `C` **Friend Chat**: permettere a un giocatore autenticato di scambiare dei messaggi testuali con
+               un suo amico.
+                1. `C` **Send Message**: permettere a un giocatore autenticato di inviare messaggi testuali a un
+                   suo amico.
+                2. `C` **Receive Message**: permettere a un giocatore registrato di ricevere messaggi testuali
+                   provenienti da un suo amico.
+                3. `C` **Message Visualization**: permettere a un giocatore autenticato di visualizzare i messaggi
+                   testuali scambiati con un suo amico.
+                4. `C` **Message Forwarding**: gestione dell'inoltro di un messaggio da un giocatore autenticato
+                   a un suo amico.
+                5. `W` **Message Notification**: gestione della notifica a un giocatore autenticato della ricezione
+                   di un messaggio di uno dei suoi amici.
+                6. `C` **Friend Chat Storage**: gestione della memorizzazione dei messaggi scambiati tra ogni
+                   giocatore registrato e i suoi amici.
+6. `C` **Statistics Management**: permettere a un giocatore di monitorare le statistiche di
+   un giocatore registrato all'applicazione, tra cui le proprie statistiche.
+    1. `C` **Score Visualization**: permettere a un giocatore di visualizzare il punteggio ELO
+       di un giocatore registrato all'applicazione.
+        1. `C` **Score Evaluation**: gestione della valutazione del punteggio di
+           un giocatore autenticato al termine di ogni partita.
+        2. `C` **Score Storage**: gestione della memorizzazione dello storico dei
+           punteggi di ciascun giocatore registrato all'applicazione.
+        3. `W` **Score History Visualization**: permettere a un giocatore di visualizzare come è cambiato
+           nel tempo il punteggio ELO di un giocatore registrato all'applicazione.
+    2. `C` **Tournament Visualization**: permettere a un giocatore di visualizzare i risultati ottenuti
+       nei tornei a cui ha partecipato un giocatore registrato all'applicazione.
+        1. `C` **Tournament Storage**: gestire la memorizzazione dei risultati di ogni torneo
+           dei giocatori registrati all'applicazione.
+    3. `C` **Leaderboard Visualization**: permettere a un giocatore di visualizzare la classifica globale
+       dei giocatori registrati all'applicazione.
+        1. `C` **Rank Visualization**: permettere a un giocatore autenticato di visualizzare la propria
+           posizione nella classifica globale.
+7. `W` **Notification Management**: gestione delle notifiche in tempo reale dell'applicazione.
+    1. `W` **Notification Forwarding**: gestione della notifica in tempo reale ai
+       giocatori autenticati degli eventi che li coinvolgono;
+    2. `W` **Notification Storage**: gestione della memorizzazione delle notifiche
+       relative ai giocatori registrati all'applicazione.
+8. `M` **Sponsor Management**: gestione della pubblicità agli sponsor dell'applicazione
+   (es.: banner, video...).
+
 [Back to Top](#top)

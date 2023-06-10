@@ -95,7 +95,7 @@ del progetto, riportate di seguito. Per definire la priorità dei requisiti è s
 
 | Obiettivo                 | Descrizione                                                                                                                                                                                                                         | Priorità    | Motivazione                                              |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------|
-| Game Management           | Gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.                                                        | Must-Have   | Necessario per applicazione.                             |
+| Game Management           | Gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.                                                        | Must-Have   | Necessario per l'applicazione.                           |
 | Authentication Management | Gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di tenere traccia dei propri progressi. | Must-Have   | Necessario per amministrare l'applicazione.              |
 | Sponsor Management        | Gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al committente di adottare una nuova strategia di business aggiuntiva.                                                                                    | Must-Have   | Necessario per adottare la nuova strategia di business.  |
 | Tournament Management     | Gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo scopo di aumentare la visibilità e la popolarità dell'applicazione.                                                                       | Should-Have | Molto importante per la visibilità dell'applicazione.    |
@@ -104,13 +104,68 @@ del progetto, riportate di seguito. Per definire la priorità dei requisiti è s
 
 In questa fase, si è iniziata la stesura del Project Definition Statement (PDS), che sarà completata durante il Planning.
 Inoltre, sono stati aggiornate le User Stories, disponibili al seguente [link](/pm/attachments/content/user-stories#31-01-2023),
-e l'RBS, disponibile al seguente [link](/pm/attachments/content/rbs#31-01-2023).
+e la RBS, disponibile al seguente [link](/pm/attachments/content/rbs#31-01-2023).
 
-## WBS
-- revisione del RBS
-- approccio (team o subteam)
-- design architetturale
-- attività e task
+## Work Breakdown Structure (WBS)
+
+Tra il Planning Kick-Off e la Work Definition Meeting, il fornitore ha lavorato per trasformare la RBS nella WBS,
+disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), identificando il design architetturale della
+soluzione e le attività del progetto. 
+
+Siccome il Core Team è piuttosto piccolo, si è deciso di coinvolgere l'intero team nella definizione della WBS, senza
+suddividerlo in sub-team.
+
+### Design Architetturale
+
+Durante una serie di riunioni interne all'azienda del fornitore, si è delineato il design architetturale della soluzione
+da realizzare. In particolare, si è deciso di adottare un'architettura a servizi, che raggruppano i requisiti del 
+progetto definiti nella RBS.
+
+Per tale architettura, si è deciso di applicare il pattern Ports&Adapters, anche conosciuto come architettura esagonale.
+
+I servizi individuati dal Core Team sono i seguenti:
+- **Frontend Service**: servizio che si occupa della rappresentazione grafica dell'applicazione web e della
+  sponsorizzazione da parte degli investitori esterni.
+  Dipende da:
+  - _Backend Service_: che utilizza per accedere alle funzionalità dell'applicazione.
+- **Backend Service**: servizio che gestisce l'inoltro delle richieste e delle connessioni dell'utente all'interno del 
+  sistema. Questo servizio agisce da interfaccia ai seguenti servizi:
+  - **Authentication Service**: servizio che gestisce l'autenticazione e l'autorizzazione dei giocatori nell'applicazione.
+    Questo servizio necessita di uno storage persistente per mantenere le informazioni relative al profilo degli utenti e
+    i token necessari per gestire i loro permessi all'interno dell'applicazione;
+  - **Statistics Service**: servizio che si occupa della gestione delle statistiche dei giocatori, tenendo traccia del
+    loro punteggio ELO e dei loro risultati nei tornei in cui hanno partecipato. Inoltre, gestisce la leaderboard 
+    dell'applicazione.
+    Dipende da:
+    - _Authentication Service_: che utilizza per verificare l'identità dei giocatori.
+  - **Notification Service**: servizio che gestisce la creazione, l'eliminazione e l'inoltro in tempo reale delle notifiche
+    ai giocatori dell'applicazione. Questo servizio necessita di uno storage persistente per le notifiche non ancora
+    visualizzate dall'utente. \
+    Dipende da:
+    - _Authentication Service_: che utilizza per verificare l'identità dei giocatori.
+  - **Game Service**: servizio che si occupa della creazione, configurazione, partecipazione ed esecuzione delle partite 
+    di scacchi. \
+    Dipende da:
+    - _Notification Service_: che utilizza per notificare i giocatori dello sviluppo della partita a cui stanno partecipando;
+    - _Statistics Service_: a cui invia i risultati delle partite per aggiornare il punteggio ELO dei giocatori.
+  - **Tournament Service**: servizio che si occupa della creazione, configurazione, partecipazione ed esecuzione dei
+    tornei di scacchi. Questo servizio necessita di uno storage persistente per i tornei, che potrebbero essere organizzati
+    mesi prima dell'esecuzione e quindi avere un ciclo di vita a lungo termine, al contrario delle semplici partite di
+    scacchi. \
+    Dipende da:
+    - _Game Service_: che utilizza per gestire le partite dei tornei;
+    - _Notification Service_: che utilizza per notificare i giocatori dello sviluppo del torneo a cui stanno partecipando;
+    - _Statistics Service_: a cui invia i risultati dei tornei per aggiornare le statistiche dei giocatori;
+    - _Authentication Service_: che utilizza per verificare l'identità dei giocatori.
+  - **Friend Service**: servizio che si occupa della gestione delle amicizie tra i giocatori dell'applicazione, tenendo
+    traccia delle richieste di amicizia pendenti oppure accettate. \
+    Dipende da:
+    - _Notification Service_: che utilizza per notificare i giocatori delle richieste di amicizia;
+    - _Authentication Service_: che utilizza per verificare l'identità dei giocatori.
+  - **Message Service**: servizio che si occupa dell'inoltro dei messaggi tra i giocatori amici nell'applicazione.
+    Dipende da:
+    - _Notification Service_: che utilizza per notificare i giocatori dei messaggi ricevuti;
+    - _Friend Service_: che utilizza per verificare l'amicizia tra i giocatori.
 
 ## Analisi dei task
 - Lavoro: precursore dell'analisi dei costi, giorni/uomo, LOC, Function Points, Story Points, Pomodoro,

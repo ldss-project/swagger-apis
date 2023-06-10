@@ -38,7 +38,7 @@ TODO show tree
       1. **Public Game**: permettere a un giocatore di creare una partita pubblica
          di scacchi, a cui chiunque può partecipare.
       2. **Private Game**: permettere a un giocatore di creare una partita privata
-         di scacchi, a cui solo chi conosce l'id segreto può partecipare.
+         di scacchi, a cui può partecipare solo chi conosce l'id segreto.
       3. **Friend Game**: permettere a un giocatore autenticato di creare una partita
          privata di scacchi invitando un suo specifico amico nell'applicazione a parteciparci.
       4. **Time Constraint**: permette di configurare i vincoli di tempo della partita.
@@ -136,7 +136,7 @@ TODO show tree
          2. **Match Execution**: gestione dell'esecuzione dei match tra le coppie
             di giocatori autenticati che devono affrontarsi.
          3. **Result Aggregation**: gestione dell'aggregazione dei risultati dei
-            match del round eseguiti.
+            match eseguiti nel round corrente.
    4. **Tournament Awards**: gestione della premiazione del torneo.
    5. **Tournament Storage**: gestione della memorizzazione dei dati relativi
       ai tornei (es.: numero di partecipanti massimi e correnti...).
@@ -273,7 +273,7 @@ TODO show tree
       1. `M` **Public Game**: permettere a un giocatore di creare una partita pubblica
          di scacchi, a cui chiunque può partecipare.
       2. `S` **Private Game**: permettere a un giocatore di creare una partita privata
-         di scacchi, a cui solo chi conosce l'id segreto può partecipare.
+         di scacchi, a cui può partecipare solo chi conosce l'id segreto.
       3. `C` **Friend Game**: permettere a un giocatore autenticato di creare una partita
          privata di scacchi invitando un suo specifico amico nell'applicazione a parteciparci.
       4. `M` **Time Constraint**: permette di configurare i vincoli di tempo della partita.
@@ -371,7 +371,7 @@ TODO show tree
          2. `S` **Match Execution**: gestione dell'esecuzione dei match tra le coppie
             di giocatori autenticati che devono affrontarsi.
          3. `S` **Result Aggregation**: gestione dell'aggregazione dei risultati dei
-            match del round eseguiti.
+            match eseguiti nel round corrente.
    4. `S` **Tournament Awards**: gestione della premiazione del torneo.
    5. `S` **Tournament Storage**: gestione della memorizzazione dei dati relativi
       ai tornei (es.: numero di partecipanti massimi e correnti...).

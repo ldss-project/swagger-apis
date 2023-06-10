@@ -20,14 +20,14 @@ del progetto. In particolare, si è concordato di concentrarsi sulla definizione
 finale in primo piano e focalizzandosi sul business value di ciascun requisito.
 
 Dopo la definizione delle User Stories, si è deciso che il fornitore, in qualità di consulente, avrà la responsabilità
-della stesura del relativo RBS, che sarà presentato e revisionato nella prossima riunione da entrambe le parti.
+della stesura della relativa RBS, che sarà presentata e revisionata nella prossima riunione da entrambe le parti.
 
 **Data: 16-01-2023**
 
-Il Project Manager del fornitore ha iniziato la presentazione del RBS redatto da lui assieme al suo Core Team,
+Il Project Manager del fornitore ha iniziato la presentazione della RBS redatta da lui assieme al suo Core Team,
 giustificando una alla volta i requisiti individuati attraverso le User Stories.
 
-Durante la discussione del RBS, è stato identificato più in dettaglio il divario tra la situazione corrente del
+Durante la discussione della RBS, è stato identificato più in dettaglio il divario tra la situazione corrente del
 committente e quella da lui desiderata. Inoltre, la sua revisione ha permesso di identificare alcuni requisiti mancanti,
 come la gestione della sponsorizzazione a livello applicativo.
 
