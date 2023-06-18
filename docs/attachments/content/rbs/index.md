@@ -105,7 +105,7 @@ TODO show tree
          1. **Standard Capture**: tutti i pezzi, ad eccezione del pedone, possono
             catturare un pezzo avversario effettuando un movimento su tale pezzo.
          2. **Pawn Capture**: gestione della cattura da parte del pedone.
-            1. **Diagonal Capture**: il pedone può catturare solo un pezzo
+            1. **Diagonal Capture**: il pedone può catturare un pezzo solo
                muovendosi di una posizione in avanti in diagonale.
             2. **En Passant**: il pedone può catturare un pedone avversario che,
                nel turno precedente, gli si è mosso accanto effettuando una mossa
@@ -340,7 +340,7 @@ TODO show tree
          1. `M` **Standard Capture**: tutti i pezzi, ad eccezione del pedone, possono
             catturare un pezzo avversario effettuando un movimento su tale pezzo.
          2. `M` **Pawn Capture**: gestione della cattura da parte del pedone.
-            1. `M` **Diagonal Capture**: il pedone può catturare solo un pezzo
+            1. `M` **Diagonal Capture**: il pedone può catturare un pezzo solo
                muovendosi di una posizione in avanti in diagonale.
             2. `M` **En Passant**: il pedone può catturare un pedone avversario che,
                nel turno precedente, gli si è mosso accanto effettuando una mossa
