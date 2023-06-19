@@ -669,7 +669,6 @@ TODO show tree
    (es.: banner, video...).
 
    {: .text-green-200}
-    - **Identify Possible Sponsors**: individuare gli sponsor che potrebbero essere interessati all'applicazione.
     - **Identify Off-The-Shelf Advertisement Solutions**: individuare possibili soluzioni già in commercio per la
       sponsorizzazione di altre aziende sulla propria applicazione.
 
@@ -698,6 +697,7 @@ TODO show tree
 | F3.2   | Implement Game Page                                 | Frontend                               |             
 | F3.3   | Integrate Game Page                                 | Frontend                               |
 | F3.4   | Show In-Game Messages                               | Frontend                               |
+| F3.5   | Add In-Game Friend Request option to Frontend       | Frontend                               |
 |        |                                                     |                                        |
 | F4.1   | Mockup Tournament Configuration Page                | Frontend                               |
 | F4.2   | Implement Tournament Configuration Page             | Frontend                               |             
@@ -711,42 +711,36 @@ TODO show tree
 | F6.2   | Implement Tournament Page                           | Frontend                               |             
 | F6.3   | Integrate Tournament Page                           | Frontend                               |
 |        |                                                     |                                        |
-| F7.1   | Mockup Tournament Page                              | Frontend                               |
-| F7.2   | Implement Tournament Page                           | Frontend                               |             
-| F7.3   | Integrate Tournament Page                           | Frontend                               |
+| F7.1   | Mockup Registration Page                            | Frontend                               |
+| F7.2   | Implement Registration Page                         | Frontend                               |             
+| F7.3   | Integrate Registration Page                         | Frontend                               |
 |        |                                                     |                                        |
-| F8.1   | Mockup Registration Page                            | Frontend                               |
-| F8.2   | Implement Registration Page                         | Frontend                               |             
-| F8.3   | Integrate Registration Page                         | Frontend                               |
+| F8.1   | Mockup Login Page                                   | Frontend                               |
+| F8.2   | Implement Login Page                                | Frontend                               |             
+| F8.3   | Integrate Login Page                                | Frontend                               |
 |        |                                                     |                                        |
-| F9.1   | Mockup Login Page                                   | Frontend                               |
-| F9.2   | Implement Login Page                                | Frontend                               |             
-| F9.3   | Integrate Login Page                                | Frontend                               |
+| F9.1   | Mockup Profile Page                                 | Frontend                               |
+| F9.2   | Implement Profile Page                              | Frontend                               |             
+| F9.3   | Integrate Profile Page                              | Frontend                               |
 |        |                                                     |                                        |
-| F10.1  | Mockup Profile Page                                 | Frontend                               |
-| F10.2  | Implement Profile Page                              | Frontend                               |             
-| F10.3  | Integrate Profile Page                              | Frontend                               |
+| F10.1  | Mockup Friend Page                                  | Frontend                               |
+| F10.2  | Implement Friend Page                               | Frontend                               |             
+| F10.3  | Integrate Friend Page                               | Frontend                               |
+| F10.4  | Add Friend Request By Username option to Frontend   | Frontend                               |
 |        |                                                     |                                        |
-| F11.1  | Mockup Friend Page                                  | Frontend                               |
-| F11.2  | Implement Friend Page                               | Frontend                               |             
-| F11.3  | Integrate Friend Page                               | Frontend                               |
-| F11.4  | Add In-Game Friend Request option to Frontend       | Frontend                               |
-| F11.5  | Add Friend Request By Username option to Frontend   | Frontend                               |
+| F11.1  | Mockup Statistics Page                              | Frontend                               |
+| F11.2  | Implement Statistics Page                           | Frontend                               |             
+| F11.3  | Integrate Statistics Page                           | Frontend                               |
 |        |                                                     |                                        |
-| F12.1  | Mockup Statistics Page                              | Frontend                               |
-| F12.2  | Implement Statistics Page                           | Frontend                               |             
-| F12.3  | Integrate Statistics Page                           | Frontend                               |
+| F12.1  | Mockup Leaderboard Page                             | Frontend                               |
+| F12.2  | Implement Leaderboard Page                          | Frontend                               |             
+| F12.3  | Integrate Leaderboard Page                          | Frontend                               |
 |        |                                                     |                                        |
-| F13.1  | Mockup Leaderboard Page                             | Frontend                               |
-| F13.2  | Implement Leaderboard Page                          | Frontend                               |             
-| F13.3  | Integrate Leaderboard Page                          | Frontend                               |
-|        |                                                     |                                        |
-| F14.1  | Show Friend Game Invitation                         | Frontend                               |
-| F14.2  | Add Logout option to Frontend                       | Frontend                               |
-| F14.3  | Show Friend Chats                                   | Frontend                               |
-| F14.4  | Show Messages                                       | Frontend                               |
-| F14.5  | Identify Possible Sponsors                          | Frontend                               |
-| F14.6  | Identify Off-The-Shelf Advertisement Solutions      | Frontend                               |
+| F13.1  | Show Friend Game Invitation                         | Frontend                               |
+| F13.2  | Add Logout option to Frontend                       | Frontend                               |
+| F13.3  | Show Friend Chats                                   | Frontend                               |
+| F13.4  | Show Messages                                       | Frontend                               |
+| F13.5  | Identify Off-The-Shelf Advertisement Solutions      | Frontend                               |
 | **B**  |                                                     |                                        |
 | B1.1   | Install Tournament Database                         | Backend                                |
 | B1.2   | Design Tournament Database                          | Backend                                |

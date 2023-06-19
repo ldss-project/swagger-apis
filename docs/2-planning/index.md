@@ -199,10 +199,18 @@ disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto l
 _Attività rispetto ai requisiti_.
 
 ## Analisi dei task
-- Lavoro: precursore dell'analisi dei costi, giorni/uomo, LOC, Function Points, Story Points, Pomodoro,
-  Consensus-Based
-- Durata: precursore alla schedula, inefficienza del team, imprevisti, Consensus-Based
-- Risorse: precursore dei costi e delle schedula e dell'assegnamento risorse, Consensus-Based
+In seguito alla definizione della WBS, il Core Team lato fornitore si è riunito per stimare il carico di lavoro, la
+durata e le risorse relativamente alle attività di progetto. I risultati di tale analisi sono disponibili al seguente
+[link](/pm/attachments/content/task-analysis#03-02-2023).
+
+In particolare, per l'analisi delle attività è stato utilizzata la _Wideband Delphi Technique_, ovvero un metodo
+iterativo per convergere a un consenso dei partecipanti sulla complessità delle attività.
+
+Inizialmente, è stata stimata la complessità delle attività in _ore/uomo_, quindi tale complessità è stata
+trasformata in durata considerando una sola risorsa assegnata all'attività, con un'efficienza pari al 75% e prevedendo
+ritardi pari al 33% della durata ideale dell'attività.
+
+Infine, per ogni attività sono state individuate le risorse e le skill necessarie.
 
 ## Analisi dei costi
 - Cash Flow Management: pianificare, anticipi, release, milestone, saldi, finanziamenti, riserva aziendale
