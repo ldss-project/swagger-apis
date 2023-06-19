@@ -167,6 +167,13 @@ I servizi individuati dal Core Team sono i seguenti:
     - _Notification Service_: che utilizza per notificare i giocatori dei messaggi ricevuti;
     - _Friend Service_: che utilizza per verificare l'amicizia tra i giocatori.
 
+### Attività del progetto
+
+Dopo aver definito le attività del progetto a partire dalla RBS, quindi motivandole rispetto ai requisiti del progetto,
+si è deciso di riorganizzarle rispetto ai servizi previsti dal design architetturale, producendo una nuova WBS
+disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto la sezione 
+_Attività rispetto ai requisiti_.
+
 ## Analisi dei task
 - Lavoro: precursore dell'analisi dei costi, giorni/uomo, LOC, Function Points, Story Points, Pomodoro,
   Consensus-Based
