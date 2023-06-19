@@ -26,15 +26,23 @@ di due settimane.
 ### Planning Kick-Off
 
 - Partecipanti:
-  - Il committente, in qualità di Project Sponsor;
-  - Project Manager lato cliente, in qualità di Project Champion;
-  - Project Manager lato fornitore;
-  - Core Team lato cliente, come consulente per il Project Manager lato cliente;
-  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore;
-  - Facilitatore, come mediatore della riunione;
-  - Tecnografo, per la stesura del verbale.
+  - Claudio Rossi, in qualità di Committente e Project Sponsor; 
+  - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Core Team lato cliente, come consulente per il Project Manager lato cliente:
+    - Cristina Grigi
+    - Camilla Gialli
+    - Cesare Neri
+    - Carlo Verdi
+  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
+    - Francesco Marroni
+    - Filippo Azzurri
+    - Federica Viola
+    - Franca Arancioni
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
-  - Presentazione del committente, come sponsor del progetto;
+  - Presentazione del Committente, come sponsor del progetto;
   - Presentazione del Project Manager lato cliente e del Project Manager lato fornitore;
   - Presentazione dei Core Team lato cliente e lato fornitore;
   - Definizione del Planning Facilitation Team;
@@ -48,13 +56,21 @@ di due settimane.
 ### Work Definition Meeting
 
 - Partecipanti:
-  - Project Manager lato cliente, in qualità di Project Champion;
-  - Project Manager lato fornitore;
-  - Core Team lato cliente, come consulente per il Project Manager lato cliente;
-  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore;
-  - Facilitatore, come mediatore della riunione;
-  - Tecnografo, per la stesura del verbale;
-  - Resource Manager lato fornitore.
+  - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Core Team lato cliente, come consulente per il Project Manager lato cliente:
+    - Cristina Grigi
+    - Camilla Gialli
+    - Cesare Neri
+    - Carlo Verdi
+  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
+    - Francesco Marroni
+    - Filippo Azzurri
+    - Federica Viola
+    - Franca Arancioni
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+  - Renato Beige, in qualità di Resource Manager lato fornitore.
 - Agenda:
   - Presentazione dell'architettura di massima del sistema;
   - Presentazione e revisione delle attività del progetto;
@@ -68,13 +84,21 @@ di due settimane.
 ### Project Proposal Submission Meeting
 
 - Partecipanti:
-  - Il committente, in qualità di Project Sponsor;
-  - Project Manager lato cliente, in qualità di Project Champion;
-  - Project Manager lato fornitore;
-  - Core Team lato cliente, come consulente per il Project Manager lato cliente;
-  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore;
-  - Facilitatore, come mediatore della riunione;
-  - Tecnografo, per la stesura del verbale.
+  - Claudio Rossi, in qualità di Committente e Project Sponsor;
+  - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Core Team lato cliente, come consulente per il Project Manager lato cliente:
+    - Cristina Grigi
+    - Camilla Gialli
+    - Cesare Neri
+    - Carlo Verdi
+  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
+    - Francesco Marroni
+    - Filippo Azzurri
+    - Federica Viola
+    - Franca Arancioni
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
 - Agenda:
   - Discussione della proposta di progetto:
     - Descrizione della situazione attuale;
@@ -90,14 +114,14 @@ di due settimane.
 
 ## Priorità dei requisiti
 
-Durante il Planning Kick-Off, dopo la presentazione del progetto, il committente ha indicato le priorità degli obiettivi
+Durante il Planning Kick-Off, dopo la presentazione del progetto, il Committente ha indicato le priorità degli obiettivi
 del progetto, riportate di seguito. Per definire la priorità dei requisiti è stato adottato lo standard MoSCoW.
 
 | Obiettivo                 | Descrizione                                                                                                                                                                                                                         | Priorità    | Motivazione                                              |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------|
 | Game Management           | Gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.                                                        | Must-Have   | Necessario per l'applicazione.                           |
-| Authentication Management | Gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di tenere traccia dei propri progressi. | Must-Have   | Necessario per amministrare l'applicazione.              |
-| Sponsor Management        | Gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al committente di adottare una nuova strategia di business aggiuntiva.                                                                                    | Must-Have   | Necessario per adottare la nuova strategia di business.  |
+| Authentication Management | Gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro permessi, allo scopo di permettere al Committente di amministrare l'applicazione e di permettere ai giocatori di tenere traccia dei propri progressi. | Must-Have   | Necessario per amministrare l'applicazione.              |
+| Sponsor Management        | Gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al Committente di adottare una nuova strategia di business aggiuntiva.                                                                                    | Must-Have   | Necessario per adottare la nuova strategia di business.  |
 | Tournament Management     | Gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo scopo di aumentare la visibilità e la popolarità dell'applicazione.                                                                       | Should-Have | Molto importante per la visibilità dell'applicazione.    |
 | Statistics Management     | Gestire il monitoraggio delle statistiche dei giocatori e una classifica globale, allo scopo di permettere ai giocatori di osservare la propria crescita nel tempo e di competere con altri giocatori.                              | Could-Have  | Importante per il coinvolgimento dei giocatori.          |
 | Socialization Management  | Gestire un sistema di amicizie e di comunicazione tra i giocatori nell'applicazione allo scopo di permettere agli utenti di socializzare all'interno dell'applicazione, facilitando la creazione di una comunità di giocatori.      | Could-Have  | Importante per la crescita di una comunità di giocatori. |

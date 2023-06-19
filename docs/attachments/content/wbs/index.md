@@ -2,7 +2,7 @@
 title: Work Breakdown Structure (WBS)
 layout: default
 parent: Allegati
-nav_order: 7
+nav_order: 6
 ---
 
 # Work Breakdown Structure (WBS)

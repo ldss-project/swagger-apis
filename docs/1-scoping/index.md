@@ -7,7 +7,7 @@ nav_order: 3
 # Scoping
 {: .no_toc}
 
-In questa sezione, si descriverà il processo seguito per comprendere la situazione attuale del committente e i
+In questa sezione, si descriverà il processo seguito per comprendere la situazione attuale del Committente e i
 suoi desideri, definendo gli obiettivi del progetto di conseguenza.
 
 ## Contenuti
@@ -26,13 +26,13 @@ di due settimane.
 ### Problem Definition Meeting
 
 - Partecipanti:
-  - Il committente;
-  - Project Manager lato cliente;
-  - Project Manager lato fornitore;
-  - Facilitatore, come mediatore della riunione;
-  - Tecnografo, per la stesura del verbale.
+  - Claudio Rossi, in qualità di Committente;
+  - Paola Celeste, in qualità di Project Manager lato cliente;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
-  - Presentazione del committente;
+  - Presentazione del Committente;
   - Presentazione tra il Project Manager lato cliente e Project Manager lato fornitore;
   - Presentazione del business di GameCo;
   - Descrizione della situazione attuale di GameCo (ovvero dell'_as is_);
@@ -47,12 +47,20 @@ di due settimane.
 ### Requirements Definition Meeting
 
 - Partecipanti:
-    - Project Manager lato cliente;
-    - Project Manager lato fornitore;
-    - Core Team lato cliente, come consulente per il Project Manager lato cliente;
-    - Core Team lato fornitore, come consulente per il Project Manager lato fornitore;
-    - Facilitatore, come mediatore della riunione;
-    - Tecnografo, per la stesura del verbale.
+  - Paola Celeste, in qualità di Project Manager lato cliente;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Core Team lato cliente, come consulente per il Project Manager lato cliente:
+    - Cristina Grigi
+    - Camilla Gialli
+    - Cesare Neri
+    - Carlo Verdi
+  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
+    - Francesco Marroni
+    - Filippo Azzurri
+    - Federica Viola
+    - Franca Arancioni
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione dei Core Team di entrambe le parti;
   - Definizione delle User Stories, ovvero dei requisiti del progetto e delle Conditions of Satisfaction a livello
@@ -66,13 +74,21 @@ di due settimane.
 ### POS Submission Meeting
 
 - Partecipanti:      
-  - Presentazione del committente;
-  - Project Manager lato cliente;
-  - Project Manager lato fornitore;
-  - Core Team lato cliente, come consulente per il Project Manager lato cliente;
-  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore;
-  - Facilitatore, come mediatore della riunione;
-  - Tecnografo, per la stesura del verbale.
+  - Claudio Rossi, in qualità di Committente;
+  - Paola Celeste, in qualità di Project Manager lato cliente;
+  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Core Team lato cliente, come consulente per il Project Manager lato cliente:
+    - Cristina Grigi
+    - Camilla Gialli
+    - Cesare Neri
+    - Carlo Verdi
+  - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
+    - Francesco Marroni
+    - Filippo Azzurri
+    - Federica Viola
+    - Franca Arancioni
+  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Discussione del POS redatto dal Project Manager lato fornitore:
     - Discussione sul problema e sulle opportunità del progetto;
@@ -90,7 +106,7 @@ di due settimane.
 
 Durante il Problem Definition Meeting, sono state definite delle Conditions of Satisfaction a livello di progetto, 
 disponibili al seguente [link](/pm/attachments/content/cos#09-01-2023), allo scopo di formalizzare e
-dettagliare gli effettivi desideri del committente.
+dettagliare gli effettivi desideri del Committente.
 
 Inizialmente, particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per
 comprendere meglio l'entità del progetto e successivamente facilitare la pianificazione e la gestione delle 
@@ -112,7 +128,7 @@ Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nell
 lavorato per trasformare le User Stories in una RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
 In particolare, sono state organizzate alcune Facilitated Group Session all'interno dell'azienda del fornitore, 
 coinvolgendo gli esperti del dominio. Queste riunioni sono state condotte dal Project Manager, che ha assunto il ruolo
-di facilitatore.
+di Facilitatore.
 
 Siccome GameCo ha già realizzato un progetto relativo al gioco degli scacchi, sarà possibile riutilizzare alcuni dei 
 requisiti di quel progetto, almeno per quanto riguarda la gestione delle regole di una partita di scacchi (`1.a.d` e
@@ -140,10 +156,10 @@ potrebbero insorgere durante il monitoraggio delle aziende competitrici.
 
 ## Project Overview Statement (POS)
 Dopo aver scelto il PMLC Model più adeguato, si è deciso di sintetizzare le informazioni raccolte nella fase di Scoping
-per presentarle al proprio senior management e successivamente al committente, allo scopo di riceverne l'approvazione.
+per presentarle al proprio senior management e successivamente al Committente, allo scopo di riceverne l'approvazione.
 Il risultato di tale sintesi, è racchiuso nel POS, disponibile al seguente [link](/pm/attachments/content/pos#20-01-2023).
 
-Infine, al termine del POS Submission Meeting, si è ottenuta l'approvazione del committente. Quindi, si ha potuto
+Infine, al termine del POS Submission Meeting, si è ottenuta l'approvazione del Committente. Quindi, si ha potuto
 procedere con la fase di Planning.
 
 ---
