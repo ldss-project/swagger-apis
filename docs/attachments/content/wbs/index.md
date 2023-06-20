@@ -671,169 +671,180 @@ TODO show tree
    {: .text-green-200}
     - **Identify Off-The-Shelf Advertisement Solutions**: individuare possibili soluzioni già in commercio per la
       sponsorizzazione di altre aziende sulla propria applicazione.
+    - **Integrate Advertisement Solution**: integrare la soluzione acquisita nel _Frontend_ dell'applicazione.
+
+{: .text-green-200}
+- **Integrate Services**: integrare i servizi dell'applicazione tra di loro, risolvendo eventuali conflitti.
+- **Test System**: collaudo del sistema in un ambiente apposito alla sua verifica.
+- **Deploy System**: installazione del sistema nell'ambiente di produzione.
 
 ### Attività rispetto ai servizi
 
-| Id     | Task                                                | Servizi                                |
-|--------|-----------------------------------------------------|----------------------------------------|
-| **F**  |                                                     |                                        |
-| F1.1   | Mockup Configuration Page                           | Frontend                               |
-| F1.2   | Implement Configuration Page                        | Frontend                               |             
-| F1.3   | Integrate Configuration Page                        | Frontend                               |             
-| F1.4   | Add Public Game option to Frontend                  | Frontend                               |             
-| F1.5   | Add Private Game option to Frontend                 | Frontend                               |             
-| F1.6   | Add Friend Game option to Frontend                  | Frontend                               |             
-| F1.7   | Add No Limit option to Frontend                     | Frontend                               |             
-| F1.8   | Add Turn Limit option to Frontend                   | Frontend                               |             
-| F1.9   | Add Player Limit option to Frontend                 | Frontend                               |
-|        |                                                     |                                        |             
-| F2.1   | Mockup Game Participation Page                      | Frontend                               |
-| F2.2   | Implement Game Participation Page                   | Frontend                               |             
-| F2.3   | Integrate Game Participation Page                   | Frontend                               |             
-| F2.4   | Add Join Public Game option to Frontend             | Frontend                               |             
-| F2.5   | Add Join Private Game option to Frontend            | Frontend                               |  
-|        |                                                     |                                        |
-| F3.1   | Mockup Game Page                                    | Frontend                               |
-| F3.2   | Implement Game Page                                 | Frontend                               |             
-| F3.3   | Integrate Game Page                                 | Frontend                               |
-| F3.4   | Show In-Game Messages                               | Frontend                               |
-| F3.5   | Add In-Game Friend Request option to Frontend       | Frontend                               |
-|        |                                                     |                                        |
-| F4.1   | Mockup Tournament Configuration Page                | Frontend                               |
-| F4.2   | Implement Tournament Configuration Page             | Frontend                               |             
-| F4.3   | Integrate Tournament Configuration Page             | Frontend                               |
-|        |                                                     |                                        |
-| F5.1   | Mockup Tournament Participation Page                | Frontend                               |
-| F5.2   | Implement Tournament Participation Page             | Frontend                               |             
-| F5.3   | Integrate Tournament Participation Page             | Frontend                               |
-|        |                                                     |                                        |
-| F6.1   | Mockup Tournament Page                              | Frontend                               |
-| F6.2   | Implement Tournament Page                           | Frontend                               |             
-| F6.3   | Integrate Tournament Page                           | Frontend                               |
-|        |                                                     |                                        |
-| F7.1   | Mockup Registration Page                            | Frontend                               |
-| F7.2   | Implement Registration Page                         | Frontend                               |             
-| F7.3   | Integrate Registration Page                         | Frontend                               |
-|        |                                                     |                                        |
-| F8.1   | Mockup Login Page                                   | Frontend                               |
-| F8.2   | Implement Login Page                                | Frontend                               |             
-| F8.3   | Integrate Login Page                                | Frontend                               |
-|        |                                                     |                                        |
-| F9.1   | Mockup Profile Page                                 | Frontend                               |
-| F9.2   | Implement Profile Page                              | Frontend                               |             
-| F9.3   | Integrate Profile Page                              | Frontend                               |
-|        |                                                     |                                        |
-| F10.1  | Mockup Friend Page                                  | Frontend                               |
-| F10.2  | Implement Friend Page                               | Frontend                               |             
-| F10.3  | Integrate Friend Page                               | Frontend                               |
-| F10.4  | Add Friend Request By Username option to Frontend   | Frontend                               |
-|        |                                                     |                                        |
-| F11.1  | Mockup Statistics Page                              | Frontend                               |
-| F11.2  | Implement Statistics Page                           | Frontend                               |             
-| F11.3  | Integrate Statistics Page                           | Frontend                               |
-|        |                                                     |                                        |
-| F12.1  | Mockup Leaderboard Page                             | Frontend                               |
-| F12.2  | Implement Leaderboard Page                          | Frontend                               |             
-| F12.3  | Integrate Leaderboard Page                          | Frontend                               |
-|        |                                                     |                                        |
-| F13.1  | Show Friend Game Invitation                         | Frontend                               |
-| F13.2  | Add Logout option to Frontend                       | Frontend                               |
-| F13.3  | Show Friend Chats                                   | Frontend                               |
-| F13.4  | Show Messages                                       | Frontend                               |
-| F13.5  | Identify Off-The-Shelf Advertisement Solutions      | Frontend                               |
-| **B**  |                                                     |                                        |
-| B1.1   | Install Tournament Database                         | Backend                                |
-| B1.2   | Design Tournament Database                          | Backend                                |
-| B1.3   | Implement Tournament Database Queries               | Backend                                |
-|        |                                                     |                                        |
-| B2.1   | Install Authentication Database                     | Backend                                |
-| B2.2   | Design Authentication Database                      | Backend                                |
-| B2.3   | Implement Authentication Database Queries           | Backend                                |
-|        |                                                     |                                        |
-| B3.1   | Install Friend Database                             | Backend                                |
-| B3.2   | Design Friend Database                              | Backend                                |
-| B3.3   | Implement Friend Database Queries                   | Backend                                |
-|        |                                                     |                                        |
-| B4.1   | Install Chat Database                               | Backend                                |
-| B4.2   | Design Chat Database                                | Backend                                |
-| B4.3   | Implement Chat Database Queries                     | Backend                                |
-|        |                                                     |                                        |
-| B5.1   | Install Statistics Database                         | Backend                                |
-| B5.2   | Design Statistics Database                          | Backend                                |
-| B5.3   | Implement Score Database Queries                    | Backend                                |
-| B5.4   | Implement Tournament Result Database Queries        | Backend                                |
-|        |                                                     |                                        |
-| B6.1   | Install Notification Database                       | Backend                                |
-| B6.2   | Design Notification Database                        | Backend                                |
-| B6.3   | Implement Notification Database Queries             | Backend                                |
-| **A**  |                                                     |                                        |
-| A1.1   | Handle Registration                                 | Authentication Service                 |
-| A1.2   | Encrypt Sensitive Data                              | Authentication Service                 |
-| A1.3   | Send Confirmation Email                             | Authentication Service                 |
-| A1.4   | Handle Email Verification                           | Authentication Service                 |
-|        |                                                     |                                        |
-| A2.1   | Handle Token Creation                               | Authentication Service                 |
-| A2.2   | Handle Token Expiration                             | Authentication Service                 |
-| A2.3   | Handle Token Revocation                             | Authentication Service                 |
-| A2.4   | Handle User Permissions                             | Authentication Service                 |
-|        |                                                     |                                        |
-| A4.1   | Get User Profile Information                        | Authentication Service                 |
-| A4.2   | Update User Profile Information                     | Authentication Service                 |
-| **S**  |                                                     |                                        |
-| S1.1   | Get Score                                           | Statistics Service                     |
-| S1.2   | Get Score History                                   | Statistics Service                     |
-| S1.3   | Handle Score Evaluation                             | Statistics Service                     |
-|        |                                                     |                                        |
-| S2     | Get Ranks                                           | Statistics Service                     |
-| **N**  |                                                     |                                        |
-| N1     | Handle Notification Forwarding                      | Notification Service                   |
-| **G**  |                                                     |                                        |
-| G1.1   | Model Game Configuration                            | Game Service                           |
-| G1.1.1 | Add Public Game option to Backend                   | Game Service                           |
-| G1.1.2 | Add Private Game option to Backend                  | Game Service                           |
-| G1.1.3 | Handle Friend Invitation                            | Game Service, Notification Service     |
-| G1.1.4 | Add No Limit option to Backend                      | Game Service                           | 
-| G1.1.5 | Add Turn Limit option to Backend                    | Game Service                           |
-| G1.1.6 | Add Player Limit option to Backend                  | Game Service                           | 
-| G1.2   | Initialize Game                                     | Game Service                           |
-| G1.3   | Handle Host Connection                              | Game Service                           |
-|        |                                                     |                                        |
-| G2.1   | Handle Public Game Participation                    | Game Service                           |
-| G2.2   | Handle Private Game Participation                   | Game Service                           |
-| G2.3   | Handle Friend Game Participation                    | Game Service                           |
-|        |                                                     |                                        |
-| G3     | Handle Game Termination                             | Game Service, Statistics Service       |
-|        |                                                     |                                        |
-| G4.1   | Analyze Previous Chess Application                  | Game Service                           |
-| G4.2   | Integrate Previous Chess Application                | Game Service                           |
-|        |                                                     |                                        |
-| G5.1   | Get In-Game Messages                                | Game Service                           |
-| G5.2   | Handle In-Game Message Sending                      | Game Service                           |
-| G5.3   | Handle In-Game Message Receiving                    | Game Service                           |
-| G5.4   | Handle In-Game Message Notification                 | Game Service, Notification Service     |
-| **T**  |                                                     |                                        |
-| T1.1   | Model Tournament Configuration                      | Tournament Service                     |
-| T1.2   | Initialize Tournament                               | Tournament Service                     |
-|        |                                                     |                                        |
-| T2.1   | Implement Pairing Algorithm                         | Tournament Service                     |
-| T2.2   | Create Match                                        | Tournament Service, Game Service       |
-| T2.3   | Notify Match Termination                            | Tournament Service, Game Service       |
-|        |                                                     |                                        |
-| T3     | Handle Tournament Termination                       | Tournament Service, Statistics Service |
-| **FS** |                                                     |                                        |
-| FS1.1  | Get Friends                                         | Friend Service                         |
-| FS1.2  | Get Friend Requests                                 | Friend Service                         |
-| FS1.3  | Handle Friend Request Forwarding                    | Friend Service                         |
-| FS1.4  | Handle Accept Friend Request                        | Friend Service                         |
-| FS1.5  | Handle Reject Friend Request                        | Friend Service                         |
-| FS1.6  | Handle Friend Request Notification                  | Friend Service, Notification Service   |
-| FS1.7  | Handle Friend Removal                               | Friend Service                         |
-| **M**  |                                                     |                                        |
-| M1.1   | Get Messages                                        | Message Service                        |
-| M1.2   | Handle Message Sending                              | Message Service                        |
-| M1.3   | Handle Message Forwarding                           | Message Service, Friend Service        |
-| M1.4   | Handle Message Receiving                            | Message Service                        |
-| M1.5   | Handle Message Notification                         | Message Service, Notification Service  |
+| Id     | Task                                              | Servizi                                |
+|--------|---------------------------------------------------|----------------------------------------|
+| **F**  |                                                   |                                        |
+| F1.1   | Mockup Configuration Page                         | Frontend                               |
+| F1.2   | Implement Configuration Page                      | Frontend                               |             
+| F1.3   | Integrate Configuration Page                      | Frontend                               |             
+| F1.4   | Add Public Game option to Frontend                | Frontend                               |             
+| F1.5   | Add Private Game option to Frontend               | Frontend                               |             
+| F1.6   | Add Friend Game option to Frontend                | Frontend                               |             
+| F1.7   | Add No Limit option to Frontend                   | Frontend                               |             
+| F1.8   | Add Turn Limit option to Frontend                 | Frontend                               |             
+| F1.9   | Add Player Limit option to Frontend               | Frontend                               |
+|        |                                                   |                                        |             
+| F2.1   | Mockup Game Participation Page                    | Frontend                               |
+| F2.2   | Implement Game Participation Page                 | Frontend                               |             
+| F2.3   | Integrate Game Participation Page                 | Frontend                               |             
+| F2.4   | Add Join Public Game option to Frontend           | Frontend                               |             
+| F2.5   | Add Join Private Game option to Frontend          | Frontend                               |  
+|        |                                                   |                                        |
+| F3.1   | Mockup Game Page                                  | Frontend                               |
+| F3.2   | Implement Game Page                               | Frontend                               |             
+| F3.3   | Integrate Game Page                               | Frontend                               |
+| F3.4   | Show In-Game Messages                             | Frontend                               |
+| F3.5   | Add In-Game Friend Request option to Frontend     | Frontend                               |
+|        |                                                   |                                        |
+| F4.1   | Mockup Tournament Configuration Page              | Frontend                               |
+| F4.2   | Implement Tournament Configuration Page           | Frontend                               |             
+| F4.3   | Integrate Tournament Configuration Page           | Frontend                               |
+|        |                                                   |                                        |
+| F5.1   | Mockup Tournament Participation Page              | Frontend                               |
+| F5.2   | Implement Tournament Participation Page           | Frontend                               |             
+| F5.3   | Integrate Tournament Participation Page           | Frontend                               |
+|        |                                                   |                                        |
+| F6.1   | Mockup Tournament Page                            | Frontend                               |
+| F6.2   | Implement Tournament Page                         | Frontend                               |             
+| F6.3   | Integrate Tournament Page                         | Frontend                               |
+|        |                                                   |                                        |
+| F7.1   | Mockup Registration Page                          | Frontend                               |
+| F7.2   | Implement Registration Page                       | Frontend                               |             
+| F7.3   | Integrate Registration Page                       | Frontend                               |
+|        |                                                   |                                        |
+| F8.1   | Mockup Login Page                                 | Frontend                               |
+| F8.2   | Implement Login Page                              | Frontend                               |             
+| F8.3   | Integrate Login Page                              | Frontend                               |
+|        |                                                   |                                        |
+| F9.1   | Mockup Profile Page                               | Frontend                               |
+| F9.2   | Implement Profile Page                            | Frontend                               |             
+| F9.3   | Integrate Profile Page                            | Frontend                               |
+|        |                                                   |                                        |
+| F10.1  | Mockup Friend Page                                | Frontend                               |
+| F10.2  | Implement Friend Page                             | Frontend                               |             
+| F10.3  | Integrate Friend Page                             | Frontend                               |
+| F10.4  | Add Friend Request By Username option to Frontend | Frontend                               |
+|        |                                                   |                                        |
+| F11.1  | Mockup Statistics Page                            | Frontend                               |
+| F11.2  | Implement Statistics Page                         | Frontend                               |             
+| F11.3  | Integrate Statistics Page                         | Frontend                               |
+|        |                                                   |                                        |
+| F12.1  | Mockup Leaderboard Page                           | Frontend                               |
+| F12.2  | Implement Leaderboard Page                        | Frontend                               |             
+| F12.3  | Integrate Leaderboard Page                        | Frontend                               |
+|        |                                                   |                                        |
+| F13.1  | Show Friend Game Invitation                       | Frontend                               |
+| F13.2  | Add Logout option to Frontend                     | Frontend                               |
+| F13.3  | Show Friend Chats                                 | Frontend                               |
+| F13.4  | Show Messages                                     | Frontend                               |
+| F13.5  | Identify Off-The-Shelf Advertisement Solutions    | Frontend                               |
+| F13.6  | Integrate Advertisement Solution                  | Frontend                               |
+| **B**  |                                                   |                                        |
+| B1.1   | Install Tournament Database                       | Backend                                |
+| B1.2   | Design Tournament Database                        | Backend                                |
+| B1.3   | Implement Tournament Database Queries             | Backend                                |
+|        |                                                   |                                        |
+| B2.1   | Install Authentication Database                   | Backend                                |
+| B2.2   | Design Authentication Database                    | Backend                                |
+| B2.3   | Implement Authentication Database Queries         | Backend                                |
+|        |                                                   |                                        |
+| B3.1   | Install Friend Database                           | Backend                                |
+| B3.2   | Design Friend Database                            | Backend                                |
+| B3.3   | Implement Friend Database Queries                 | Backend                                |
+|        |                                                   |                                        |
+| B4.1   | Install Chat Database                             | Backend                                |
+| B4.2   | Design Chat Database                              | Backend                                |
+| B4.3   | Implement Chat Database Queries                   | Backend                                |
+|        |                                                   |                                        |
+| B5.1   | Install Statistics Database                       | Backend                                |
+| B5.2   | Design Statistics Database                        | Backend                                |
+| B5.3   | Implement Score Database Queries                  | Backend                                |
+| B5.4   | Implement Tournament Result Database Queries      | Backend                                |
+|        |                                                   |                                        |
+| B6.1   | Install Notification Database                     | Backend                                |
+| B6.2   | Design Notification Database                      | Backend                                |
+| B6.3   | Implement Notification Database Queries           | Backend                                |
+| **A**  |                                                   |                                        |
+| A1.1   | Handle Registration                               | Authentication Service                 |
+| A1.2   | Encrypt Sensitive Data                            | Authentication Service                 |
+| A1.3   | Send Confirmation Email                           | Authentication Service                 |
+| A1.4   | Handle Email Verification                         | Authentication Service                 |
+|        |                                                   |                                        |
+| A2.1   | Handle Token Creation                             | Authentication Service                 |
+| A2.2   | Handle Token Expiration                           | Authentication Service                 |
+| A2.3   | Handle Token Revocation                           | Authentication Service                 |
+| A2.4   | Handle User Permissions                           | Authentication Service                 |
+|        |                                                   |                                        |
+| A3.1   | Get User Profile Information                      | Authentication Service                 |
+| A3.2   | Update User Profile Information                   | Authentication Service                 |
+| **S**  |                                                   |                                        |
+| S1.1   | Get Score                                         | Statistics Service                     |
+| S1.2   | Get Score History                                 | Statistics Service                     |
+| S1.3   | Handle Score Evaluation                           | Statistics Service                     |
+|        |                                                   |                                        |
+| S2     | Get Ranks                                         | Statistics Service                     |
+| **N**  |                                                   |                                        |
+| N1     | Handle Notification Forwarding                    | Notification Service                   |
+| **G**  |                                                   |                                        |
+| G1.1   | Model Game Configuration                          | Game Service                           |
+| G1.1.1 | Add Public Game option to Backend                 | Game Service                           |
+| G1.1.2 | Add Private Game option to Backend                | Game Service                           |
+| G1.1.3 | Handle Friend Invitation                          | Game Service, Notification Service     |
+| G1.1.4 | Add No Limit option to Backend                    | Game Service                           | 
+| G1.1.5 | Add Turn Limit option to Backend                  | Game Service                           |
+| G1.1.6 | Add Player Limit option to Backend                | Game Service                           | 
+| G1.2   | Initialize Game                                   | Game Service                           |
+| G1.3   | Handle Host Connection                            | Game Service                           |
+|        |                                                   |                                        |
+| G2.1   | Handle Public Game Participation                  | Game Service                           |
+| G2.2   | Handle Private Game Participation                 | Game Service                           |
+| G2.3   | Handle Friend Game Participation                  | Game Service                           |
+|        |                                                   |                                        |
+| G3     | Handle Game Termination                           | Game Service, Statistics Service       |
+|        |                                                   |                                        |
+| G4.1   | Analyze Previous Chess Application                | Game Service                           |
+| G4.2   | Integrate Previous Chess Application              | Game Service                           |
+|        |                                                   |                                        |
+| G5.1   | Get In-Game Messages                              | Game Service                           |
+| G5.2   | Handle In-Game Message Sending                    | Game Service                           |
+| G5.3   | Handle In-Game Message Receiving                  | Game Service                           |
+| G5.4   | Handle In-Game Message Notification               | Game Service, Notification Service     |
+| **T**  |                                                   |                                        |
+| T1.1   | Model Tournament Configuration                    | Tournament Service                     |
+| T1.2   | Initialize Tournament                             | Tournament Service                     |
+|        |                                                   |                                        |
+| T2.1   | Implement Pairing Algorithm                       | Tournament Service                     |
+| T2.2   | Create Match                                      | Tournament Service, Game Service       |
+| T2.3   | Notify Match Termination                          | Tournament Service, Game Service       |
+|        |                                                   |                                        |
+| T3     | Handle Tournament Termination                     | Tournament Service, Statistics Service |
+| **FS** |                                                   |                                        |
+| FS1.1  | Get Friends                                       | Friend Service                         |
+| FS1.2  | Get Friend Requests                               | Friend Service                         |
+| FS1.3  | Handle Friend Request Forwarding                  | Friend Service                         |
+| FS1.4  | Handle Accept Friend Request                      | Friend Service                         |
+| FS1.5  | Handle Reject Friend Request                      | Friend Service                         |
+| FS1.6  | Handle Friend Request Notification                | Friend Service, Notification Service   |
+| FS1.7  | Handle Friend Removal                             | Friend Service                         |
+| **M**  |                                                   |                                        |
+| M1.1   | Get Messages                                      | Message Service                        |
+| M1.2   | Handle Message Sending                            | Message Service                        |
+| M1.3   | Handle Message Forwarding                         | Message Service, Friend Service        |
+| M1.4   | Handle Message Receiving                          | Message Service                        |
+| M1.5   | Handle Message Notification                       | Message Service, Notification Service  |
+| **O**  |                                                   |                                        |
+| O1     | Integrate Services                                | All                                    |
+| O2     | Test System                                       | All                                    |
+| O3     | Deploy System                                     | All                                    |
 
 #### Nomenclatura
 {: .no_toc}
@@ -857,5 +868,6 @@ dove `X` è il servizio principale coinvolto dalla funzionalità del sistema e `
     - **T**: Tournament Service.
     - **FS**: Friend Service.
     - **M**: Message Service.
+    - **O (Other)**: altro.
 
 [Back to Top](#top)

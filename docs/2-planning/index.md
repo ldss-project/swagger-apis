@@ -198,7 +198,7 @@ si è deciso di riorganizzarle rispetto ai servizi previsti dal design architett
 disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto la sezione 
 _Attività rispetto ai requisiti_.
 
-## Analisi dei task
+## Analisi delle attività
 In seguito alla definizione della WBS, il Core Team lato fornitore si è riunito per stimare il carico di lavoro, la
 durata e le risorse relativamente alle attività di progetto. I risultati di tale analisi sono disponibili al seguente
 [link](/pm/attachments/content/task-analysis#03-02-2023).
@@ -207,13 +207,33 @@ In particolare, per l'analisi delle attività è stato utilizzata la _Wideband D
 iterativo per convergere a un consenso dei partecipanti sulla complessità delle attività.
 
 Inizialmente, è stata stimata la complessità delle attività in _ore/uomo_, quindi tale complessità è stata
-trasformata in durata considerando una sola risorsa assegnata all'attività, con un'efficienza pari al 75% e prevedendo
+trasformata in durata, considerando una sola risorsa assegnata all'attività, con un'efficienza pari al 75% e prevedendo
 ritardi pari al 33% della durata ideale dell'attività.
 
 Infine, per ogni attività sono state individuate le risorse e le skill necessarie.
 
+Al termine dell'analisi, è stata estrapolata la durata massima attesa per il progetto, pari a circa 16 mesi, nel caso in
+il team di sviluppo fosse composto da una sola persona, ovvero senza parallelismo tra le attività. Durante la stesura
+della Schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti dalle
+Conditions of Satisfaction.
+
 ## Analisi dei costi
-- Cash Flow Management: pianificare, anticipi, release, milestone, saldi, finanziamenti, riserva aziendale
+Dopo aver individuato il carico di lavoro, la durata e le risorse necessarie per le singole attività del progetto, è
+stato possibile portare avanti l'analisi dei costi su tali attività, disponibile al seguente 
+[link](/pm/attachments/content/cost-analysis#03-02-2023).
+
+In seguito all'analisi dei costi, è stato possibile determinare una stima sul costo del progetto, basata su tre fattori
+principali:
+- Costi di Manodopera: dovuti al mantenimento del team incaricato allo sviluppo del progetto;
+- Costi di Strumentazione: dovuti all'acquisizione di strumenti hardware o software;
+- Costi di Gestione: dovuti alla gestione delle attività di progetto (es.: stipendio del Project Manager...).
+
+Al termine dell'analisi, è stato estrapolato il costo atteso per il progetto, pari a circa 160000$, al quale si ha
+intenzione di aggiungere almeno un 20% di margine, pari a circa 32000$.
+
+Il Project Manager potrà attingere a tale margine nel caso di imprevisti rispetto al piano di progetto, previa
+consultazione del senior management. Tuttavia, è richiesta la sua competenza per minimizzare i rischi legati a tali 
+imprevisti, massimizzando il margine per l'azienda.
 
 ## Schedula
 - Project network diagram (PND): vincoli tecnici, di gestione, interprogettuali o di tempo
@@ -221,6 +241,15 @@ Infine, per ogni attività sono state individuate le risorse e le skill necessar
 - Percorso critico
 - Compressione della schedula
 - Scope Bank
+
+Per
+- anticipo 20% 200000$ 40000$
+- 2 milestone
+- poter giocare a scacchi: ?
+- poter organizzare i tornei e socializzare: ?
+- saldo
+
+Cash Flow Management: pianificare, anticipi, release, milestone, saldi, finanziamenti, riserva aziendale
 
 ## Contratto
 

@@ -1,11 +1,11 @@
 ---
-title: Analisi dei Task
+title: Analisi delle attività
 layout: default
 parent: Allegati
 nav_order: 7
 ---
 
-# Task Analysis
+# Analisi delle attività
 {: .no_toc}
 
 ## Versioni
@@ -18,7 +18,7 @@ nav_order: 7
 
 ## 03-02-2023
 [Back to Top](#top) |
-[Back to Planning](/pm/2-planning#analisi-dei-task)
+[Back to Planning](/pm/2-planning#analisi-delle-attività)
 
 [Download Excel](/pm/resources/tables/task-analysis-2023-02-03.xlsx){: .btn .btn-green }
 
