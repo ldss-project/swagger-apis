@@ -28,8 +28,8 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente;
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione del Committente;
@@ -48,7 +48,7 @@ di due settimane.
 
 - Partecipanti:
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
@@ -56,10 +56,10 @@ di due settimane.
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
     - Francesco Marroni
-    - Filippo Azzurri
+    - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione dei Core Team di entrambe le parti;
@@ -76,7 +76,7 @@ di due settimane.
 - Partecipanti:      
   - Claudio Rossi, in qualità di Committente;
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
@@ -84,10 +84,10 @@ di due settimane.
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
     - Francesco Marroni
-    - Filippo Azzurri
+    - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Discussione del POS redatto dal Project Manager lato fornitore:

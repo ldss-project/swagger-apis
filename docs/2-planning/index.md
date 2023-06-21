@@ -28,7 +28,7 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente e Project Sponsor; 
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
@@ -36,10 +36,10 @@ di due settimane.
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
     - Francesco Marroni
-    - Filippo Azzurri
+    - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione del Committente, come sponsor del progetto;
@@ -57,7 +57,7 @@ di due settimane.
 
 - Partecipanti:
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
@@ -65,10 +65,10 @@ di due settimane.
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
     - Francesco Marroni
-    - Filippo Azzurri
+    - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
   - Renato Beige, in qualità di Resource Manager lato fornitore.
 - Agenda:
@@ -86,7 +86,7 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente e Project Sponsor;
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Fucsia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
@@ -94,10 +94,10 @@ di due settimane.
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
     - Francesco Marroni
-    - Filippo Azzurri
+    - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Fucsia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
 - Agenda:
   - Discussione della proposta di progetto:
@@ -195,8 +195,8 @@ I servizi individuati dal Core Team sono i seguenti:
 
 Dopo aver definito le attività del progetto a partire dalla RBS, quindi motivandole rispetto ai requisiti del progetto,
 si è deciso di riorganizzarle rispetto ai servizi previsti dal design architetturale, producendo una nuova WBS
-disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto la sezione 
-_Attività rispetto ai requisiti_.
+disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto la sezione _Attività rispetto ai 
+requisiti_.
 
 ## Analisi delle attività
 In seguito alla definizione della WBS, il Core Team lato fornitore si è riunito per stimare il carico di lavoro, la
@@ -217,6 +217,11 @@ il team di sviluppo fosse composto da una sola persona, ovvero senza parallelism
 della Schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti dalle
 Conditions of Satisfaction.
 
+## Assegnamento delle risorse
+Una volta individuate le risorse necessarie allo svolgimento di ogni attività, è stato possibile individuarne il
+responsabile tra il personale aziendale. Come risultato di questo processo, è stata derivata la matrice delle
+responsabilità, disponibile al seguente [link](/pm/attachments/content/responsibility-matrix#03-02-2023).
+
 ## Analisi dei costi
 Dopo aver individuato il carico di lavoro, la durata e le risorse necessarie per le singole attività del progetto, è
 stato possibile portare avanti l'analisi dei costi su tali attività, disponibile al seguente 
@@ -228,8 +233,8 @@ principali:
 - Costi di Strumentazione: dovuti all'acquisizione di strumenti hardware o software;
 - Costi di Gestione: dovuti alla gestione delle attività di progetto (es.: stipendio del Project Manager...).
 
-Al termine dell'analisi, è stato estrapolato il costo atteso per il progetto, pari a circa 160000$, al quale si ha
-intenzione di aggiungere almeno un 20% di margine, pari a circa 32000$.
+Al termine dell'analisi, è stato estrapolato il costo atteso per il progetto, pari a circa 150000$, al quale si ha
+intenzione di aggiungere almeno un 20% di margine, pari a circa 30000$.
 
 Il Project Manager potrà attingere a tale margine nel caso di imprevisti rispetto al piano di progetto, previa
 consultazione del senior management. Tuttavia, è richiesta la sua competenza per minimizzare i rischi legati a tali 
