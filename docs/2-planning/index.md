@@ -243,6 +243,19 @@ Il Project Manager potrà attingere a tale margine nel caso di imprevisti rispet
 consultazione del senior management. Tuttavia, è richiesta la sua competenza per minimizzare i rischi legati a tali 
 imprevisti, massimizzando il margine per l'azienda.
 
+### Cash Flow Management
+
+Per quanto riguarda la gestione dei costi del progetto, il Project Manager lato fornitore ha intenzione di richiedere
+al Committente di distribuire il pagamento del progetto in quattro fasi:
+- Anticipo a inizio progetto: un primo pagamento con un valore pari al 20% del costo del progetto, ovvero 36000$;
+- Primo controllo: dopo due mesi dall'inizio progetto, si prevederà un primo controllo in cui sarà coinvolto il 
+  Committente per mostrargli lo stato dei lavori. Se durante tale controllo, si converrà che il piano di progetto è
+  stato rispettato opportunamente, allora si prevederà un secondo pagamento di importo pari a 36000$;
+- Secondo controllo: dopo quattro mesi dall'inizio del progetto, si prevederà un secondo controllo, a cui seguirà un
+  terzo pagamento pari a 36000$;
+- Saldo a fine progetto: alla consegna del progetto, si prevederà un ultimo pagamento pari al 40% del costo del progetto,
+  ovvero 72000$.
+
 ## Schedula
 
 Tra il Work Definition Meeting e il Project Proposal Submission Meeting, il Project Manager lato fornitore
@@ -283,14 +296,12 @@ of Satisfaction.
 
 ### Gantt Chart
 
-Per
-- anticipo 20% 200000$ 40000$
-- 2 milestone
-- poter giocare a scacchi: ?
-- poter organizzare i tornei e socializzare: ?
-- saldo
+Dopo la definizione del Project Network Diagram, è stato possibile generare il Gantt Chart, disponibile al seguente
+[link](https://app.asana.com/0/1204894076877574/1204894076877574), in cui sono state decise le date effettive delle
+attività del progetto.
 
-Cash Flow Management: pianificare, anticipi, release, milestone, saldi, finanziamenti, riserva aziendale
+> _**NOTA**_: per utilizzare il link è necessario possedere delle credenziali di un account Asana appartenente al
+> gruppo del progetto.
 
 ## Contratto
 
