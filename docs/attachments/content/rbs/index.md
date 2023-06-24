@@ -14,7 +14,7 @@ nav_order: 4
 - TOC
 {:toc}
 
-## Latest
+## Ultima Versione
 {: .no_toc}
 
 [![Requirement Breakdown Structure](/pm/resources/diagrams/rbs.jpg)](https://miro.com/app/board/uXjVM7o3fSE=/?share_link_id=384704669808)

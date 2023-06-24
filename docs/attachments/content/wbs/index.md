@@ -14,7 +14,7 @@ nav_order: 6
 - TOC
 {:toc}
 
-## Latest
+## Ultima Versione
 {: .no_toc}
 
 [![Work Breakdown Structure](/pm/resources/diagrams/wbs.jpg)](https://miro.com/app/board/uXjVM7oEJbI=/?share_link_id=912979534867)
