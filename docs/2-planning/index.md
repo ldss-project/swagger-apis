@@ -194,9 +194,7 @@ I servizi individuati dal Core Team sono i seguenti:
 ### Attività del progetto
 
 Dopo aver definito le attività del progetto a partire dalla RBS, quindi motivandole rispetto ai requisiti del progetto,
-si è deciso di riorganizzarle rispetto ai servizi previsti dal design architetturale, producendo una nuova WBS
-disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto la sezione _Attività rispetto ai 
-requisiti_.
+si è deciso di riorganizzarle rispetto ai servizi previsti dal design architetturale.
 
 ## Analisi delle attività
 
