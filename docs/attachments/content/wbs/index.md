@@ -27,15 +27,10 @@ nav_order: 6
 [Back to Top](#top) |
 [Back to Planning](/pm/2-planning#wbs)
 
-### WBS
-{: .no_toc}
-
-TODO show tree
+[Download Excel](/pm/resources/tables/tasks-2023-02-01.xlsx){: .btn .btn-green }
 
 ### Attività
 {: .no_toc}
-
-[Download Excel](/pm/resources/tables/tasks-2023-02-01.xlsx){: .btn .btn-green }
 
 **Goal**: realizzare un'applicazione web per giocare a scacchi online.
 
