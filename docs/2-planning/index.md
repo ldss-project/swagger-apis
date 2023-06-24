@@ -199,6 +199,7 @@ disponibile al seguente [link](/pm/attachments/content/wbs/#01-02-2023), sotto l
 requisiti_.
 
 ## Analisi delle attività
+
 In seguito alla definizione della WBS, il Core Team lato fornitore si è riunito per stimare il carico di lavoro, la
 durata e le risorse relativamente alle attività di progetto. I risultati di tale analisi sono disponibili al seguente
 [link](/pm/attachments/content/task-analysis#03-02-2023).
@@ -212,17 +213,19 @@ ritardi pari al 33% della durata ideale dell'attività.
 
 Infine, per ogni attività sono state individuate le risorse e le skill necessarie.
 
-Al termine dell'analisi, è stata estrapolata la durata massima attesa per il progetto, pari a circa 16 mesi, nel caso in
-il team di sviluppo fosse composto da una sola persona, ovvero senza parallelismo tra le attività. Durante la stesura
-della Schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti dalle
-Conditions of Satisfaction.
+Al termine dell'analisi, è stata estrapolata la durata massima attesa per il progetto, pari a circa 14-15 mesi, nel caso
+in cui il team di sviluppo fosse composto da una sola persona, ovvero senza parallelismo tra le attività. Durante la 
+stesura della Schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti
+dalle Conditions of Satisfaction.
 
 ## Assegnamento delle risorse
+
 Una volta individuate le risorse necessarie allo svolgimento di ogni attività, è stato possibile individuarne il
 responsabile tra il personale aziendale. Come risultato di questo processo, è stata derivata la matrice delle
 responsabilità, disponibile al seguente [link](/pm/attachments/content/responsibility-matrix#03-02-2023).
 
 ## Analisi dei costi
+
 Dopo aver individuato il carico di lavoro, la durata e le risorse necessarie per le singole attività del progetto, è
 stato possibile portare avanti l'analisi dei costi su tali attività, disponibile al seguente 
 [link](/pm/attachments/content/cost-analysis#03-02-2023).
@@ -241,11 +244,44 @@ consultazione del senior management. Tuttavia, è richiesta la sua competenza pe
 imprevisti, massimizzando il margine per l'azienda.
 
 ## Schedula
-- Project network diagram (PND): vincoli tecnici, di gestione, interprogettuali o di tempo
-- Gantt Chart
-- Percorso critico
-- Compressione della schedula
-- Scope Bank
+
+Tra il Work Definition Meeting e il Project Proposal Submission Meeting, il Project Manager lato fornitore
+ha definito prima il Project Network Diagram (PND), per poter quindi generare il Gantt Chart per la schedula del
+progetto.
+
+### Project Network Diagram (PND)
+
+Per definire il Project Network Diagram (PND), è stato necessario esplicitare le dipendenze tra le attività del
+progetto.
+
+Le dipendenze individuate tra le varie attività del progetto sono state principalmente di due tipi:
+- _Vincoli logici_: impediscono a un'attività di cominciare prima di un'altra da cui dipende;
+- _Vincoli di risorse_: impediscono a un'attività di cominciare prima che il suo responsabile sia disponibile.
+
+Il risultato dell'analisi delle dipendenze tra le attività è il diagramma seguente.
+
+[![Project Network Diagram](/pm/resources/diagrams/project-network-diagram.jpg)](https://miro.com/app/board/uXjVM9abzds=/?share_link_id=313338560385)
+
+> _**NOTA**_: cliccare sull'immagine per visualizzare il diagramma su _Miro_.
+
+Nel diagramma, per ogni attività sono state descritte le seguenti informazioni:
+- _Id_: identificatore dell'attività;
+- _Descrizione_: descrizione del contenuto dell'attività;
+- _Responsabile_: la persona incaricata dello svolgimento dell'attività;
+- _Durata_: la durata in ore dell'attività;
+- _Slack_: il massimo ritardo in ore che l'attività può subire senza ritardare la consegna del progetto;
+- _Earliest Start/Finish_: la prima data disponibile per cominciare/terminare l'attività;
+- _Latest Start/Finish_: l'ultima data disponibile per cominciare/terminare l'attività, senza causare un ritardo
+  sulla consegna del progetto.
+
+Quindi, è stato evidenziato il percorso critico (visibile nelle transizioni in grassetto) e conseguentemente
+è stata determinata una stima della durata del progetto, pari a circa 112 giorni lavorativi, a cui sono stati
+aggiunti circa 11 giorni lavorativi come Scope Bank, equivalenti al 10% della durata del progetto.
+
+Pertanto, la durata effettiva del progetto ammonta a poco meno di 6 mesi, garantendo il rispetto delle Conditions
+of Satisfaction.
+
+### Gantt Chart
 
 Per
 - anticipo 20% 200000$ 40000$
