@@ -305,7 +305,13 @@ attività del progetto.
 
 ## Contratto
 
+Il contratto che il Project Manager ha intenzione di proporre al Committente è un contratto a corpo, quindi a prezzo
+predeterminato, stabilito sulla base del piano di progetto. Tuttavia, come già menzionato, saranno previsti diversi
+pagamenti durante lo svolgimento del progetto.
+
 ## PDS
+
+...
 
 ---
 

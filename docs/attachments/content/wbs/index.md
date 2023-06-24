@@ -14,6 +14,12 @@ nav_order: 6
 - TOC
 {:toc}
 
+## Latest
+{: .no_toc}
+
+[![Work Breakdown Structure](/pm/resources/diagrams/wbs.jpg)](https://miro.com/app/board/uXjVM7oEJbI=/?share_link_id=912979534867)
+> _**NOTA**_: cliccare sull'immagine per visualizzare il diagramma su _Miro_.
+
 ---
 
 ## 01-02-2023

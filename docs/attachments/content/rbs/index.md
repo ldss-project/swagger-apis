@@ -14,6 +14,12 @@ nav_order: 4
 - TOC
 {:toc}
 
+## Latest
+{: .no_toc}
+
+[![Requirement Breakdown Structure](/pm/resources/diagrams/rbs.jpg)](https://miro.com/app/board/uXjVM7o3fSE=/?share_link_id=384704669808)
+> _**NOTA**_: cliccare sull'immagine per visualizzare il diagramma su _Miro_.
+
 ---
 
 ## 16-01-2023
@@ -21,11 +27,6 @@ nav_order: 4
 [Back to Top](#top) |
 [Back to Scoping](/pm/1-scoping#rbs) |
 [Next Version](#31-01-2023)
-
-### RBS
-{: .no_toc}
-
-TODO show tree
 
 ### Requisiti
 {: .no_toc}
@@ -261,11 +262,6 @@ TODO show tree
 [Back to Top](#top) |
 [Back to Planning](/pm/2-planning#priorità-dei-requisiti) |
 [Previous Version](#16-01-2023)
-
-### RBS
-{: .no_toc}
-
-TODO show tree
 
 ### Requisiti
 {: .no_toc}
