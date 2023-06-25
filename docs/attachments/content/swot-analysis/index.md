@@ -23,7 +23,7 @@ nav_order: 5
 ### Strengths
 {: .no_toc}
 
-I fattori interni che possono contribuire al successo del progetto, ovvero:
+I fattori interni che possono contribuire al successo del progetto sono i seguenti:
 
 - Il cliente ha già realizzato un'applicazione di scacchi in passato, quindi è possibile usufruire della sua
   esperienza in ambito, oltre che riutilizzare parte dei requisiti di quell'applicazione;
@@ -39,7 +39,7 @@ I fattori interni che possono contribuire al successo del progetto, ovvero:
 ### Weaknesses
 {: .no_toc}
 
-I fattori interni che possono contribuire al fallimento del progetto, ovvero:
+I fattori interni che possono contribuire al fallimento del progetto sono i seguenti:
 - Il cliente ha poca esperienza nel nuovo modello di business che ha intenzione di adottare, quindi esiste un rischio
   concreto che il cliente non riesca a soddisfare le sue aspettative, nonostante l'adeguatezza della soluzione;
 - Il cliente ha espresso una forte urgenza nel terminare il progetto, quindi si rischia di ridurre la qualità della
@@ -48,20 +48,20 @@ I fattori interni che possono contribuire al fallimento del progetto, ovvero:
 ### Opportunities
 {: .no_toc}
 
-I fattori esterni e gli obiettivi che possono contribuire al successo del progetto, ovvero:
+I fattori esterni e gli obiettivi che possono contribuire al successo del progetto sono i seguenti:
 - L'opportunità di costruire una community attorno all'applicazione e quindi intorno all'azienda del cliente,
   fidelizzando i giocatori coinvolti nella community e aumentando la popolarità dell'azienda;
 - L'opportunità di sviluppare un'applicazione accessibile direttamente dal browser, facilitando l'uso
   dell'applicazione da parte dei giocatori e facilitando il contatto con nuovi utenti;
 - L'opportunità di entrare in un mercato con pochi competitori, quindi facilitando l'acquisizione di clienti
   fidelizzati;
-- L'opportunità di adottare una strategia di business aggiuntiva, quindi permettendo di essere più robusti agli
+- L'opportunità di adottare una strategia di business aggiuntiva, quindi permettendo di essere più robusti
   ai fattori esterni del mercato.
 
 ### Threats
 {: .no_toc}
 
-I fattori esterni che possono contribuire al fallimento del progetto, ovvero:
+I fattori esterni che possono contribuire al fallimento del progetto sono i seguenti:
 - Il rischio di non distinguersi dall'applicazione concorrente abbastanza da risaltare sul mercato.
   Per ridurre questo rischio, sarà necessario non ispirarsi troppo all'applicazione concorrente e adottare dei processi
   d'innovazione o creazione;

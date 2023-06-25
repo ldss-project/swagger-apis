@@ -87,11 +87,11 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 ### Allegati
 
 - Conditions of Satisfaction: [link](/pm/attachments/content/cos)
-- User Stories: [link](pm/attachments/content/user-stories)
+- User Stories: [link](/pm/attachments/content/user-stories)
 - Requirement Breakdown Structure: [link](/pm/attachments/content/rbs)
 - Swot Analysis: [link](/pm/attachments/content/swot-analysis)
 
-Revisionato in data 23-01-2023.
+Approvato in data 23-01-2023.
 
 ---
 

@@ -33,7 +33,7 @@ di due settimane.
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione del Committente;
-  - Presentazione tra il Project Manager lato cliente e Project Manager lato fornitore;
+  - Presentazione tra il Project Manager lato cliente e il Project Manager lato fornitore;
   - Presentazione del business di GameCo;
   - Descrizione della situazione attuale di GameCo (ovvero dell'_as is_);
   - Descrizione del problema o dell'opportunità individuata da GameCo;
@@ -108,7 +108,7 @@ Durante il Problem Definition Meeting, sono state definite delle Conditions of S
 disponibili al seguente [link](/pm/attachments/content/cos#09-01-2023), allo scopo di formalizzare e
 dettagliare gli effettivi desideri del Committente.
 
-Inizialmente, particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per
+Particolare importanza è stata data alla definizione di vincoli di tempi e budget più precisi, per
 comprendere meglio l'entità del progetto e successivamente facilitare la pianificazione e la gestione delle 
 risorse.
 
@@ -120,8 +120,9 @@ necessità degli utenti finali del sistema e terminato con la definizione formal
 Durante il Requirements Definition Meeting, sono stati definiti i requisiti di progetto in termini di User Stories,
 disponibili al seguente [link](/pm/attachments/content/user-stories#12-01-2023). 
 In questo modo, è stata condotta un'analisi sulle necessità degli utenti finali, ovvero dei giocatori dell'applicazione,
-quindi i requisiti del progetto saranno il più vicino possibile all'utente finale. Quindi, le User Stories potranno
-essere il riferimento per la verifica del sistema.
+quindi i requisiti del progetto saranno il più vicino possibile a loro.
+
+Le User Stories dovranno essere utilizzate come riferimento per la verifica del sistema.
 
 ### Requirement Breakdown Structure (RBS)
 Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
@@ -143,16 +144,18 @@ Come fase preliminare alla stesura del POS, è stata svolta la SWOT Analysis, di
 le debolezze del progetto, da cui sono state derivate le possibili opportunità e minacce per il suo successo.
 
 ## Project Management Lifecycle Model (PMLC) Model
-In seguito all'analisi del progetto, si ha ragionato sull'approccio migliore per la gestione del progetto.
+In seguito all'analisi del progetto, si ha ragionato sull'approccio migliore per la sua gestione.
 
 Per quanto riguarda la possibilità di adottare un approccio tradizionale, si è considerato che si potrebbe approfittare
 dell'esperienza di GameCO nello sviluppo di applicazioni di scacchi e dell'esperienza del fornitore nello sviluppo di
 applicazioni web per produrre un piano completo del progetto, senza che sia necessario introdurre i rischi della
-flessibilità dell'approccio iterativo (es.: posticipazione della pianificazione...).
+flessibilità dell'approccio agile (es.: posticipazione della pianificazione...).
 
-Tuttavia, considerando anche i rischi legati alle aziende competitrici sul mercato, si è concluso che un approccio 
-iterativo possa essere la soluzione migliore, per poter reagire tempestivamente alle modifiche sui requisiti che 
-potrebbero insorgere durante il monitoraggio delle aziende competitrici.
+Tuttavia, considerando anche i rischi legati alle aziende competitrici sul mercato, potrebbe essere necessario reagire
+tempestivamente a modifiche sui requisiti che potrebbero insorgere durante il monitoraggio di tali aziende.
+
+Presi in considerazione i vantaggi e gli svantaggi dell'approccio tradizionale e di quello agile, alla fine si è deciso
+di adottare un PMLC Model di tipo incrementale.
 
 ## Project Overview Statement (POS)
 Dopo aver scelto il PMLC Model più adeguato, si è deciso di sintetizzare le informazioni raccolte nella fase di Scoping
