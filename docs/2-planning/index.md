@@ -222,6 +222,17 @@ Una volta individuate le risorse necessarie allo svolgimento di ogni attività, 
 responsabile tra il personale aziendale. Come risultato di questo processo, è stata derivata la matrice delle
 responsabilità, disponibile al seguente [link](/pm/attachments/content/responsibility-matrix#03-02-2023).
 
+## Analisi dei rischi
+
+In seguito all'analisi delle attività, è stata eseguita un'analisi sui rischi individuati durante la fase di Scoping
+nella Swot Analysis, allo scopo di determinarne l'impatto atteso e trasformarlo in un costo atteso per i rischi del
+progetto.
+
+I risultati di tale analisi sono disponibili al seguente [link](/pm/attachments/content/risk-analysis#03-02-2023).
+
+In previsione del monitoraggio dei rischi, insieme all'analisi, è già stato predisposto un template da usare come Risk
+Log.
+
 ## Analisi dei costi
 
 Dopo aver individuato il carico di lavoro, la durata e le risorse necessarie per le singole attività del progetto, è
@@ -235,7 +246,8 @@ principali:
 - Costi di Gestione: dovuti alla gestione delle attività di progetto (es.: stipendio del Project Manager...).
 
 Al termine dell'analisi, è stato estrapolato il costo atteso per il progetto, pari a circa 150000$, al quale si ha
-intenzione di aggiungere almeno un 20% di margine, pari a circa 30000$.
+intenzione di aggiungere un 10% di riserva giustificato dai rischi del progetto, pari a circa 15000$, e almeno un 20% di
+margine, pari a circa 30000$.
 
 Il Project Manager potrà attingere a tale margine nel caso di imprevisti rispetto al piano di progetto, previa
 consultazione del senior management. Tuttavia, è richiesta la sua competenza per minimizzare i rischi legati a tali 
@@ -245,14 +257,14 @@ imprevisti, massimizzando il margine per l'azienda.
 
 Per quanto riguarda la gestione dei costi del progetto, il Project Manager lato fornitore ha intenzione di richiedere
 al Committente di distribuire il pagamento del progetto in quattro fasi:
-- Anticipo a inizio progetto: un primo pagamento con un valore pari al 20% del costo del progetto, ovvero 36000$;
+- Anticipo a inizio progetto: un primo pagamento con un valore pari al 20% del costo del progetto, ovvero 39000$;
 - Primo controllo: dopo due mesi dall'inizio progetto, si prevederà un primo controllo in cui sarà coinvolto il 
   Committente per mostrargli lo stato dei lavori. Se durante tale controllo, si converrà che il piano di progetto è
-  stato rispettato opportunamente, allora si prevederà un secondo pagamento di importo pari a 36000$;
+  stato rispettato opportunamente, allora si prevederà un secondo pagamento di importo pari a 39000$;
 - Secondo controllo: dopo quattro mesi dall'inizio del progetto, si prevederà un secondo controllo, a cui seguirà un
-  terzo pagamento pari a 36000$;
+  terzo pagamento pari a 39000$;
 - Saldo a fine progetto: alla consegna del progetto, si prevederà un ultimo pagamento pari al 40% del costo del progetto,
-  ovvero 72000$.
+  ovvero 78000$.
 
 ## Schedula
 
