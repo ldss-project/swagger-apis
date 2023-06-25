@@ -20,7 +20,7 @@ Scoping, allo scopo di ridurre l'incertezza sul progetto e determinare la schedu
 
 ## Joint Project Planning Sessions
 
-In questa fase di Planning, sono stati organizzati i seguenti meeting in giornate separate, distribuiti nell'arco
+In questa fase di Planning, sono stati organizzati i seguenti meeting in giornate separate, distribuite nell'arco
 di due settimane.
 
 ### Planning Kick-Off
@@ -75,7 +75,7 @@ di due settimane.
   - Presentazione dell'architettura di massima del sistema;
   - Presentazione e revisione delle attività del progetto;
     - Presentazione e revisione della WBS;
-    - Presentazione e revisione dell'analisi sulle attività, discutendo tempi, costi e risorse.
+    - Presentazione e revisione dell'analisi sulle attività, discutendo carico di lavoro, tempi e risorse.
   - Revisione del PMLC Model.
 - Data: 06-02-2023, 07-02-2023
 - Durata: 8 ore, divise su due giornate
@@ -225,19 +225,18 @@ responsabilità, disponibile al seguente [link](/pm/attachments/content/responsi
 ## Analisi dei rischi
 
 In seguito all'analisi delle attività, è stata eseguita un'analisi sui rischi individuati durante la fase di Scoping
-nella Swot Analysis, allo scopo di determinarne l'impatto atteso e trasformarlo in un costo atteso per i rischi del
+nella SWOT Analysis, allo scopo di determinarne l'impatto atteso e trasformarlo in un costo atteso per i rischi del
 progetto.
 
-I risultati di tale analisi sono disponibili al seguente [link](/pm/attachments/content/risk-analysis#03-02-2023).
+I risultati di tale analisi sono disponibili al seguente [link](/pm/attachments/content/risk-analysis#08-02-2023).
 
-In previsione del monitoraggio dei rischi, insieme all'analisi, è già stato predisposto un template da usare come Risk
-Log.
+In previsione del monitoraggio dei rischi, insieme all'analisi, è stato predisposto un template da usare come Risk Log.
 
 ## Analisi dei costi
 
 Dopo aver individuato il carico di lavoro, la durata e le risorse necessarie per le singole attività del progetto, è
 stato possibile portare avanti l'analisi dei costi su tali attività, disponibile al seguente 
-[link](/pm/attachments/content/cost-analysis#03-02-2023).
+[link](/pm/attachments/content/cost-analysis#09-02-2023).
 
 In seguito all'analisi dei costi, è stato possibile determinare una stima sul costo del progetto, basata su tre fattori
 principali:

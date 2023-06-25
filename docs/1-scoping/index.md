@@ -20,7 +20,7 @@ suoi desideri, definendo gli obiettivi del progetto di conseguenza.
 
 ## Scoping Meetings
 
-In questa fase di Scoping, sono stati organizzati i seguenti meeting in giornate separate, distribuiti nell'arco
+In questa fase di Scoping, sono stati organizzati i seguenti meeting in giornate separate, distribuite nell'arco
 di due settimane.
 
 ### Problem Definition Meeting
