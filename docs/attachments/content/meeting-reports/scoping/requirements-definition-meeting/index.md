@@ -28,7 +28,7 @@ Il Project Manager del fornitore ha iniziato la presentazione della RBS redatta 
 giustificando una alla volta i requisiti individuati attraverso le User Stories.
 
 Durante la discussione della RBS, è stato identificato più in dettaglio il divario tra la situazione corrente del
-committente e quella da lui desiderata. Inoltre, la sua revisione ha permesso di identificare alcuni requisiti mancanti,
+Committente e quella da lui desiderata. Inoltre, la sua revisione ha permesso di identificare alcuni requisiti mancanti,
 come la gestione della sponsorizzazione a livello applicativo.
 
 In conclusione, si è data al fornitore la responsabilità della stesura del POS e ci si è accordati sulla data della sua

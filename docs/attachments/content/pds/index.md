@@ -118,7 +118,7 @@ Realizzare un'architettura che comprende i seguenti servizi:
 
 - Possibilità di riutilizzare alcuni dei requisiti dell'applicazione che il committente ha già realizzato in passato;
 - Possibilità di analizzare delle applicazioni concorrenti disponibili pubblicamente;
-- Pochi competitor sul mercato;
+- Pochi competitori sul mercato;
 - Flessibilità sul budget a disposizione per il progetto;
 - Poca flessibilità sul tempo a disposizione per il progetto;
 - Poca esperienza nella nuova strategia di business che il committente vuole adottare;

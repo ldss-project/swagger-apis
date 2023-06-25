@@ -209,7 +209,7 @@ Inizialmente, è stata stimata la complessità delle attività in _ore/uomo_, qu
 trasformata in durata, considerando una sola risorsa assegnata all'attività, con un'efficienza pari al 75% e prevedendo
 ritardi pari al 33% della durata ideale dell'attività.
 
-Infine, per ogni attività sono state individuate le risorse e le skill necessarie.
+Infine, per ogni attività sono state individuate le risorse e le capacità necessarie.
 
 Al termine dell'analisi, è stata estrapolata la durata massima attesa per il progetto, pari a circa 14-15 mesi, nel caso
 in cui il team di sviluppo fosse composto da una sola persona, ovvero senza parallelismo tra le attività. Durante la 

@@ -19,10 +19,10 @@ Quindi, sono stati descritti gli obiettivi del progetto, i criteri di successo, 
 che sarà adottato dal fornitore per lo sviluppo del progetto. Particolare rilievo è stato dato alla necessità di
 adottare dei processi creativi per produrre un'applicazione originale e competitiva.
 
-In seguito, il Project Manager e il committente hanno discusso sulla fattibilità di massima del progetto, concordando che
+In seguito, il Project Manager e il Committente hanno discusso sulla fattibilità di massima del progetto, concordando che
 tempi e budget dovrebbero essere sufficienti e che i rischi del progetto sono accettabili.
 
-In conclusione, si è ottenuta l'approvazione del POS da parte del committente.
+In conclusione, si è ottenuta l'approvazione del POS da parte del Committente.
 
 ---
 

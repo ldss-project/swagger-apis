@@ -12,7 +12,7 @@ nav_order: 4
 
 **Data: 30-01-2023**
 
-Dopo la presentazione del committente e dei collaboratori al progetto, si è definito il Planning Facilitation Team,
+Dopo la presentazione del Committente e dei collaboratori al progetto, si è definito il Planning Facilitation Team,
 assegnando i due ruoli di Facilitatore e Tecnografo.
 
 Quindi, il Project Manager lato fornitore ha iniziato la presentazione del progetto, descrivendo ai partecipanti i
