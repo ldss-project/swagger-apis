@@ -42,20 +42,64 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 
 ### Obiettivi
 
-- **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online,
-  allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme;
-- **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo
-  scopo di aumentare la visibilità e la popolarità dell'applicazione;
-- **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro
-  permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di
-  tenere traccia dei propri progressi;
-- **Socialization Management**: gestire un sistema di amicizie e di comunicazione tra i giocatori nell'applicazione,
-  allo scopo di permettere agli utenti di socializzare all'interno dell'applicazione, facilitando la creazione di una
-  comunità di giocatori;
-- **Statistics Management**: gestire il monitoraggio delle statistiche dei giocatori e una classifica globale, allo
-  scopo di permettere ai giocatori di osservare la propria crescita nel tempo e di competere con altri giocatori;
-- **Sponsor Management**: gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al committente di
-  adottare una nuova strategia di business aggiuntiva.
+In ordine di priorità decrescente:
+1. `Must-Have` **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di 
+   scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.
+2. `Must-Have` **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione ed i 
+   loro permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di
+   tenere traccia dei propri progressi.
+3. `Must-Have` **Sponsor Management**: gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al
+   committente di adottare una nuova strategia di business aggiuntiva.
+4. `Should-Have` **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di
+   scacchi, allo scopo di aumentare la visibilità e la popolarità dell'applicazione.
+5. `Could-Have` **Statistics Management**: gestire il monitoraggio delle statistiche dei giocatori e una classifica
+   globale, allo scopo di permettere ai giocatori di osservare la propria crescita nel tempo e di competere con altri
+   giocatori.
+6. `Could-Have` **Socialization Management**: gestire un sistema di amicizie e di comunicazione tra i giocatori
+   nell'applicazione, allo scopo di permettere agli utenti di socializzare all'interno dell'applicazione, facilitando la
+   creazione di una comunità di giocatori.
+
+### Soluzione
+
+Realizzare un'architettura che comprende i seguenti servizi:
+- **Frontend Service**: servizio che si occupa della rappresentazione grafica dell'applicazione web e della
+  sponsorizzazione da parte degli investitori esterni.
+- **Backend Service**: servizio che gestisce l'inoltro delle richieste e delle connessioni dell'utente all'interno del
+  sistema.
+- **Authentication Service**: servizio che gestisce l'autenticazione e l'autorizzazione dei giocatori nell'applicazione.
+- **Statistics Service**: servizio che si occupa della gestione delle statistiche dei giocatori, tenendo traccia del
+  loro punteggio ELO e dei loro risultati nei tornei in cui hanno partecipato. Inoltre, gestisce la leaderboard
+  dell'applicazione.
+- **Notification Service**: servizio che gestisce la creazione, l'eliminazione e l'inoltro in tempo reale delle
+  notifiche ai giocatori dell'applicazione.
+- **Game Service**: servizio che si occupa della creazione, configurazione, partecipazione ed esecuzione delle partite
+  di scacchi.
+- **Tournament Service**: servizio che si occupa della creazione, configurazione, partecipazione ed esecuzione dei
+  tornei di scacchi.
+- **Friend Service**: servizio che si occupa della gestione delle amicizie tra i giocatori dell'applicazione, tenendo
+  traccia delle richieste di amicizia pendenti oppure accettate.
+- **Message Service**: servizio che si occupa dell'inoltro dei messaggi tra i giocatori amici nell'applicazione.
+
+### Costi
+
+| Categoria      | Importo     |
+|----------------|-------------|
+| Manodopera     | 50000$      |
+| Strumentazione | 50000$      |
+| Gestione       | 50000$      |
+| Rischi         | 15000$      |
+| Margine        | 30000$      |
+| **Somma**      | **195000$** |
+
+### Schedula
+
+| Milestone         | Data di scadenza | Pagamento   |
+|-------------------|------------------|-------------|
+| Inizio progetto   | 20-02-2023       | 39000$      |
+| Primo controllo   | 20-04-2023       | 39000$      |
+| Secondo controllo | 20-06-2023       | 39000$      |
+| Consegna progetto | 14-08-2023       | 78000$      |
+| **Somma**         | **< 6 mesi**     | **195000$** |
 
 ### Criteri di successo
 
