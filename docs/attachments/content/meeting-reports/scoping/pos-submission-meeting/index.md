@@ -22,7 +22,7 @@ adottare dei processi creativi per produrre un'applicazione originale e competit
 In seguito, il Project Manager e il Committente hanno discusso sulla fattibilità di massima del progetto, concordando che
 tempi e budget dovrebbero essere sufficienti e che i rischi del progetto sono accettabili.
 
-In conclusione, si è ottenuta l'approvazione del POS da parte del Committente.
+La riunione si è conclusa con l'ottenimento dell'approvazione del POS da parte del Committente.
 
 ---
 

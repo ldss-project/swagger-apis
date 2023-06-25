@@ -22,13 +22,13 @@ nav_order: 11
 
 ### Problema
 
-Il committente ha subito un calo inaspettato nelle vendite di una sua applicazione di scacchi, pari a
+Il Committente ha subito un calo inaspettato nelle vendite di una sua applicazione di scacchi, pari a
 circa il 70% rispetto ai valori attesi. La causa è stata attribuita alla pubblicazione di una nuova applicazione web
 gratuita di scacchi, appartenente a un'azienda competitrice.
 
 ### Opportunità
 
-Il committente ha individuato l'opportunità di adottare una nuova strategia di business aggiuntiva,
+Il Committente ha individuato l'opportunità di adottare una nuova strategia di business aggiuntiva,
 permettendo di essere più robusti agli eventi esterni del mercato.
 
 Rispetto alla strategia di business corrente, basata sulla vendita di applicazioni a pagamento tramite intermediario,
@@ -45,11 +45,11 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 In ordine di priorità decrescente:
 1. `Must-Have` **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di 
    scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.
-2. `Must-Have` **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione ed i 
-   loro permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di
+2. `Must-Have` **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione e i 
+   loro permessi, allo scopo di permettere al Committente di amministrare l'applicazione e di permettere ai giocatori di
    tenere traccia dei propri progressi.
 3. `Must-Have` **Sponsor Management**: gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al
-   committente di adottare una nuova strategia di business aggiuntiva.
+   Committente di adottare una nuova strategia di business aggiuntiva.
 4. `Should-Have` **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di
    scacchi, allo scopo di aumentare la visibilità e la popolarità dell'applicazione.
 5. `Could-Have` **Statistics Management**: gestire il monitoraggio delle statistiche dei giocatori e una classifica
@@ -116,17 +116,23 @@ Realizzare un'architettura che comprende i seguenti servizi:
 
 ### Assunzioni e rischi principali
 
-- Possibilità di riutilizzare alcuni dei requisiti dell'applicazione che il committente ha già realizzato in passato;
+- Possibilità di riutilizzare alcuni dei requisiti dell'applicazione che il Committente ha già realizzato in passato;
 - Possibilità di analizzare delle applicazioni concorrenti disponibili pubblicamente;
 - Pochi competitori sul mercato;
 - Flessibilità sul budget a disposizione per il progetto;
 - Poca flessibilità sul tempo a disposizione per il progetto;
-- Poca esperienza nella nuova strategia di business che il committente vuole adottare;
+- Poca esperienza nella nuova strategia di business che il Committente vuole adottare;
 - Rischio di non distinguersi abbastanza dalle applicazioni concorrenti;
 - Rischio che le aziende concorrenti migliorino le proprie applicazioni prima del completamento di questo progetto;
 - Rischio di non riuscire a generare sufficiente profitto tramite gli investimenti degli sponsor;
 - Rischio dovuto all'incertezza sulle tecnologie da applicare per rendere l'applicazione scalabile;
 - Rischio dovuto all'incertezza sulla domanda dell'applicazione al rilascio.
+
+### Contatti
+
+- Committente: Claudio Rossi.
+- Project Manager lato cliente: Paola Celeste.
+- Project Manager lato fornitore: Pietro Magnolia.
 
 ### Allegati
 

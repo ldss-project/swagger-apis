@@ -46,7 +46,7 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
   allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme;
 - **Tournament Management**: gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo
   scopo di aumentare la visibilità e la popolarità dell'applicazione;
-- **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro
+- **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione e i loro
   permessi, allo scopo di permettere al committente di amministrare l'applicazione e di permettere ai giocatori di 
   tenere traccia dei propri progressi;
 - **Socialization Management**: gestire un sistema di amicizie e di comunicazione tra i giocatori nell'applicazione,
@@ -83,6 +83,12 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 - Rischio di non riuscire a generare sufficiente profitto tramite gli investimenti degli sponsor;
 - Rischio dovuto all'incertezza sulle tecnologie da applicare per rendere l'applicazione scalabile;
 - Rischio dovuto all'incertezza sulla domanda dell'applicazione al rilascio.
+
+### Contatti
+
+- Committente: Claudio Rossi.
+- Project Manager lato cliente: Paola Celeste.
+- Project Manager lato fornitore: Pietro Magnolia.
 
 ### Allegati
 
