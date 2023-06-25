@@ -18,7 +18,7 @@ nav_order: 6
 
 ## 20-01-2023
 [Back to Top](#top) |
-[Back to Scoping](/pm/1-scoping#pos)
+[Back to Scoping](/pm/1-scoping#project-overview-statement-pos)
 
 ### Problema
 
@@ -89,7 +89,7 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 - Conditions of Satisfaction: [link](/pm/attachments/content/cos)
 - User Stories: [link](/pm/attachments/content/user-stories)
 - Requirement Breakdown Structure: [link](/pm/attachments/content/rbs)
-- Swot Analysis: [link](/pm/attachments/content/swot-analysis)
+- SWOT Analysis: [link](/pm/attachments/content/swot-analysis)
 
 Approvato in data 23-01-2023.
 

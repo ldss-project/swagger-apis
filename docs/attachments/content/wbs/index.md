@@ -683,4 +683,5 @@ nav_order: 6
 - **Test System**: collaudo del sistema in un ambiente apposito alla sua verifica.
 - **Deploy System**: installazione del sistema nell'ambiente di produzione.
 
-[Back to Top](#top)
+[Back to Top](#top) |
+[Previous Version](#01-02-2023)

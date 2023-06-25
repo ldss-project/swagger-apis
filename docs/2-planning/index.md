@@ -268,7 +268,7 @@ al Committente di distribuire il pagamento del progetto in quattro fasi:
 ## Schedula
 
 Tra il Work Definition Meeting e il Project Proposal Submission Meeting, il Project Manager lato fornitore
-ha definito prima il Project Network Diagram (PND), per poter quindi generare il Gantt Chart per la schedula del
+ha prima definito il Project Network Diagram (PND), per poter quindi generare il Gantt Chart per la schedula del
 progetto.
 
 ### Project Network Diagram (PND)
@@ -318,9 +318,14 @@ Il contratto che il Project Manager ha intenzione di proporre al Committente è 
 predeterminato, stabilito sulla base del piano di progetto. Tuttavia, come già menzionato, saranno previsti diversi
 pagamenti durante lo svolgimento del progetto.
 
-## PDS
+## Project Definition Statement (PDS)
 
-...
+Durante la fase di Planning, il Project Manager lato fornitore ha raffinato il Project Overview Statement (POS) con le
+nuove informazioni estratte dal piano del progetto, producendo quindi il Project Definition Statement (PDS), disponibile
+al seguente [link](/pm/attachments/content/pds#10-02-2023).
+
+Infine, al termine del Project Proposal Submission Meeting, si è ottenuta l’approvazione del Committente. Quindi, si ha
+potuto procedere con la fase di Executing.
 
 ---
 
