@@ -17,13 +17,15 @@ TODO
 
 ---
 
-Gestire l'accettazione del progetto e la documentazione finale.
+## Collaudo
 
-- Collaudo
-- Installazione
-- Documentazione
-- Audit Post-Implementazione: retrospettiva sul progetto...
-- Final Project Report
+## Installazione
+
+## Documentazione
+
+## Audit Post-Implementazione
+
+## Final Project Report
 
 ---
 
