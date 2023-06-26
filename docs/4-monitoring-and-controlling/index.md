@@ -7,7 +7,8 @@ nav_order: 6
 # Monitoring and Controlling
 {: .no_toc}
 
-TODO
+In questa sezione, si descriverà il processo seguito per garantire che il piano di progetto venga rispettato durante la
+sua esecuzione.
 
 ## Contenuti
 {: .no_toc}
@@ -16,6 +17,17 @@ TODO
 {:toc}
 
 ---
+
+## Monitoraggio
+
+
+early warnings
+cumulative report
+
+[link](/pm/attachments/content/schedule-cumulative-report)
+
+## Controllo
+
 
 - Monitoring:
   - Project Status Report:

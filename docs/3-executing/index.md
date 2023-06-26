@@ -142,7 +142,7 @@ In tale riunione, ogni membro del team dovrà esprimere la propria opinione, ric
 stesso valore. Quindi, nel caso in cui il conflitto non si risolvesse spontaneamente, il Project Manager potrà agire da
 mediatore e in casi estremi forzarne la risoluzione.
 
-### Comunicazione
+### Communication Management
 
 Per quanto riguarda la comunicazione tra i membri del team, si dovrà prediligere una comunicazione di tipo verbale da
 svolgersi principalmente durante i Daily Status Meeting.
@@ -161,7 +161,7 @@ redarre il relativo Project Impact Statement, che analizza l'impatto che tale ca
 aumento o diminuzione dei costi del progetto, modifiche sulla schedula, riduzione dei requisiti...).
 
 In seguito all'approvazione del Project Impact Statement da parte del Committente, il Project Manager dovrà impegnarsi
-nella revisione del piano di progetto.
+nella revisione del piano di progetto, eventualmente attingendo alla Scope Bank.
 
 ---
 
