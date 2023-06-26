@@ -20,11 +20,31 @@ sua esecuzione.
 
 ## Monitoraggio
 
+Durante la fase di Monitoring and Controlling, il Project Manager ha monitorato lo stato di avanzamento del progetto,
+allo scopo di individuare il prima possibile degli Early Warning, ovvero delle anomalie rispetto al piano di progetto,
+in modo da intervenire preventivamente.
 
-early warnings
-cumulative report
+Il processo di monitoraggio è avvenuto sia attraverso i Daily Status Meeting, previsti dalle regole operative durante la
+fase di Executing, ma anche attraverso controlli periodici a cadenza settimanale, in particolare il venerdì di ogni
+settimana.
 
-[link](/pm/attachments/content/schedule-cumulative-report)
+### Rapporto Cumulativo - Schedula
+
+Ogni settimana sono stati raccolti i dati relativi allo stato di avanzamento delle varie attività nella schedula.
+
+In questo modo, è stato possibile stimare il ritardo rispetto al piano di progetto e quindi mantenere aggiornato un
+rapporto cumulativo riferito alla schedula del progetto, disponibile al seguente
+[link](/pm/attachments/content/schedule-cumulative-report#04-08-2023).
+
+### Rapporto Cumulativo - Costo
+
+In modo analogo alla schedula, sono state anche monitorate le entrate e le uscite del progetto, mantenendo aggiornato un
+rapporto cumulativo riferito ai costi del progetto, disponibile al seguente
+[link](/pm/attachments/content/cost-cumulative-report#04-08-2023).
+
+### Stoplight Report
+
+### Issue Log
 
 ## Controllo
 

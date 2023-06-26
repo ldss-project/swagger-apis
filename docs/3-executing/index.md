@@ -71,7 +71,7 @@ In particolare, il Project Team si compone dei seguenti membri:
 
 Durante l'Executing Kick-Off, dopo la revisione delle attività della schedula, sono stati definiti i Work Package del
 progetto, ovvero dei raggruppamenti di attività che condividono delle caratteristiche in comune, disponibili al seguente
-[link](/pm/attachments/content/work-packages).
+[link](/pm/attachments/content/work-packages#17-02-2023).
 
 In particolare, si è deciso di suddividere le attività in base ai servizi da realizzare, come già fatto durante la fase
 di Planning, quindi definendo un Work Package per ogni servizio, ovvero:

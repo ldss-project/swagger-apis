@@ -16,12 +16,12 @@ nav_order: 13
 
 ---
 
-## 07-08-2023
+## 04-08-2023
 
 [Back to Top](#top) |
-[Back to Monitoring](/pm/4-monitoring-and-controlling#monitoraggio)
+[Back to Monitoring](/pm/4-monitoring-and-controlling#rapporto-cumulativo-schedula)
 
-[Download Excel](/pm/resources/tables/schedule-cumulative-report-2023-08-07.xlsx){: .btn .btn-green }
+[Download Excel](/pm/resources/tables/schedule-cumulative-report-2023-08-04.xlsx){: .btn .btn-green }
 
 [Back to Top](#top) |
-[Previous Version](#07-08-2023)
+[Previous Version](#04-08-2023)
