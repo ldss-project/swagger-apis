@@ -97,16 +97,71 @@ svolgere.
 Al termine dell'Executing Kick-Off, sono state definite le regole operative che il Developer Team dovrà seguire durante
 lo sviluppo del progetto.
 
-- Regole Operative: 
-  - problem solving
-  - decision making
-  - conflict resolution
-  - consensus building
-  - brainstorming,
-  - team meeting
-  - comunicazione
+### Daily Status Meeting
 
-(- Scope Change Management)
+La comunicazione all'interno del team avverrà principalmente attraverso dei meeting giornalieri, che hanno lo scopo di
+monitorare lo stato di avanzamento del progetto.
+
+In questi meeting, ogni membro del team dovrà indicare l'attività che ha intenzione di svolgere in giornata, il suo
+stato di avanzamento ed eventuali problemi che sono stati riscontrati.
+
+### Problem Resolution Meeting
+
+Durante un Daily Status Meeting, nel caso in cui si individuasse un problema, sarà necessario individuarne i membri del
+team interessati o responsabili, in modo da organizzare una riunione specifica per la risoluzione del problema.
+
+In tale riunione, sarà necessario chiarire qual è il problema e chi ne è responsabile. A questo punto, il responsabile
+dovrà raccogliere dei dati per individuare le cause del problema e proporre possibili soluzioni.
+
+Quindi, segue una breve valutazione delle soluzioni al problema, per determinare quale possa essere la più efficace ed
+efficiente.
+
+Infine, bisognerà riportare l'esito dell'implementazione di tale soluzione con eventuali note all'interno dell'Issue
+Log, allo scopo di arricchire l'esperienza progettuale dell'azienda.
+
+### Decision-Making
+
+Ogni membro del team ha facoltà di scegliere autonomamente tra le diverse alternative che individua per lo svolgimento
+di un'attività di cui è responsabile.
+
+Nel caso in cui un membro del team avesse il dubbio che una scelta potesse influenzare anche altre attività oltre che la
+propria, sarà necessario notificarne prima il team durante un Daily Status Meeting. A questo punto, il Project Manager
+potrà decidere se affidare la scelta a quel membro del team oppure organizzare una riunione apposita con i diretti
+interessati, allo scopo di raggiungere un consenso sulla scelta.
+
+In tale riunione, il Project Manager assumerà il ruolo di Facilitatore. In particolare, nel caso in cui non si riuscisse
+a raggiungere un consenso tra i membri coinvolti, avrà il potere di decidere sulla base di quanto detto nella riunione.
+
+### Conflict Resolution
+
+Nel caso in cui si generasse un conflitto tra due o più membri del team, sarà necessario notificarlo durante un Daily
+Status Meeting. A questo punto, il Project Manager potrà decidere di organizzare una riunione apposita per la
+risoluzione del conflitto.
+
+In tale riunione, ogni membro del team dovrà esprimere la propria opinione, ricordandosi che tutte le opinioni hanno lo
+stesso valore. Quindi, nel caso in cui il conflitto non si risolvesse spontaneamente, il Project Manager potrà agire da
+mediatore e in casi estremi forzarne la risoluzione.
+
+### Comunicazione
+
+Per quanto riguarda la comunicazione tra i membri del team, si dovrà prediligere una comunicazione di tipo verbale da
+svolgersi principalmente durante i Daily Status Meeting.
+
+In alternativa, sarà possibile adottare una comunicazione scritta utilizzando l'apposito spazio di lavoro predisposto su
+Slack.
+
+### Scope Change Management
+
+Nel caso in cui il Project Manager lato fornitore o il Committente individuassero la necessità di un cambiamento sullo
+Scope di progetto, sarà necessario redarre una Scope Change Request, in cui si informa la controparte dei dettagli su
+tale cambiamento.
+
+All'approvazione della Scope Change Request dalla controparte, il Project Manager insieme al suo Core Team dovranno
+redarre il relativo Project Impact Statement, che analizza l'impatto che tale cambiamento avrà sul progetto (es.:
+aumento o diminuzione dei costi del progetto, modifiche sulla schedula, riduzione dei requisiti...).
+
+In seguito all'approvazione del Project Impact Statement da parte del Committente, il Project Manager dovrà impegnarsi
+nella revisione del piano di progetto.
 
 ---
 
