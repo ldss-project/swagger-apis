@@ -213,7 +213,7 @@ Infine, per ogni attività sono state individuate le risorse e le capacità nece
 
 Al termine dell'analisi, è stata estrapolata la durata massima attesa per il progetto, pari a circa 14-15 mesi, nel caso
 in cui il team di sviluppo fosse composto da una sola persona, ovvero senza parallelismo tra le attività. Durante la 
-stesura della Schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti
+stesura della schedula, sarà necessario parallelizzare il maggior numero di attività per rientrare nei 6 mesi previsti
 dalle Conditions of Satisfaction.
 
 ## Assegnamento delle risorse
