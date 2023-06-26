@@ -1,10 +1,10 @@
 ---
-title: Monitoring and Controlling
+title: Monitoring e Controlling
 layout: default
 nav_order: 6
 ---
 
-# Monitoring and Controlling
+# Monitoring e Controlling
 {: .no_toc}
 
 In questa sezione, si descriverà il processo seguito per garantire che il piano di progetto venga rispettato durante la
@@ -20,7 +20,7 @@ sua esecuzione.
 
 ## Monitoraggio
 
-Durante la fase di Monitoring and Controlling, il Project Manager ha monitorato lo stato di avanzamento del progetto,
+Durante la fase di Monitoring e Controlling, il Project Manager ha monitorato lo stato di avanzamento del progetto,
 allo scopo di individuare il prima possibile degli Early Warning, ovvero delle anomalie rispetto al piano di progetto,
 in modo da intervenire preventivamente.
 
@@ -42,24 +42,24 @@ In modo analogo alla schedula, sono state anche monitorate le entrate e le uscit
 rapporto cumulativo riferito ai costi del progetto, disponibile al seguente
 [link](/pm/attachments/content/cost-cumulative-report#04-08-2023).
 
-### Stoplight Report
+### Stoplight Reports
+
+Una volta aggiornati i rapporti cumulativi del progetto, il Project Manager ha redatto degli Stoplight Report, come
+sintesi dei risultati del monitoraggio, da mostrare al senior management lato fornitore.
 
 ### Issue Log
 
+Come già anticipato in fase di Executing, durante lo sviluppo del progetto si è mantenuto un Issue Log, per tenere
+traccia dei problemi incontrati e risolti durante il progetto, costruendo uno storico delle soluzioni individuate da
+poter consultare in progetti futuri.
+
 ## Controllo
 
+Durante la fase di Monitoring e Controlling, ogni volta che è stata individuata un'anomalia rispetto al piano di
+progetto, è stata adottata la Problem Escalation Strategy, coinvolgendo solo le persone necessarie per la risoluzione
+dell'anomalia.
 
-- Monitoring:
-  - Project Status Report:
-    - Current Period, Cumulative, Exception
-    - Stoplight, Variance (Earned Value Analysis)
-    - Cadenza del monitoraggio
-  - Issue Log
-- Controlling:
-  - Problem Escalation Strategy
-    - Ignorare (Slack, Scope Bank), cambiare la Schedula, o riassegnare le risorse
-    - Richiedere nuove risorse
-    - Aggiungere derivable, estendere la Schedula, modificare lo Scope
+In particolare, il Project Manager ha sfruttato la Scope Bank per rimanere in pari con i tempi e i costi del progetto.
 
 ---
 
