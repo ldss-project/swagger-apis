@@ -105,7 +105,7 @@ stato di avanzamento ed eventuali problemi che sono stati riscontrati.
 
 ### Problem Resolution Meeting
 
-Durante un Daily Status Meeting, nel caso in cui si individuasse un problema, sarà necessario individuarne i membri del
+Durante un Daily Status Meeting, nel caso in cui si riportasse un problema, sarà necessario individuarne i membri del
 team interessati o responsabili, in modo da organizzare una riunione specifica per la risoluzione del problema.
 
 In tale riunione, sarà necessario chiarire qual è il problema e chi ne è responsabile. A questo punto, il responsabile
