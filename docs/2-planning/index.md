@@ -28,19 +28,17 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente e Project Sponsor; 
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
 - Agenda:
   - Presentazione del Committente, come sponsor del progetto;
   - Presentazione del Project Manager lato cliente e del Project Manager lato fornitore;
@@ -57,19 +55,17 @@ di due settimane.
 
 - Partecipanti:
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
   - Renato Beige, in qualità di Resource Manager lato fornitore.
 - Agenda:
   - Presentazione dell'architettura di massima del sistema;
@@ -86,19 +82,17 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente e Project Sponsor;
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
 - Agenda:
   - Discussione della proposta di progetto:
     - Descrizione della situazione attuale;
@@ -121,7 +115,7 @@ del progetto, riportate di seguito. Per definire la priorità dei requisiti è s
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------|
 | Game Management           | Gestire la creazione, la configurazione e la partecipazione a delle partite di scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.                                                        | Must-Have   | Necessario per l'applicazione.                           |
 | Authentication Management | Gestire l'autenticazione degli utenti all'interno dell'applicazione ed i loro permessi, allo scopo di permettere al Committente di amministrare l'applicazione e di permettere ai giocatori di tenere traccia dei propri progressi. | Must-Have   | Necessario per amministrare l'applicazione.              |
-| Sponsor Management        | Gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al Committente di adottare una nuova strategia di business aggiuntiva.                                                                                    | Must-Have   | Necessario per adottare la nuova strategia di business.  |
+| Sponsor Management        | Gestire la pubblicità agli sponsor dell'applicazione, allo scopo di permettere al Committente di adottare una nuova strategia di business aggiuntiva.                                                                               | Must-Have   | Necessario per adottare la nuova strategia di business.  |
 | Tournament Management     | Gestire la creazione, la configurazione e la partecipazione a dei tornei di scacchi, allo scopo di aumentare la visibilità e la popolarità dell'applicazione.                                                                       | Should-Have | Molto importante per la visibilità dell'applicazione.    |
 | Statistics Management     | Gestire il monitoraggio delle statistiche dei giocatori e una classifica globale, allo scopo di permettere ai giocatori di osservare la propria crescita nel tempo e di competere con altri giocatori.                              | Could-Have  | Importante per il coinvolgimento dei giocatori.          |
 | Socialization Management  | Gestire un sistema di amicizie e di comunicazione tra i giocatori nell'applicazione allo scopo di permettere agli utenti di socializzare all'interno dell'applicazione, facilitando la creazione di una comunità di giocatori.      | Could-Have  | Importante per la crescita di una comunità di giocatori. |

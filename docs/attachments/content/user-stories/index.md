@@ -46,7 +46,7 @@ nav_order: 3
 ### Nomenclatura
 {: .no_toc}
 
-Ogni User Story ha associato un id nella forma seguente:
+Ogni User Story ha associato un identificatore nella forma seguente:
 
 `Id = XN`
 
@@ -94,11 +94,11 @@ dove `X` è ruolo dell'utente target interessato dalla funzionalità del sistema
 ### Nomenclatura
 {: .no_toc}
 
-Ogni User Story ha associato un id nella forma seguente:
+Ogni User Story ha associato un identificatore nella forma seguente:
 
 `Id = PXN`
 
-dove `P` è la priorità della user story, `X` è ruolo dell'utente target interessato dalla funzionalità del sistema e `N` è un numero progressivo.
+dove `P` è la priorità della User Story, `X` è ruolo dell'utente target interessato dalla funzionalità del sistema e `N` è un numero progressivo.
 
 ### Legenda
 {: .no_toc}

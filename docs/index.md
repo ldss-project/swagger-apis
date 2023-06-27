@@ -7,11 +7,9 @@ nav_order: 1
 # Caso di studio: GameCo Chess Web Application
 {: .no_toc}
 
-## Contenuti
-{: .no_toc}
-
-- TOC
-{:toc}
+## Autori
+- Cesario Jahrim Gabriele
+- Kentpayeva Madina
 
 ---
 
@@ -25,7 +23,3 @@ mano a mano presentati nella documentazione.
 
 In ogni caso, è possibile sfogliare la documentazione liberamente attraverso la barra di navigazione verticale sulla
 sinistra.
-
-## Autori
-- Cesario Jahrim Gabriele
-- Kentpayeva Madina

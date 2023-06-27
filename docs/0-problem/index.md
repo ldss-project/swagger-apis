@@ -48,7 +48,7 @@ l'applicazione.
 I vincitori di tali tornei verranno premiati con dei badge unici che potranno mostrare agli altri giocatori 
 all'interno dell'applicazione.
 
-Data la poca esperienza di GameCo nello sviluppo di applicazione web, si è stati incaricati in qualità di 
+Data la poca esperienza di GameCo nello sviluppo di applicazioni web, si è stati incaricati in qualità di 
 Project Manager e consulente esterno, di realizzare con urgenza una tale soluzione software. GameCo ha 
 intenzione d'investire molto su questa nuova opportunità di business.
 

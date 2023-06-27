@@ -28,8 +28,7 @@ di due settimane.
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente;
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione del Committente;
@@ -48,19 +47,17 @@ di due settimane.
 
 - Partecipanti:
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
 - Agenda:
   - Presentazione dei Core Team di entrambe le parti;
   - Definizione delle User Stories, ovvero dei requisiti del progetto e delle Conditions of Satisfaction a livello
@@ -76,19 +73,17 @@ di due settimane.
 - Partecipanti:      
   - Claudio Rossi, in qualità di Committente;
   - Paola Celeste, in qualità di Project Manager lato cliente;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
 - Agenda:
   - Discussione del POS redatto dal Project Manager lato fornitore:
     - Discussione sul problema e sulle opportunità del progetto;
@@ -99,7 +94,7 @@ di due settimane.
   - Discussione sulla fattibilità di massima del progetto;
   - Approvazione o rifiuto del POS.
 - Data: 23-01-2023
-- Durata: 4 ore.
+- Durata: 4 ore
 - Verbale: [link](/pm/attachments/content/meeting-reports/scoping/pos-submission-meeting)
 
 ## Conditions of Satisfaction
@@ -113,7 +108,7 @@ comprendere meglio l'entità del progetto e successivamente facilitare la pianif
 risorse.
 
 ## Definizione dei requisiti
-Di seguito, si riporta il processo di definizione dei requisiti del progetto, che è partito dell'identificazione delle
+Di seguito, si riporta il processo di definizione dei requisiti del progetto, che è partito dall'identificazione delle
 necessità degli utenti finali del sistema e terminato con la definizione formale dei requisiti del progetto.
 
 ### User Stories
@@ -126,7 +121,8 @@ Le User Stories dovranno essere utilizzate come riferimento per la verifica del 
 
 ### Requirement Breakdown Structure (RBS)
 Tra le due giornate del meeting, allo scopo di facilitare la pianificazione nelle fasi successive del progetto, si è 
-lavorato per trasformare le User Stories in una RBS, disponibile al seguente [link](/pm/attachments/content/rbs#16-01-2023). 
+lavorato per trasformare le User Stories in una RBS, disponibile al seguente
+[link](/pm/attachments/content/rbs#16-01-2023). 
 In particolare, sono state organizzate alcune Facilitated Group Session all'interno dell'azienda del fornitore, 
 coinvolgendo gli esperti del dominio. Queste riunioni sono state condotte dal Project Manager, che ha assunto il ruolo
 di Facilitatore.

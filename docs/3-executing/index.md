@@ -25,19 +25,17 @@ In questa fase di Executing, è stato organizzato il seguente meeting per partir
 - Partecipanti:
   - Claudio Rossi, in qualità di Committente e Project Sponsor;
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
-  - Pietro Magnolia, in qualità di Project Manager lato fornitore;
+  - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
     - Cristina Grigi
     - Camilla Gialli
     - Cesare Neri
     - Carlo Verdi
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
     - Filippo Ecru
     - Federica Viola
     - Franca Arancioni
-  - Pietro Magnolia, in qualità di Facilitatore, come mediatore della riunione;
-  - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
 - Agenda:
   - Presentazione del Committente, come sponsor del progetto;
   - Presentazione del Project Team;
