@@ -25,12 +25,18 @@ nav_order: 7
 ## 01-02-2023
 
 [Back to Top](#top) |
-[Back to Planning](/pm/2-planning#wbs)
-
-[Download Excel](/pm/resources/tables/tasks-2023-02-01.xlsx){: .btn .btn-green }
+[Back to Planning](/pm/2-planning#work-breakdown-structure-wbs)
 
 ### Attività
 {: .no_toc}
+
+[Download Excel](/pm/resources/tables/tasks-2023-02-01.xlsx){: .btn .btn-green }
+
+### Gerarchia delle Attività
+{: .no_toc}
+
+Di seguito, si riporta l'RBS a cui sono state aggiunte le attività (in verde) necessarie a soddisfare i requisiti di 
+progetto (in nero).
 
 **Goal**: realizzare un'applicazione web per giocare a scacchi online.
 

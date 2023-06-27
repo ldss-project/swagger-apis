@@ -27,15 +27,15 @@ In questa fase di Executing, è stato organizzato il seguente meeting per partir
   - Paola Celeste, in qualità di Project Manager lato cliente e Project Champion;
   - Pietro Magnolia, in qualità di Project Manager lato fornitore e di Facilitatore, ovvero mediatore della riunione;
   - Core Team lato cliente, come consulente per il Project Manager lato cliente:
-    - Cristina Grigi
-    - Camilla Gialli
-    - Cesare Neri
-    - Carlo Verdi
+    - Cristina Grigi;
+    - Camilla Gialli;
+    - Cesare Neri;
+    - Carlo Verdi.
   - Core Team lato fornitore, come consulente per il Project Manager lato fornitore:
-    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale.
-    - Filippo Ecru
-    - Federica Viola
-    - Franca Arancioni
+    - Francesco Marroni, in qualità di Tecnografo, per la stesura del verbale;
+    - Filippo Ecru;
+    - Federica Viola;
+    - Franca Arancioni.
 - Agenda:
   - Presentazione del Committente, come sponsor del progetto;
   - Presentazione del Project Team;
@@ -54,7 +54,7 @@ Durante la fase di Executing, prima dell'Executing Kick-Off, è stato formato il
 occuperà dello sviluppo del progetto, già in parte definito durante la fase di Planning.
 
 In particolare, il Project Team si compone dei seguenti membri:
-- Developer Team:
+- **Developer Team**:
   - _Pietro Magnolia_, in qualità di Project Manager e IT Acquisition Specialist;
   - _Francesco Marroni_, in qualità di UX Designer e Senior Frontend Developer;
   - _Filippo Ecru_, in qualità di Quality Assurance Tester e Junior Frontend Developer;
@@ -62,7 +62,7 @@ In particolare, il Project Team si compone dei seguenti membri:
   - _Franca Arancioni_, in qualità di DevOps Engineer e Senior Backend Developer;
   - _Fiorella Bordeaux_, in qualità di Junior Frontend Developer;
   - _Fernando Kaki_, in qualità di Junior Backend Developer.
-- Client Team:
+- **Client Team**:
   - _Paola Celeste_, in qualità di Project Manager e Project Champion.
 
 ## Work Packages
@@ -73,19 +73,19 @@ progetto, ovvero dei raggruppamenti di attività che condividono delle caratteri
 
 In particolare, si è deciso di suddividere le attività in base ai servizi da realizzare, come già fatto durante la fase
 di Planning, quindi definendo un Work Package per ogni servizio, ovvero:
-- Frontend Work Package: include tutte le attività relative al servizio di Frontend;
-- Backend Work Package: include tutte le attività relative al servizio di Backend;
-- Authentication Work Package: include tutte le attività relative all'Authentication Service;
-- Statistics Work Package: include tutte le attività relative allo Statistics Service;
-- Notification Work Package: include tutte le attività relative al Notification Service;
-- Game Work Package: include tutte le attività relative al Game Service;
-- Tournament Work Package: include tutte le attività relative al Tournament Service;
-- Friend Work Package: include tutte le attività relative al Friend Service;
-- Message Work Package: include tutte le attività relative al Message Service.
+- **Frontend Work Package**: include tutte le attività relative al servizio di Frontend;
+- **Backend Work Package**: include tutte le attività relative al servizio di Backend;
+- **Authentication Work Package**: include tutte le attività relative all'Authentication Service;
+- **Statistics Work Package**: include tutte le attività relative allo Statistics Service;
+- **Notification Work Package**: include tutte le attività relative al Notification Service;
+- **Game Work Package**: include tutte le attività relative al Game Service;
+- **Tournament Work Package**: include tutte le attività relative al Tournament Service;
+- **Friend Work Package**: include tutte le attività relative al Friend Service;
+- **Message Work Package**: include tutte le attività relative al Message Service.
 
 Quindi, sono stati aggiunti dei Work Package per facilitare la gestione del progetto:
-- Closing Work Package: include tutte le attività di chiusura del progetto;
-- Critical Work Package: include tutte le attività nel percorso critico.
+- **Closing Work Package**: include tutte le attività di chiusura del progetto;
+- **Critical Work Package**: include tutte le attività nel percorso critico.
 
 Infine, è stato definito un Work Package per ciascuno dei membri del Developer Team, contenente le attività che dovrà
 svolgere.

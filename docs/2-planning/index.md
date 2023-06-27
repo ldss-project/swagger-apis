@@ -310,7 +310,7 @@ attività del progetto.
 
 Il contratto che il Project Manager ha intenzione di proporre al Committente è un contratto a corpo, quindi a prezzo
 predeterminato, stabilito sulla base del piano di progetto. Tuttavia, come già menzionato, saranno previsti diversi
-pagamenti durante lo svolgimento del progetto.
+pagamenti durante lo svolgimento del progetto, invece che uno solo al termine del progetto.
 
 ## Project Definition Statement (PDS)
 
@@ -319,7 +319,7 @@ nuove informazioni estratte dal piano del progetto, producendo quindi il Project
 al seguente [link](/pm/attachments/content/pds#10-02-2023).
 
 Infine, al termine del Project Proposal Submission Meeting, si è ottenuta l’approvazione del Committente. Quindi, si ha
-potuto procedere parallelamente con la fase di Executing e con la fase di Monitoring and Controlling.
+potuto procedere parallelamente con la fase di Executing e con la fase di Monitoring e Controlling.
 
 ---
 
