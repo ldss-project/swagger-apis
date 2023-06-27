@@ -26,4 +26,5 @@ La riunione si è conclusa con l'ottenimento dell'approvazione del POS da parte 
 
 ---
 
+[Back to Top](#top) |
 [Back to Scoping](/pm/1-scoping#pos-submission-meeting)

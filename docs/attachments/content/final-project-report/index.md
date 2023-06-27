@@ -1,11 +1,11 @@
 ---
-title: Project Definition Statement (PDS)
+title: Final Project Report
 layout: default
 parent: Allegati
-nav_order: 12
+nav_order: 16
 ---
 
-# Project Definition Statement (PDS)
+# Final Project Report
 {: .no_toc}
 
 ## Versioni
@@ -16,9 +16,10 @@ nav_order: 12
 
 ---
 
-## 10-02-2023
+## 14-08-2023
+
 [Back to Top](#top) |
-[Back to Planning](/pm/2-planning#project-definition-statement-pds)
+[Back to Closing](/pm/5-closing#final-project-report)
 
 ### Problema
 
@@ -43,9 +44,9 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 ### Obiettivi
 
 In ordine di priorità decrescente:
-1. `Must-Have` **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di 
+1. `Must-Have` **Game Management**: gestire la creazione, la configurazione e la partecipazione a delle partite di
    scacchi online, allo scopo di permettere agli utenti dell'applicazione di divertirsi insieme.
-2. `Must-Have` **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione e i 
+2. `Must-Have` **Authentication Management**: gestire l'autenticazione degli utenti all'interno dell'applicazione e i
    loro permessi, allo scopo di permettere al Committente di amministrare l'applicazione e di permettere ai giocatori di
    tenere traccia dei propri progressi.
 3. `Must-Have` **Sponsor Management**: gestire la pubblicità agli sponsor del progetto, allo scopo di permettere al
@@ -133,6 +134,21 @@ Realizzare un'architettura che comprende i seguenti servizi:
 | Consegna progetto | 14-08-2023       | 78000$      |
 | **Somma**         | **< 6 mesi**     | **195000$** |
 
+### Svolgimento
+
+La gestione dell'esecuzione del progetto è avvenuta principalmente attraverso la definizione di alcune regole operative,
+in generale di carattere consultivo, e il monitoraggio tramite brevi meeting giornalieri e aggiornamenti settimanali dei
+report del progetto.
+
+### Conclusioni
+
+Il progetto si è concluso con successo, soddisfacendo i criteri di successo e le Conditions of Satisfaction definite
+assieme al Committente, ad eccezione di quelli per cui sarà necessario attendere un certo periodo di esecuzione del
+sistema nell'ambiente di produzione.
+
+In particolare, sono stati rispettati i tempi e i budget concordati con il Committente e si è fruttato un margine di
+all'incirca 32000$ alla consegna del progetto.
+
 ### Contatti
 
 - Committente: Claudio Rossi.
@@ -152,10 +168,11 @@ Realizzare un'architettura che comprende i seguenti servizi:
 - Analisi dei costi: [link](/pm/attachments/content/cost-analysis)
 - Project Network Diagram: [link](https://miro.com/app/board/uXjVM9abzds=/?share_link_id=313338560385)
 - Schedula: [link](https://app.asana.com/0/1204894076877574/1204894076877574)
-
-Approvato in data 13-02-2023.
+- Work Packages: [link](/pm/attachments/content/work-packages)
+- Rapporto Cumulativo - Schedula: [link](/pm/attachments/content/schedule-cumulative-report)
+- Rapporto Cumulativo - Costo: [link](/pm/attachments/content/cost-cumulative-report)
 
 ---
 
 [Back to Top](#top) |
-[Previous Version](#10-02-2023)
+[Previous Version](#14-08-2023)

@@ -28,4 +28,5 @@ La riunione si è conclusa con l'ottenimento dell'approvazione del PDS da parte 
 
 ---
 
+[Back to Top](#top) |
 [Back to Planning](/pm/2-planning#project-proposal-submission-meeting)

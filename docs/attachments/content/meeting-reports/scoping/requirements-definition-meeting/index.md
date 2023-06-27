@@ -36,4 +36,5 @@ presentazione.
 
 ---
 
+[Back to Top](#top) |
 [Back to Scoping](/pm/1-scoping#requirements-definition-meeting)

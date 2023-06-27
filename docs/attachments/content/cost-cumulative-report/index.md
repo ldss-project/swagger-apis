@@ -2,7 +2,7 @@
 title: Rapporto Cumulativo - Costo
 layout: default
 parent: Allegati
-nav_order: 14
+nav_order: 15
 ---
 
 # Rapporto Cumulativo - Costo
@@ -22,6 +22,8 @@ nav_order: 14
 [Back to Monitoring](/pm/4-monitoring-and-controlling#rapporto-cumulativo---costo)
 
 [Download Excel](/pm/resources/tables/cost-cumulative-report-2023-08-04.xlsx){: .btn .btn-green }
+
+---
 
 [Back to Top](#top) |
 [Previous Version](#04-08-2023)

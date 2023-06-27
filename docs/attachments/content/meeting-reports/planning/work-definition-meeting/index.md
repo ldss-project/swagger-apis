@@ -35,4 +35,5 @@ presentazione.
 
 ---
 
+[Back to Top](#top) |
 [Back to Planning](/pm/2-planning#work-definition-meeting)

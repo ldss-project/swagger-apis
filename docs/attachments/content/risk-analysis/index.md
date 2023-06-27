@@ -2,7 +2,7 @@
 title: Analisi dei rischi
 layout: default
 parent: Allegati
-nav_order: 9
+nav_order: 10
 ---
 
 # Analisi dei rischi
@@ -21,6 +21,8 @@ nav_order: 9
 [Back to Planning](/pm/2-planning#analisi-dei-rischi)
 
 [Download Excel](/pm/resources/tables/risk-log-2023-02-08.xlsx){: .btn .btn-green }
+
+---
 
 [Back to Top](#top) |
 [Previous Version](#08-02-2023)

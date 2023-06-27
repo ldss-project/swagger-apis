@@ -2,7 +2,7 @@
 title: Analisi dei costi
 layout: default
 parent: Allegati
-nav_order: 10
+nav_order: 11
 ---
 
 # Analisi dei costi
@@ -21,6 +21,8 @@ nav_order: 10
 [Back to Planning](/pm/2-planning#analisi-dei-costi)
 
 [Download Excel](/pm/resources/tables/cost-analysis-2023-02-09.xlsx){: .btn .btn-green }
+
+---
 
 [Back to Top](#top) |
 [Previous Version](#09-02-2023)

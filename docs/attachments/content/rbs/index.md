@@ -25,7 +25,7 @@ nav_order: 4
 ## 16-01-2023
 
 [Back to Top](#top) |
-[Back to Scoping](/pm/1-scoping#rbs) |
+[Back to Scoping](/pm/1-scoping#requirement-breakdown-structure-rbs) |
 [Next Version](#31-01-2023)
 
 ### Requisiti

@@ -27,4 +27,5 @@ presentati e revisionati nella prossima riunione da entrambe le parti.
 
 ---
 
+[Back to Top](#top) |
 [Back to Planning](/pm/2-planning#planning-kick-off)

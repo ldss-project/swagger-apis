@@ -32,4 +32,5 @@ La riunione si è conclusa con una breve celebrazione dell'avvio del progetto.
 
 ---
 
+[Back to Top](#top) |
 [Back to Executing](/pm/3-executing#executing-kick-off)

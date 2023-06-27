@@ -2,7 +2,7 @@
 title: Work Breakdown Structure (WBS)
 layout: default
 parent: Allegati
-nav_order: 6
+nav_order: 7
 ---
 
 # Work Breakdown Structure (WBS)
@@ -682,6 +682,8 @@ nav_order: 6
 - **Integrate Services**: integrare i servizi dell'applicazione tra di loro, risolvendo eventuali conflitti.
 - **Test System**: collaudo del sistema in un ambiente apposito alla sua verifica.
 - **Deploy System**: installazione del sistema nell'ambiente di produzione.
+
+---
 
 [Back to Top](#top) |
 [Previous Version](#01-02-2023)

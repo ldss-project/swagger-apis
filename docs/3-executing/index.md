@@ -48,9 +48,9 @@ In questa fase di Executing, è stato organizzato il seguente meeting per partir
   - Definizione delle regole operative.
 - Data: 17-02-2023
 - Durata: 8 ore
-- Verbale: [link](/pm/attachments/content/meeting-reports/scoping/executing-kickoff)
+- Verbale: [link](/pm/attachments/content/meeting-reports/executing/executing-kickoff)
 
-## Definizione del Project Team
+## Project Team
 
 Durante la fase di Executing, prima dell'Executing Kick-Off, è stato formato il Project Team, ovvero il team che si
 occuperà dello sviluppo del progetto, già in parte definito durante la fase di Planning.
@@ -67,7 +67,7 @@ In particolare, il Project Team si compone dei seguenti membri:
 - Client Team:
   - _Paola Celeste_, in qualità di Project Manager e Project Champion.
 
-## Definizione dei Work Package
+## Work Packages
 
 Durante l'Executing Kick-Off, dopo la revisione delle attività della schedula, sono stati definiti i Work Package del
 progetto, ovvero dei raggruppamenti di attività che condividono delle caratteristiche in comune, disponibili al seguente
@@ -92,15 +92,15 @@ Quindi, sono stati aggiunti dei Work Package per facilitare la gestione del prog
 Infine, è stato definito un Work Package per ciascuno dei membri del Developer Team, contenente le attività che dovrà
 svolgere.
 
-## Definizione delle Regole Operative
+## Regole Operative
 
 Al termine dell'Executing Kick-Off, sono state definite le regole operative che il Developer Team dovrà seguire durante
 lo sviluppo del progetto.
 
 ### Daily Status Meeting
 
-La comunicazione all'interno del team avverrà principalmente attraverso dei meeting giornalieri, che hanno lo scopo di
-monitorare lo stato di avanzamento del progetto.
+La comunicazione all'interno del team avverrà principalmente attraverso dei meeting giornalieri di breve durata
+(all'incirca 15 minuti), che hanno lo scopo di monitorare lo stato di avanzamento del progetto.
 
 In questi meeting, ogni membro del team dovrà indicare l'attività che ha intenzione di svolgere in giornata, il suo
 stato di avanzamento ed eventuali problemi che sono stati riscontrati.

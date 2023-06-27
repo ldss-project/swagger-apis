@@ -84,6 +84,11 @@ competitiva rispetto alle altre applicazioni concorrenti, entro sei mesi dall'ap
 - Rischio dovuto all'incertezza sulle tecnologie da applicare per rendere l'applicazione scalabile;
 - Rischio dovuto all'incertezza sulla domanda dell'applicazione al rilascio.
 
+### Strategia
+
+Per la gestione del progetto, si ha intenzione di adottare un PMLC Model di tipo incrementale, con una pianificazione
+preliminare molto dettagliata e una sequenza di milestone da raggiungere durante lo sviluppo del progetto.
+
 ### Contatti
 
 - Committente: Claudio Rossi.

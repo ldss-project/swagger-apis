@@ -34,4 +34,5 @@ In conclusione, ci si è accordati sulle riunioni necessarie per completare lo S
 
 ---
 
+[Back to Top](#top) |
 [Back to Scoping](/pm/1-scoping#problem-definition-meeting)

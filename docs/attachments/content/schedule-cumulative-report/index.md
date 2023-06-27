@@ -2,7 +2,7 @@
 title: Rapporto Cumulativo - Schedula
 layout: default
 parent: Allegati
-nav_order: 13
+nav_order: 14
 ---
 
 # Rapporto Cumulativo - Schedula
@@ -22,6 +22,8 @@ nav_order: 13
 [Back to Monitoring](/pm/4-monitoring-and-controlling#rapporto-cumulativo---schedula)
 
 [Download Excel](/pm/resources/tables/schedule-cumulative-report-2023-08-04.xlsx){: .btn .btn-green }
+
+---
 
 [Back to Top](#top) |
 [Previous Version](#04-08-2023)
