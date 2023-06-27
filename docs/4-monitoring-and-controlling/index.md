@@ -47,11 +47,16 @@ rapporto cumulativo riferito ai costi del progetto, disponibile al seguente
 Una volta aggiornati i rapporti cumulativi del progetto, il Project Manager ha redatto degli Stoplight Report, come
 sintesi dei risultati del monitoraggio, da mostrare al senior management lato fornitore.
 
+### Risk Log
+
+Come già anticipato in fase di Planning, durante lo sviluppo del progetto si è mantenuto un Risk Log, per tenere
+traccia dello stato dei rischi individuati nel piano di progetto.
+
 ### Issue Log
 
-Come già anticipato in fase di Executing, durante lo sviluppo del progetto si è mantenuto un Issue Log, per tenere
-traccia dei problemi incontrati e risolti durante il progetto, costruendo uno storico delle soluzioni individuate da
-poter consultare in progetti futuri.
+Analogamente, come già anticipato in fase di Executing, durante lo sviluppo del progetto si è mantenuto un Issue Log,
+per tenere traccia dei problemi incontrati e risolti durante il progetto, costruendo uno storico delle soluzioni
+individuate da poter consultare in progetti futuri.
 
 ## Controllo
 
@@ -59,7 +64,8 @@ Durante la fase di Monitoring e Controlling, ogni volta che è stata individuata
 progetto, è stata adottata la Problem Escalation Strategy, coinvolgendo solo le persone necessarie per la risoluzione
 dell'anomalia.
 
-In particolare, il Project Manager ha sfruttato la Scope Bank per rimanere in pari con i tempi e i costi del progetto.
+In particolare, come metodo di controllo, il Project Manager ha sfruttato la Scope Bank per rimanere in pari con i tempi
+e i costi del progetto.
 
 ---
 

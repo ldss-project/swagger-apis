@@ -38,7 +38,7 @@ Una volta terminato il collaudo del sistema, è stato contattato il Committente 
 In seguito al collaudo, si è potuto procedere con l'installazione e la verifica del sistema sull'ambiente di
 produzione.
 
-Tale installazione è avvenuto per fasi sequenziali, preparando l'infrastruttura su cui installare il sistema ed
+Tale installazione è avvenuta per fasi sequenziali, preparando l'infrastruttura su cui installare il sistema ed
 eseguendo il deployment di un servizio per volta.
 
 Quindi, si è verificato che la soluzione funzionasse nell'ambiente di produzione tanto quanto ha funzionato
@@ -59,11 +59,11 @@ In particolare, sono state fatte le seguenti osservazioni:
 - Gli obiettivi del progetto sono stati raggiunti con successo. Per quanto riguarda l'effettiva soddisfazione del
   Committente, sono state verificate molte delle Conditions of Satisfaction, tuttavia per verificare le rimanenti sarà
   necessario aspettare del tempo perché i giocatori possano provare l'applicazione;
-- Il piano di progetto è risultato piuttosto corretto per raggiungere gli obiettivi previsti. Tuttavia, è emerso che
-  sono stati sovrastimati leggermente i tempi riservati alla Scope Bank, perdendo competitività nella proposta della
-  soluzione;
+- Il piano di progetto è risultato adeguato per il raggiungimento degli obiettivi previsti. Tuttavia, è emerso che
+  sono stati sovrastimati leggermente i tempi riservati alla Scope Bank, perdendo competitività nella proposta del
+  contratto;
 - Il costo del progetto è anch'esso risultato pressoché corretto. Tuttavia, è emerso che i costi attesi dai rischi del
-  progetto sono stati leggermente sovrastimati, sempre perdendo competitività nella proposta della soluzione;
+  progetto sono stati leggermente sovrastimati, sempre perdendo competitività nella proposta del contratto;
 - Per questo tipo di progetto, è stato rischioso affidarsi a un PMLC Model di tipo tradizionale a causa dei rischi
   legati alla dinamicità del mercato in cui vuole entrare il Committente. Inoltre, nell'approccio incrementale adottato,
   sarebbe stato meglio prevedere un maggior numero di milestone per gestire meglio le entrate del progetto, infatti si è
