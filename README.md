@@ -1,5 +1,5 @@
-# PM Project 2023: GameCo Case Study
+# Swagger APIs
 
-Project simulation for the exam of Project Management.
+Swagger APIs for the services of the project of the course of Laboratory of Software Systems 2022-2023.
 
-See documentation at the [repository webpage](https://jahrim.github.io/pm/).
+See documentation at the [repository webpage](https://ldss-project.github.io/swagger-apis/).
