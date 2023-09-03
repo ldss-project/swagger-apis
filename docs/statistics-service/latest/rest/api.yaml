@@ -1,0 +1,313 @@
+openapi: 3.0.0
+info:
+  version: 0.4.0
+  title: Statistics Service
+  description: |
+    A service which handles the scores of the users of an application.
+    
+    ### External Links
+    - [GitHub Organization](https://github.com/ldss-project)
+    - [GitHub Repository](https://github.com/ldss-project/statistics-service)
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/jahrim/StatisticsService/0.4.0
+paths:
+  '/':
+    get:
+      tags:
+        - Utility
+      summary: Welcome
+      description: Welcome a user to this service.
+      operationId: welcome
+      responses:
+        '200':
+          description: successful operation
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Welcome to the Statistics Service!
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+  '/score/history/{playerName}':
+    get:
+      tags:
+        - Score Management
+      summary: Get player statistics
+      description: Get all the scores of the specified player sorted from the oldest to
+        the most recent.
+      operationId: get-player-statistics
+      parameters:
+        - in: path
+          name: playerName
+          description: the specified player
+          schema:
+            type: string
+            example: Paul
+          required: true
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  scores:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Score'
+        '404':
+          description: user not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+  '/score/{playerName}':
+    get:
+      tags:
+        - Score Management
+      summary: Get player score
+      description: Get the latest score of the specified player.
+      operationId: get-player-score
+      parameters:
+        - in: path
+          name: playerName
+          description: the specified player
+          schema:
+            type: string
+            example: Paul
+          required: true
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  score:
+                    $ref: '#/components/schemas/Score'
+        '404':
+          description: user not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+    post:
+      tags:
+        - Score Management
+      summary: Add a new score
+      description: Add the specified score to the statistics of the specified player.
+      operationId: add-score
+      parameters:
+        - in: path
+          name: playerName
+          description: the specified player
+          schema:
+            type: string
+            example: Paul
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                score:
+                  type: object
+                  properties:
+                    hasWon:
+                      type: boolean
+                      example: true
+            examples:
+              victory:
+                value:
+                  score:
+                    hasWon: true
+              loss:
+                value:
+                  score:
+                    hasWon: false
+              par:
+                value:
+                  score: {}
+        required: true
+      responses:
+        '200':
+          description: successful operation
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+    delete:
+      tags:
+        - Score Management
+      summary: Delete player statistics
+      description: Delete all the scores of the specified player.
+      operationId: delete-player-statistics
+      parameters:
+        - in: path
+          name: playerName
+          description: the specified player
+          schema:
+            type: string
+            example: Paul
+          required: true
+      responses:
+        '200':
+          description: successful operation
+        '404':
+          description: user not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+  '/leaderboard':
+    get:
+      tags:
+        - Leaderboard Management
+      summary: Get leaderboard
+      description: Get the leaderboard from the first specified rank to the last specified rank. By default, it retrieves the first hundred ranks, or the first hundred ranks starting from the first specified rank.
+      operationId: get-leaderboard
+      parameters:
+        - in: query
+          name: first
+          description: the lowest rank (numerically) on the leaderboard to retrieve
+          schema:
+            type: integer
+            format: int64
+            example: 1
+        - in: query
+          name: last
+          description: the highest rank (numerically) on the leaderboard to retrieve
+          schema:
+            type: integer
+            format: int64
+            example: 100
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  scores:
+                    $ref: '#/components/schemas/Leaderboard'
+        '404':
+          description: user not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserNotFoundException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+components:
+  schemas:
+    Leaderboard:
+      type: array
+      items:
+        type: object
+        properties:
+          username:
+            type: string
+            example: Paul
+          insertion:
+            type: object
+            properties:
+              '$date':
+                type: string
+                example: '2023-09-03T08:05:05.12Z'
+          rank:
+            type: integer
+            format: int64
+            example: 1
+          wins:
+            type: integer
+            format: int32
+            example: 10
+          losses:
+            type: integer
+            format: int32
+            example: 3
+          ratio:
+            type: number
+            format: double
+            example: 3.33
+    Score:
+      type: object
+      properties:
+        insertion:
+          type: object
+          properties:
+            '$date':
+              type: string
+              example: '2023-09-03T08:05:05.12Z'
+        rank:
+          type: integer
+          format: int64
+          example: 1
+        wins:
+          type: integer
+          format: int32
+          example: 10
+        losses:
+          type: integer
+          format: int32
+          example: 3
+        ratio:
+          type: number
+          format: double
+          example: 3.33
+    Exception:
+      type: object
+      properties:
+        type:
+          type: string
+        message:
+          type: string
+    MalformedInputException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: MalformedInputException
+        message:
+          type: string
+    UserNotFoundException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: UserNotFoundException
+        message:
+          type: string

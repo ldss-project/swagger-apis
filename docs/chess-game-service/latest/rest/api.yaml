@@ -1,0 +1,304 @@
+openapi: 3.0.0
+info:
+  version: 0.1.1
+  title: Chess Game Service
+  description: |
+    A service which handles the configuration, execution and termination of chess games.
+    
+    ### External Links
+    - [GitHub Organization](https://github.com/ldss-project)
+    - [GitHub Repository](https://github.com/ldss-project/chess-game-service)
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/jahrim/ChessGameService/0.1.1
+paths:
+  '/':
+    get:
+      tags:
+        - Utility
+      summary: Welcome
+      description: Welcome a user to this service.
+      operationId: welcome
+      responses:
+        '200':
+          description: successful operation
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Welcome to the Chess Game Service!
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+  '/game/{gameId}':
+    get:
+      tags:
+        - Game Search
+      summary: Find private game
+      description: Search for a private game with the specified id that is still awaiting for players to join.
+      operationId: find-private-game
+      parameters:
+        - in: path
+          name: gameId
+          description: the specified id
+          schema:
+            type: string
+            example: PaulPrivateGame
+          required: true
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  connection:
+                    $ref: '#/components/schemas/GameConnection'
+        '403':
+          description: game already started
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameAlreadyStartedException'
+        '404':
+          description: game not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameNotFoundException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+  '/game':
+    get:
+      tags:
+        - Game Search
+      summary: Find public game
+      description: Search for a random public game that is still awaiting for players to join.
+      operationId: find-public-game
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  connection:
+                    $ref: '#/components/schemas/GameConnection'
+                example:
+                  connection:
+                    websocket: '/game/connect/GeorgeGame/websocket'
+        '404':
+          description: 'no available games exception'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NoAvailableGamesException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+    post:
+      tags:
+        - Game Creation
+      summary: Create a new chess game
+      description: |
+        Create a new chess game with the specified configuration.
+        
+        All the fields of a game configuration are optional and, if not
+        specified, they will be replaced with the corresponding default
+        values, that is:
+        - **TimeConstraint**: NoLimit
+        - **WhitePlayer**: none
+        - **BlackPlayer**: none
+        - **GameMode**: PVP
+        - **isPrivate**: false
+        - **gameId**: <randomly-generated>
+        
+        > **Warning**: although the service theoretically accepts in input
+        > a complete configuration, in practice there is still no support
+        > for configurations in which both players have already been
+        > established (without them explicitly joining the game). This
+        > feature could be added in the future if requested.
+      operationId: create-game
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                gameConfiguration:
+                  $ref: '#/components/schemas/GameConfiguration'
+              example:
+                gameConfiguration:
+                  timeConstraint:
+                    type: MoveLimit
+                    time:
+                      value:
+                        '$numberLong': '5'
+                      unit: MINUTES
+                  isPrivate: true
+                  gameId: PaulPrivateGame
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  connection:
+                    $ref: '#/components/schemas/GameConnection'
+        '400':
+          description: malformed input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MalformedInputException'
+        '403':
+          description: game id already taken
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameIdAlreadyTakenException'
+        '500':
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Exception'
+
+components:
+  schemas:
+    GameConfiguration:
+      type: object
+      properties:
+        timeConstraint:
+          $ref: '#/components/schemas/TimeConstraint'
+        whitePlayer:
+          $ref: '#/components/schemas/Player'
+        blackPlayer:
+          $ref: '#/components/schemas/Player'
+        gameMode:
+          $ref: '#/components/schemas/GameMode'
+        isPrivate:
+          type: boolean
+          example: true
+        gameId:
+          type: string
+          example: PaulPrivateGame
+    TimeConstraint:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+            - NoLimit
+            - MoveLimit
+            - PlayerLimit
+          example: MoveLimit
+        time:
+          $ref: '#/components/schemas/Duration'
+    Duration:
+      type: object
+      properties:
+        value:
+          type: object
+          properties:
+            '$numberLong':
+              type: string
+              example: '5'
+        unit:
+          type: string
+          enum:
+            - NANOSECONDS
+            - MICROSECONDS
+            - MILLISECONDS
+            - SECONDS
+            - MINUTES
+            - HOURS
+            - DAYS
+          example: MINUTES
+    Player:
+      type: object
+      properties:
+        team:
+          $ref: '#/components/schemas/Team'
+        name:
+          type: string
+          example: Paul
+    Team:
+      type: string
+      enum:
+        - WHITE
+        - BLACK
+      example: WHITE
+    GameMode:
+      type: string
+      enum:
+        - PVP
+        - PVE
+      example: PVP
+    GameConnection:
+      type: object
+      properties:
+        websocket:
+          type: string
+          example: "/game/connect/PaulPrivateGame/websocket"
+    Exception:
+      type: object
+      properties:
+        type:
+          type: string
+        message:
+          type: string
+    MalformedInputException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: MalformedInputException
+        message:
+          type: string
+    GameIdAlreadyTakenException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: GameIdAlreadyTakenException
+        message:
+          type: string
+    GameAlreadyStartedException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: GameAlreadyStartedException
+        message:
+          type: string
+    GameNotFoundException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: GameNotFoundException
+        message:
+          type: string
+    NoAvailableGamesException:
+      type: object
+      properties:
+        type:
+          type: string
+          example: NoAvailableGamesException
+        message:
+          type: string
