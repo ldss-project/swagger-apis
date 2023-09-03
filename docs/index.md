@@ -32,7 +32,7 @@ la cui documentazione è reperibile al seguente [link](/docs).
 - **Chess Game Service**:
   - `latest`:
     - [REST API](/swagger-apis/chess-game-service/latest/rest)
-    - [Websocket API](/swagger-apis/chess-game-connection/0.1.1/async)
+    - [Websocket API](/swagger-apis/chess-game-service/latest/async)
   - `0.1.1`:
-    - [REST API](/swagger-apis/chess-game-service/latest/rest)
-    - [Websocket API](/swagger-apis/chess-game-connection/0.1.1/async)
+    - [REST API](/swagger-apis/chess-game-service/0.1.1/rest)
+    - [Websocket API](/swagger-apis/chess-game-service/0.1.1/async)
