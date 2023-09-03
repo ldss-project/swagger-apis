@@ -10,8 +10,8 @@ info:
     - [GitHub Repository](https://github.com/ldss-project/authentication-service)
   version: 0.4.2
 servers:
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/jahrim/AuthenticationService/0.4.2
+  - description: Default Local Server
+    url: ws://localhost:8083/<connection-string>
 paths:
   '/':
     get:
