@@ -1,456 +1,955 @@
-openapi: 3.0.0
+id: https://github.com/ldss-project/chess-game-service/websocket
+asyncapi: 2.4.0
 info:
-  title: Authentication Service
+  title: Chess Game Service Connection
+  version: '0.1.1'
   description: |
-    A service which handles the registration and authentication of the users
-    of an application.
+    A service which handles the configuration, execution and termination of chess games.
+
+    This API refers to the messages that can be exchanged during the connection between a player and a specific chess game.
     
     ### External Links
     - [GitHub Organization](https://github.com/ldss-project)
-    - [GitHub Repository](https://github.com/ldss-project/authentication-service)
-  version: 0.4.2
+    - [GitHub Repository](https://github.com/ldss-project/chess-game-service)
+  license: { name: MIT }
 servers:
-  - description: Default Local Server
-    url: ws://localhost:8083/<connection-string>
-paths:
-  '/':
-    get:
-      tags:
-        - Utility
-      summary: Welcome
-      description: Welcome a user to this service.
-      operationId: welcome
-      security: []
-      responses:
-        '200':
-          description: successful operation
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: Welcome to the Authentication Service!
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
-  '/user/{username}/sign-in':
-    post:
-      tags:
-        - Authentication Management
-      summary: Sign in
-      description: Register a new user with the specified username, email and password.
-      operationId: sign-in
-      security: []
-      parameters:
-        - in: path
-          name: username
-          description: the specified user
-          schema:
-            type: string
-            example: Paul
-          required: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                user:
-                  type: object
-                  properties:
-                    email:
-                      type: string
-                      example: paul@chessgame.com
-                    password:
-                      type: string
-                      example: paulSecretPassword
-        required: true
-      responses:
-        '200':
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  session:
-                    $ref: '#/components/schemas/Session'
-          headers:
-            Set-Cookie:
-              schema:
-                type: string
-                example: chess-app-session=<url-encoded-json-session>; SameSite=None; Secure; Max-Age=1800
-        '400':
-          description: malformed input
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/MalformedInputException'
-        '403':
-          description: username already taken
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UsernameAlreadyTakenException'
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
-  '/user/{username}/log-in':
-    post:
-      tags:
-        - Authentication Management
-      summary: Log in
-      description: Authenticate a user with the specified username and password.
-      operationId: log-in
-      security: []
-      parameters:
-        - in: path
-          name: username
-          description: the specified user
-          schema:
-            type: string
-            example: Paul
-          required: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                user:
-                  type: object
-                  properties:
-                    password:
-                      type: string
-                      example: paulSecretPassword
-        required: true
-      responses:
-        '200':
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  session:
-                    $ref: '#/components/schemas/Session'
-          headers:
-            Set-Cookie:
-              schema:
-                type: string
-                example: chess-app-session=<url-encoded-json-session>; SameSite=None; Secure; Max-Age=1800
-        '400':
-          description: malformed input, incorrect password
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - $ref: '#/components/schemas/MalformedInputException'
-                  - $ref: '#/components/schemas/IncorrectPasswordException'
-              examples:
-                malformed-input:
-                  value:
-                    type: MalformedInputException
-                    message: string
-                incorrect-password:
-                  value:
-                    type: IncorrectPasswordException
-                    message: string
-        '404':
-          description: user not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UserNotFoundException'
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
-  '/user/{username}/log-out':
-    post:
-      tags:
-        - Authentication Management
-      summary: Log out
-      description: Revoke the token of the specified user.
-      operationId: log-out
-      security:
-        - cookieSession: []
-      parameters:
-        - in: path
-          name: username
-          description: the specified user
-          schema:
-            type: string
-            example: Paul
-          required: true
-        - in: cookie
-          name: chess-app-session
-          description: the session of the specified user
-          schema:
-            type: string
-          required: true
-      responses:
-        '200':
-          description: successful operation
-          headers:
-            Set-Cookie:
-              schema:
-                type: string
-                example: chess-app-session=<url-encoded-json-session>; SameSite=None; Secure; Max-Age=0
-        '403':
-          description: user not authorized, token expired
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - $ref: '#/components/schemas/UserNotAuthorizedException'
-                  - $ref: '#/components/schemas/TokenExpiredException'
-              examples:
-                user-not-authorized:
-                  value:
-                    type: UserNotAuthorizedException
-                    message: string
-                token-expired:
-                  value:
-                    type: TokenExpiredException
-                    message: string
-        '404':
-          description: user not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UserNotFoundException'
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
-  '/user/{username}/profile':
-    get:
-      tags:
-        - Profile Management
-      summary: Get user profile
-      description: Get the profile information of the specified user.
-      operationId: get-user-profile
-      security:
-        - cookieSession: []
-      parameters:
-        - in: path
-          name: username
-          description: the specified user
-          schema:
-            type: string
-            example: Paul
-          required: true
-        - in: cookie
-          name: chess-app-session
-          description: the session of the specified user
-          schema:
-            type: string
-          required: true
-      responses:
-        '200':
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  user:
-                    $ref: '#/components/schemas/User'
-        '403':
-          description: user not authorized, token expired
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - $ref: '#/components/schemas/UserNotAuthorizedException'
-                  - $ref: '#/components/schemas/TokenExpiredException'
-              examples:
-                user-not-authorized:
-                  value:
-                    type: UserNotAuthorizedException
-                    message: string
-                token-expired:
-                  value:
-                    type: TokenExpiredException
-                    message: string
-        '404':
-          description: user not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UserNotFoundException'
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
-  '/user/{username}/password':
-    put:
-      tags:
-        - Profile Management
-      summary: Update password
-      description: Update the password of the specified user with the specified password.
-      operationId: update-password
-      security:
-        - cookieSession: []
-      parameters:
-        - in: path
-          name: username
-          description: the specified user
-          schema:
-            type: string
-            example: Paul
-          required: true
-        - in: cookie
-          name: chess-app-session
-          description: the session of the specified user
-          schema:
-            type: string
-          required: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                user:
-                  type: object
-                  properties:
-                    password:
-                      type: string
-                      example: paulNewSecretPassword
-        required: true
-      responses:
-        '200':
-          description: successful operation
-        '403':
-          description: user not authorized, token expired
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - $ref: '#/components/schemas/UserNotAuthorizedException'
-                  - $ref: '#/components/schemas/TokenExpiredException'
-              examples:
-                user-not-authorized:
-                  value:
-                    type: UserNotAuthorizedException
-                    message: string
-                token-expired:
-                  value:
-                    type: TokenExpiredException
-                    message: string
-        '404':
-          description: user not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UserNotFoundException'
-        '500':
-          description: internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Exception'
+  local:
+    description: Default Local Server
+    url: localhost:8083
+    protocol: ws
+tags:
+  - name: Requests
+  - name: Responses
+  - name: Events
+defaultContentType: application/json
+
+channels:
+  /game/connect/{gameId}/websocket:
+    description: The websocket connection between a player and a chess game.
+
+    parameters:
+      gameId:
+        description: the id of the chess game which the player is connected to.
+        schema:
+          type: string
+          example: PaulPrivateGame
+
+    publish:
+      summary: Interact with the chess game with the specified id.
+      operationId: player-to-server
+      message:
+        oneOf:
+          - { $ref: '#/components/messages/GetStateRequest' }
+          - { $ref: '#/components/messages/JoinGameRequest' }
+          - { $ref: '#/components/messages/FindMovesRequest' }
+          - { $ref: '#/components/messages/ApplyMoveRequest' }
+          - { $ref: '#/components/messages/PromoteRequest' }
+
+    subscribe:
+      summary: Observe the consequences of the interactions with the chess game with the specified id.
+      operationId: server-to-player
+      message:
+        oneOf:
+          - { $ref: '#/components/messages/GetStateResponse' }
+          - { $ref: '#/components/messages/JoinGameResponse' }
+          - { $ref: '#/components/messages/FindMovesResponse' }
+          - { $ref: '#/components/messages/ApplyMoveResponse' }
+          - { $ref: '#/components/messages/PromoteResponse' }
+          - { $ref: '#/components/messages/ChessboardUpdateEvent' }
+          - { $ref: '#/components/messages/GameOverUpdateEvent' }
+          - { $ref: '#/components/messages/GameSituationUpdateEvent' }
+          - { $ref: '#/components/messages/MoveHistoryUpdateEvent' }
+          - { $ref: '#/components/messages/WhitePlayerUpdateEvent' }
+          - { $ref: '#/components/messages/BlackPlayerUpdateEvent' }
+          - { $ref: '#/components/messages/WhiteTimerUpdateEvent' }
+          - { $ref: '#/components/messages/BlackTimerUpdateEvent' }
+          - { $ref: '#/components/messages/TurnUpdateEvent' }
+          - { $ref: '#/components/messages/ServerErrorUpdateEvent' }
+          - { $ref: '#/components/messages/ServerSituationUpdateEvent' }
+          - { $ref: '#/components/messages/SubscriptionUpdateEvent' }
+
 components:
+  messages:
+    GetStateRequest:
+      tags: [{ name: Requests }]
+      messageId: get-state
+      name: get-state
+      title: Get state
+      summary: Request the chess game to provide a snapshot of its state.
+      description: |
+        The state of a chess game contains information not only about the game itself,
+        but also about the server hosting the game. In particular, a `ServerState` refers
+        to all the information of a chess game, including the state of the server, possible
+        errors, subscription and the state of the actual game, which it is referred to as
+        `GameState`.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [GetState]
+      x-response: { $ref: '#/components/messages/GetStateResponse' }
+    JoinGameRequest:
+      tags: [{ name: Requests }]
+      messageId: join-game
+      name: join-game
+      title: Join game
+      summary: Join the chess game as the specified player in the specified team.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [JoinGame]
+              input:
+                type: object
+                properties:
+                  player: { $ref: '#/components/schemas/Player' }
+      x-response: { $ref: '#/components/messages/JoinGameResponse' }
+    FindMovesRequest:
+      tags: [{ name: Requests }]
+      messageId: find-moves
+      name: find-moves
+      title: Find moves
+      summary: Request the chess game to provide the available moves for the piece at the specified position.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [FindMoves]
+              input:
+                type: object
+                properties:
+                  position: { $ref: '#/components/schemas/Position' }
+      x-response: { $ref: '#/components/messages/FindMovesResponse' }
+    ApplyMoveRequest:
+      tags: [{ name: Requests }]
+      messageId: apply-move
+      name: apply-move
+      title: Apply move
+      summary: Request the chess game to apply the specified move.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [ApplyMove]
+              input:
+                type: object
+                properties:
+                  move: { $ref: '#/components/schemas/Move' }
+      x-response: { $ref: '#/components/messages/ApplyMoveResponse' }
+    PromoteRequest:
+      tags: [{ name: Requests }]
+      messageId: promote
+      name: promote
+      title: Promote
+      summary: Request the chess game to promote the pawn which is currently awaiting for promotion to the specified promotion choice.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [Promote]
+              input:
+                type: object
+                properties:
+                  promotionChoice: { $ref: '#/components/schemas/PromotionChoice' }
+      x-response: { $ref: '#/components/messages/PromoteResponse' }
+
+    GetStateResponse:
+      tags: [{ name: Responses }]
+      messageId: get-state-response
+      name: get-state-response
+      title: Get State Response
+      summary: A response to the 'Get State' request from a player.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [GetState]
+              output:
+                type: object
+                properties:
+                  serverState: { $ref: '#/components/schemas/ServerState' }
+      examples:
+        - payload:
+            methodCall:
+              method: GetState
+              output:
+                serverState:
+                  situation: NotConfigured
+                  subscriptions: []
+                  error: null
+                  gameState:
+                    chessboard: { $ref: '#/components/schemas/Chessboard/example' }
+                    moveHistory:
+                      entries: []
+                    currentTurn: WHITE
+                    configuration:
+                      timeConstraint:
+                        type: NoLimit
+                      whitePlayer: { team: WHITE, name: '' }
+                      blackPlayer: { team: BLACK, name: '' }
+                      gameMode: PVP
+                      isPrivate: false
+                      gameId: null
+                    situation:
+                      type: None
+                    gameOver: null
+                    timers:
+                      white: null
+                      black: null
+        - payload:
+            methodCall:
+              method: GetState
+              output:
+                serverState:
+                  situation: Ready
+                  subscriptions: []
+                  error: null
+                  gameState:
+                    chessboard: { $ref: '#/components/schemas/Chessboard/example' }
+                    moveHistory:
+                      entries: []
+                    currentTurn: WHITE
+                    configuration:
+                      timeConstraint:
+                        type: MoveLimit
+                        time:
+                          value: { '$numberLong': '5' }
+                          unit: MINUTES
+                      whitePlayer: { team: WHITE, name: 'Paul' }
+                      blackPlayer: { team: BLACK, name: 'George' }
+                      gameMode: PVP
+                      isPrivate: false
+                      gameId: 'PaulPrivateGame'
+                    situation:
+                      type: None
+                    gameOver: null
+                    timers:
+                      white: null
+                      black: null
+    JoinGameResponse:
+      tags: [{ name: Responses }]
+      messageId: join-game-response
+      name: join-game-response
+      title: Join Game Response
+      summary: A response to the 'Join Game' request from a player.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [JoinGame]
+    FindMovesResponse:
+      tags: [{ name: Responses }]
+      messageId: find-moves-response
+      name: find-moves-response
+      title: Find Moves Response
+      summary: A response to the 'Find Moves' request from a player.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [FindMoves]
+              output:
+                type: object
+                properties:
+                  moves:
+                    type: array
+                    items: { $ref: '#/components/schemas/Move' }
+        example:
+          methodCall:
+            method: FindMoves
+            output:
+              moves:
+                - { from: { file: A, rank: '2' }, to: { file: A, rank: '3' } }
+                - { from: { file: A, rank: '2' }, to: { file: A, rank: '4' } }
+    ApplyMoveResponse:
+      tags: [{ name: Responses }]
+      messageId: apply-move-response
+      name: apply-move-response
+      title: Apply Move Response
+      summary: A response to the 'Apply Move' request from a player.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [ApplyMove]
+    PromoteResponse:
+      tags: [{ name: Responses }]
+      messageId: promote-response
+      name: promote-response
+      title: Promote Response
+      summary: A response to the 'Promote' request from a player.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          methodCall:
+            type: object
+            properties:
+              method:
+                type: string
+                enum: [Promote]
+
+    ChessboardUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: chessboard-update-event
+      name: chessboard-update-event
+      title: Chessboard Update Event
+      summary: An event triggered when the chessboard of the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [ChessboardUpdateEvent]
+              payload: { $ref: '#/components/schemas/Chessboard' }
+    GameOverUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: game-over-update-event
+      name: game-over-update-event
+      title: Game Over Update Event
+      summary: An event triggered when the game over status of the game is updated.
+      description: |
+        The game over status of game, if present, tells that the game has ended and
+        gives information about the result of the game, such as the cause of the game
+        over and the winner of the game (if any).
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [GameOverUpdateEvent]
+              payload: { $ref: '#/components/schemas/GameOver' }
+    GameSituationUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: game-situation-update-event
+      name: game-situation-update-event
+      title: Game Situation Update Event
+      summary: An event triggered when the situation of the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [GameSituationUpdateEvent]
+              payload: { $ref: '#/components/schemas/GameSituation' }
+    MoveHistoryUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: move-history-update-event
+      name: move-history-update-event
+      title: Move History Update Event
+      summary: An event triggered when the history of the moves executed in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [MoveHistoryUpdateEvent]
+              payload: { $ref: '#/components/schemas/MoveHistory' }
+    WhitePlayerUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: white-player-update-event
+      name: white-player-update-event
+      title: White Player Update Event
+      summary: An event triggered when the white player in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [WhitePlayerUpdateEvent]
+              payload: { $ref: '#/components/schemas/Player' }
+    BlackPlayerUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: black-player-update-event
+      name: black-player-update-event
+      title: Black Player Update Event
+      summary: An event triggered when the black player in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [BlackPlayerUpdateEvent]
+              payload: { $ref: '#/components/schemas/Player' }
+        example:
+          event:
+            type: BlackPlayerUpdateEvent
+            payload:
+              team: BLACK
+              name: George
+    WhiteTimerUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: white-timer-update-event
+      name: white-timer-update-event
+      title: White Timer Update Event
+      summary: An event triggered when the timer of the white player in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [WhiteTimerUpdateEvent]
+              payload: { $ref: '#/components/schemas/Duration' }
+    BlackTimerUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: black-timer-update-event
+      name: black-timer-update-event
+      title: Black Timer Update Event
+      summary: An event triggered when the timer of the black player in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [BlackTimerUpdateEvent]
+              payload: { $ref: '#/components/schemas/Duration' }
+    TurnUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: turn-update-event
+      name: turn-update-event
+      title: Turn Update Event
+      summary: An event triggered when the current turn in the game is updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [TurnUpdateEvent]
+              payload: { $ref: '#/components/schemas/Turn' }
+    ServerErrorUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: server-error-update-event
+      name: server-error-update-event
+      title: Server Error Update Event
+      summary: An event triggered when the latest error thrown by the server hosting the chess game is updated.
+      description: |
+        An error during a chess game can be one of the following:
+        - **GameAlreadyStartedException**: a request failed because it required the game not to be
+          started, but the game had already started.
+        - **GameConfiguredException**: a request failed because it required the game not to be
+          configured, but the game had already been configured.
+        - **GameNotReadyException**: a request failed because it required the game to be
+          ready, but the game was not.
+        - **GameNotRunningException**: a request failed because it required the game to be
+          running, but the game was not.
+        - **GameNotWaitingForPlayersException**: a request failed because it required the
+          game to be waiting for more player to join, but the game was not.
+        - **GameNotWaitingForPromotionException**: a request failed because it required
+          the game to be waiting for a pawn to be promoted, but the game was not.
+        - **GameTerminatedException**: a request failed because it required the game not
+          to be terminated, but the game had already been terminated.
+        - **GameWaitingForPromotionException**: a request failed because it required the
+          game not to be waiting for a pawn to be promoted, but the game was.
+        - **InternalServerException**: an unexpected error happened during the execution
+          of the game, probably due to the server implementation.
+        - **MalformedInputException**: a request failed because it did not conform to the
+          api specification of this service.
+        - **PlayerAlreadyExistingException**: a request for joining the game failed because
+          the team requested by the joining player had already been assigned to another player
+          beforehand.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [ServerErrorUpdateEvent]
+              payload: { $ref: '#/components/schemas/ChessGameServiceException' }
+    ServerSituationUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: server-situation-update-event
+      name: server-situation-update-event
+      title: Server Situation Update Event
+      summary: An event triggered when the situation of the server hosting the chess game is updated.
+      description: |
+        The situation of a server hosting a chess game can be one of the following:
+        - **NotConfigured**: the server is waiting for a game configuration to be provided.
+        - **WaitingForPlayers**: the server is waiting for enough players to join the game.
+        - **Ready**: the server has enough players and is waiting for a user to start the game.
+        - **Running**: the server is executing the game, listening for the players' commands.
+        - **Terminated**: the server is terminated due to the game ending or fatal errors.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [ServerSituationUpdateEvent]
+              payload: { $ref: '#/components/schemas/ServerSituation' }
+    SubscriptionUpdateEvent:
+      tags: [{ name: Events }]
+      messageId: subscription-update-event
+      name: subscription-update-event
+      title: Subscription Update Event
+      summary: An event triggered when the subscriptions to the events generated by the game are updated.
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: [SubscriptionUpdateEvent]
+              payload:
+                type: array
+                items: { $ref: '#/components/schemas/SubscriptionId' }
+
   schemas:
-    Token:
+    ServerState:
       type: object
       properties:
-        id:
+        situation: { $ref: '#/components/schemas/ServerSituation' }
+        subscriptions:
+          type: array
+          items: { $ref: '#/components/schemas/SubscriptionId' }
+          example:
+            - 1bs22c3e2daj0
+            - 4ci75ce3dao36
+        error:
+          oneOf:
+            - { $ref: '#/components/schemas/ChessGameServiceException' }
+            - { $ref: '#/components/schemas/Nullable' }
+        gameState: { $ref: '#/components/schemas/GameState' }
+
+    ServerSituation:
+      type: string
+      enum:
+        - NotConfigured
+        - WaitingForPlayers
+        - Ready
+        - Running
+        - Terminated
+      example: Running
+    SubscriptionId:
+      type: string
+      example: 1bs22c3e2daj0
+    ChessGameServiceException:
+      type: object
+      properties:
+        type:
           type: string
-          example: '9476a1b4-bfe5-4ebb-a7f6-f3d56ff7ddc3'
-        expiration:
+          enum:
+            - GameAlreadyStartedException
+            - GameConfiguredException
+            - GameNotReadyException
+            - GameNotRunningException
+            - GameNotWaitingForPlayersException
+            - GameNotWaitingForPromotionException
+            - GameTerminatedException
+            - GameWaitingForPromotionException
+            - InternalServerException
+            - MalformedInputException
+            - PlayerAlreadyExistingException
+        message:
+          type: string
+    GameState:
+      type: object
+      properties:
+        chessboard: { $ref: '#/components/schemas/Chessboard' }
+        moveHistory: { $ref: '#/components/schemas/MoveHistory' }
+        currentTurn: { $ref: '#/components/schemas/Turn' }
+        configuration: { $ref: '#/components/schemas/GameConfiguration' }
+        situation: { $ref: '#/components/schemas/GameSituation' }
+        gameOver:
+          oneOf:
+            - { $ref: '#/components/schemas/GameOver' }
+            - { $ref: '#/components/schemas/Nullable' }
+        timers: { $ref: '#/components/schemas/TimerMap' }
+    Chessboard:
+      type: object
+      properties:
+        pieces:
+          type: array
+          items:
+            type: object
+            properties:
+              piece: { $ref: '#/components/schemas/Piece' }
+              position: { $ref: '#/components/schemas/Position' }
+      example:
+        pieces:
+          - { piece: { type: Rook, team: WHITE }, position: { file: A, rank: "1" } }
+          - { piece: { type: Knight, team: WHITE }, position: { file: B, rank: "1" } }
+          - { piece: { type: Bishop, team: WHITE }, position: { file: C, rank: "1" } }
+          - { piece: { type: Queen, team: WHITE }, position: { file: D, rank: "1" } }
+          - { piece: { type: King, team: WHITE }, position: { file: E, rank: "1" } }
+          - { piece: { type: Bishop, team: WHITE }, position: { file: F, rank: "1" } }
+          - { piece: { type: Knight, team: WHITE }, position: { file: G, rank: "1" } }
+          - { piece: { type: Rook, team: WHITE }, position: { file: H, rank: "1" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: A, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: B, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: C, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: D, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: E, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: F, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: G, rank: "2" } }
+          - { piece: { type: Pawn, team: WHITE }, position: { file: H, rank: "2" } }
+          - { piece: { type: Rook, team: BLACK }, position: { file: A, rank: "8" } }
+          - { piece: { type: Knight, team: BLACK }, position: { file: B, rank: '8' } }
+          - { piece: { type: Bishop, team: BLACK }, position: { file: C, rank: "8" } }
+          - { piece: { type: Queen, team: BLACK }, position: { file: D, rank: "8" } }
+          - { piece: { type: King, team: BLACK }, position: { file: E, rank: "8" } }
+          - { piece: { type: Bishop, team: BLACK }, position: { file: F, rank: "8" } }
+          - { piece: { type: Knight, team: BLACK }, position: { file: G, rank: "8" } }
+          - { piece: { type: Rook, team: BLACK }, position: { file: H, rank: "8" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: A, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: B, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: C, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: D, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: E, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: F, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: G, rank: "7" } }
+          - { piece: { type: Pawn, team: BLACK }, position: { file: H, rank: "7" } }
+    Piece:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+            - Pawn
+            - Knight
+            - Bishop
+            - Rook
+            - Queen
+            - King
+          example: Pawn
+        team: { $ref: '#/components/schemas/Team' }
+    Team:
+      type: string
+      enum:
+        - WHITE
+        - BLACK
+      example: WHITE
+    Position:
+      type: object
+      properties:
+        file: { $ref: '#/components/schemas/File' }
+        rank: { $ref: '#/components/schemas/Rank' }
+    File:
+      type: string
+      enum: [A, B, C, D, E, F, G, H]
+      example: A
+    Rank:
+      type: string
+      enum: ['1', '2', '3', '4', '5', '6', '7', '8']
+      example: '1'
+    MoveHistory:
+      type: object
+      properties:
+        entries:
+          type: array
+          items: { $ref: '#/components/schemas/MoveHistoryEntry' }
+      example:
+        entries:
+          - piece: { type: Pawn, team: WHITE }
+            move: { from: { file: A, rank: '1' }, to: { file: A, rank: '2' } }
+          - piece: { type: Knight, team: BLACK }
+            move: { from: { file: G, rank: '8' }, to: { file: H, rank: '6' } }
+    MoveHistoryEntry:
+      type: object
+      properties:
+        piece: { $ref: '#/components/schemas/Piece' }
+        move: { $ref: '#/components/schemas/Move' }
+      example:
+        piece: { type: Pawn, team: WHITE }
+        move: { from: { file: A, rank: '1' }, to: { file: A, rank: '2' } }
+    Move:
+      oneOf:
+        - $ref: '#/components/schemas/StandardMove'
+        - $ref: '#/components/schemas/CaptureMove'
+        - $ref: '#/components/schemas/Castling'
+        - $ref: '#/components/schemas/DoubleMove'
+        - $ref: '#/components/schemas/EnPassant'
+    StandardMove:
+      type: object
+      properties:
+        from: { $ref: '#/components/schemas/Position' }
+        to: { $ref: '#/components/schemas/Position' }
+      example:
+        from: { file: A, rank: '2' }
+        to: { file: A, rank: '3' }
+    CaptureMove:
+      type: object
+      properties:
+        from: { $ref: '#/components/schemas/Position' }
+        to: { $ref: '#/components/schemas/Position' }
+        capturedPiece: { $ref: '#/components/schemas/Piece' }
+      example:
+        from: { file: A, rank: '2' }
+        to: { file: B, rank: '3' }
+        capturedPiece: { type: Pawn, team: BLACK }
+    Castling:
+      type: object
+      properties:
+        from: { $ref: '#/components/schemas/Position' }
+        to: { $ref: '#/components/schemas/Position' }
+        castling:
           type: object
           properties:
-            '$date':
+            rookFrom: { $ref: '#/components/schemas/Position' }
+            rookTo: { $ref: '#/components/schemas/Position' }
+      example:
+        from: { file: E, rank: '1' }
+        to: { file: C, rank: '1' }
+        castling:
+          rookFrom: { file: A, rank: '1' }
+          rookTo: { file: D, rank: '1' }
+    DoubleMove:
+      type: object
+      properties:
+        from: { $ref: '#/components/schemas/Position' }
+        to: { $ref: '#/components/schemas/Position' }
+        doubleMove:
+          type: object
+          properties:
+            passingBy: { $ref: '#/components/schemas/Position' }
+      example:
+        from: { file: A, rank: '2' }
+        to: { file: A, rank: '4' }
+        doubleMove:
+          passingBy: { file: A, rank: '3' }
+    EnPassant:
+      type: object
+      properties:
+        from: { $ref: '#/components/schemas/Position' }
+        to: { $ref: '#/components/schemas/Position' }
+        capturedPiece: { $ref: '#/components/schemas/Piece' }
+        enPassant:
+          type: object
+          properties:
+            capturedPawnPosition: { $ref: '#/components/schemas/Position' }
+      example:
+        from: { file: A, rank: '5' }
+        to: { file: B, rank: '6' }
+        capturedPiece: { type: Pawn, team: BLACK }
+        enPassant:
+          capturePawnPosition: { file: B, rank: '5' }
+    Turn:
+      type: string
+      enum:
+        - WHITE
+        - BLACK
+      example: WHITE
+    GameConfiguration:
+      type: object
+      properties:
+        timeConstraint: { $ref: '#/components/schemas/TimeConstraint' }
+        whitePlayer: { $ref: '#/components/schemas/Player' }
+        blackPlayer: { $ref: '#/components/schemas/Player' }
+        gameMode: { $ref: '#/components/schemas/GameMode' }
+        isPrivate:
+          type: boolean
+          example: true
+        gameId:
+          type: [string, "null"]
+          example: PaulPrivateGame
+      example:
+        timeConstraint:
+          type: MoveLimit
+          time:
+            value: { '$numberLong': '5' }
+            unit: MINUTES
+        whitePlayer:
+          team: WHITE
+          name: Paul
+        blackPlayer:
+          team: BLACK
+          name: George
+        gameMode: PVP
+        isPrivate: true
+        gameId: PaulPrivateGame
+    TimeConstraint:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+            - NoLimit
+            - MoveLimit
+            - PlayerLimit
+          example: MoveLimit
+        time:
+          oneOf:
+            - { $ref: '#/components/schemas/Duration' }
+            - { $ref: '#/components/schemas/Nullable' }
+    Duration:
+      type: object
+      properties:
+        value:
+          type: object
+          properties:
+            '$numberLong':
               type: string
-              example: '2023-09-03T08:05:05.12Z'
-    Session:
+              example: '5'
+        unit: { $ref: '#/components/schemas/TimeUnit' }
+      example:
+        value: { '$numberLong': '5' }
+        unit: MINUTES
+    TimeUnit:
+      type: string
+      enum:
+        - NANOSECONDS
+        - MICROSECONDS
+        - MILLISECONDS
+        - SECONDS
+        - MINUTES
+        - HOURS
+        - DAYS
+      example: MINUTES
+    Player:
       type: object
       properties:
-        username:
+        team: { $ref: '#/components/schemas/Team' }
+        name:
           type: string
-          example: Paul
-        token:
-          $ref: '#/components/schemas/Token'
-    User:
-      type: object
-      properties:
-        username:
-          type: string
-          example: Paul
-        email:
-          type: string
-          example: paul@chessgame.com
-    Exception:
-      type: object
-      properties:
-        type:
-          type: string
-        message:
-          type: string
-    MalformedInputException:
-      type: object
-      properties:
-        type:
-          type: string
-          example: MalformedInputException
-        message:
-          type: string
-    IncorrectPasswordException:
+      example:
+        team: WHITE
+        name: Paul
+    GameMode:
+      type: string
+      enum: [PVP, PVE]
+      example: PVP
+    GameSituation:
       type: object
       properties:
         type:
           type: string
-          example: IncorrectPasswordException
-        message:
-          type: string
-    UsernameAlreadyTakenException:
+          enum:
+            - None
+            - Check
+            - Stale
+            - Checkmate
+            - Promotion
+          example: None
+        promotingPawnPosition:
+          oneOf:
+          - { $ref: '#/components/schemas/Position' }
+          - { $ref: '#/components/schemas/Nullable' }
+      examples:
+        - { type: None }
+        - { type: Promotion, promotingPawnPosition: { file: A, rank: '1' } }
+    GameOver:
       type: object
       properties:
-        type:
+        cause:
           type: string
-          example: UsernameAlreadyTakenException
-        message:
-          type: string
-    TokenExpiredException:
+          enum:
+            - Checkmate
+            - Stalemate
+            - Surrender
+            - Timeout
+          example: Checkmate
+        winner:
+          oneOf:
+            - { $ref: '#/components/schemas/Player' }
+            - { $ref: '#/components/schemas/Nullable' }
+    TimerMap:
       type: object
       properties:
-        type:
-          type: string
-          example: TokenExpiredException
-        message:
-          type: string
-    UserNotAuthorizedException:
-      type: object
-      properties:
-        type:
-          type: string
-          example: UserNotAuthorizedException
-        message:
-          type: string
-    UserNotFoundException:
-      type: object
-      properties:
-        type:
-          type: string
-          example: UserNotFoundException
-        message:
-          type: string
-  securitySchemes:
-    cookieSession:
-      type: apiKey
-      in: cookie
-      name: chess-app-session
+        white:
+          oneOf:
+            - { $ref: '#/components/schemas/Duration' }
+            - { $ref: '#/components/schemas/Nullable' }
+        black:
+          oneOf:
+            - { $ref: '#/components/schemas/Duration' }
+            - { $ref: '#/components/schemas/Nullable' }
+    PromotionChoice:
+      type: string
+      enum:
+        - Knight
+        - Bishop
+        - Rook
+        - Queen
+      example: Queen
+    Nullable:
+      type: "null"
+      example: null

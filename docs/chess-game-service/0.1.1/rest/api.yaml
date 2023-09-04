@@ -8,6 +8,7 @@ info:
     ### External Links
     - [GitHub Organization](https://github.com/ldss-project)
     - [GitHub Repository](https://github.com/ldss-project/chess-game-service)
+  license: { name: MIT }
 servers:
   - description: Default Local Server
     url: http://localhost:8083
