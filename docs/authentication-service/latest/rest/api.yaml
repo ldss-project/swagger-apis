@@ -10,7 +10,7 @@ info:
     - [GitHub Repository](https://github.com/ldss-project/authentication-service)
   version: 0.4.2
   license:
-    name: MIT
+    name: MIT License
     url: https://opensource.org/license/mit/
 servers:
   - description: Default Local Server
