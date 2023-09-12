@@ -22,17 +22,17 @@ la cui documentazione è reperibile al seguente [link](/docs).
 - **Authentication Service**:
   - `latest`:
     - [REST API](/swagger-apis/authentication-service/latest/rest)
-  - `0.4.2`:
-    - [REST API](/swagger-apis/authentication-service/0.4.2/rest)
+  - `0.4.3`:
+    - [REST API](/swagger-apis/authentication-service/0.4.3/rest)
 - **Statistics Service**:
   - `latest`:
     - [REST API](/swagger-apis/statistics-service/latest/rest)
-  - `0.4.0`:
-    - [REST API](/swagger-apis/statistics-service/0.4.0/rest)
+  - `0.4.1`:
+    - [REST API](/swagger-apis/statistics-service/0.4.1/rest)
 - **Chess Game Service**:
   - `latest`:
     - [REST API](/swagger-apis/chess-game-service/latest/rest)
     - [Websocket API](/swagger-apis/chess-game-service/latest/async)
-  - `0.1.1`:
-    - [REST API](/swagger-apis/chess-game-service/0.1.1/rest)
-    - [Websocket API](/swagger-apis/chess-game-service/0.1.1/async)
+  - `0.1.2`:
+    - [REST API](/swagger-apis/chess-game-service/0.1.2/rest)
+    - [Websocket API](/swagger-apis/chess-game-service/0.1.2/async)
