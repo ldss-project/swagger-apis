@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 0.4.0
+  version: 0.4.1
   title: Statistics Service
   description: |
     A service which handles the scores of the users of an application.

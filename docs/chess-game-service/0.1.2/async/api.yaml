@@ -2,7 +2,7 @@ id: https://github.com/ldss-project/chess-game-service/websocket
 asyncapi: 2.4.0
 info:
   title: Chess Game Service Connection
-  version: '0.1.1'
+  version: '0.1.2'
   description: |
     A service which handles the configuration, execution and termination of chess games.
 

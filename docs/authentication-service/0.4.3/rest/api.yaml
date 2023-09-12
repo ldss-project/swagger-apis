@@ -8,7 +8,7 @@ info:
     ### External Links
     - [GitHub Organization](https://github.com/ldss-project)
     - [GitHub Repository](https://github.com/ldss-project/authentication-service)
-  version: 0.4.2
+  version: 0.4.3
   license:
     name: MIT License
     url: https://opensource.org/license/mit/
